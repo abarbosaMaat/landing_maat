@@ -1,0 +1,28 @@
+.navbar {
+    overflow-x: hidden;
+    color: white;
+    margin: 0%;
+    width: 100%;
+}
+
+.d-inline{
+    width: 40%;
+}
+
+.nav-link {
+    margin-right: 2em;
+}
+
+a {
+    color: white !important;
+    font-size: 20px;
+}
+
+.callToAction {
+    color: white;
+    background-color: #FE3618;
+    border-radius: 5px;
+    border-color: #FE3618;
+    padding: 0 1em;
+    margin-top: 8px;
+}

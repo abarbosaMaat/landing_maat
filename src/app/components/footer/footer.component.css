@@ -1,0 +1,45 @@
+.footer {
+    /*background-image: url("../../../assets/fondo_footer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;*/
+    overflow-x: hidden;
+    max-width: 100%;
+    max-height: 300px;
+    color: #2E2C4F;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+
+}
+
+.row {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+.column {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.c1 {
+    width: 12%;
+}
+
+.redes {
+    width: 3em;
+}
+
+p {
+    margin-bottom: 0%;
+}
+
+.plast {
+    padding-bottom: 1em;
+    padding-left: 2.5em;
+}

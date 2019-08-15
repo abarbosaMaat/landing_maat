@@ -1,0 +1,73 @@
+.home{
+    overflow-x: hidden;
+    background-image: url("../../../assets/fondo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    max-width: 100%;
+    height: 650px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+.flexbox-container {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    padding: 2em;
+}
+
+.flexbox-container > div {
+    width: 50%;
+    padding: 10px;
+    margin: 2em;
+}
+
+.flexbox-container > div:first-child {
+    margin-left: 8em;
+}
+
+.text1 {
+    font-size: 28px;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+.text2 {
+    font-size: 30px;
+    padding-top: 0%;
+    margin-bottom: 0%;
+}
+
+.text3 {
+    font-size: 22px;
+}
+
+.row {
+    padding-left: 2em; 
+}
+
+.btnJoinUp {
+    background-color: #023C68;
+    border: #023C68;
+    border-radius: 5px;
+    color: white;
+    padding: 3px 15px; 
+    margin-right: 1em;
+}
+
+.btnLookVideo {
+    background-color: #FE3618;
+    border: #FE3618;
+    border-radius: 5px;
+    color: white;
+    padding: 2px 15px; 
+    margin-left: 1em; 
+}
+
+.cel1 {
+    width: 65%;
+    padding-left: 7em;
+    padding-top: 1em; 
+}

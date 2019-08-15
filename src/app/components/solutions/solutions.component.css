@@ -1,0 +1,76 @@
+.solutions {
+    overflow-x: hidden;
+    display: flex;
+    background-color:  #C8E3EC;
+    text-align: center;
+    color: #023C68;
+    padding-top: 2em;
+    margin: 0%;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.row {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+}
+
+.column {
+    width: 29%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.divImg{
+    height: 100%;
+    max-height: 250px;
+    vertical-align: middle;
+    text-align: center !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgCel2, .imgControl, .imgLiberty {
+    height: 100%;
+    max-height: 220px;
+    width: auto;
+}
+
+.imgControl {
+    width: 200px !important;
+    height: auto !important;
+    margin-top: 3em;
+    margin-bottom: .6em;
+}
+
+.imgLiberty {
+    width: 150px !important;
+    height: auto !important;
+    margin-bottom: .4em;
+    margin-top: .2em;
+}
+
+h5 {
+    margin-top: 1.8em;
+}
+
+.divText {
+    width: 100%;
+    max-width: 330px;
+    vertical-align: text-bottom;
+}
+
+p {
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    vertical-align: text-bottom;
+}
