@@ -1,24 +1,29 @@
+<app-navbar></app-navbar>
 <section class="home">
-    <app-navbar></app-navbar>
+  <section class="containerHome">
     <div class="flexbox-container">
         <div>
-          <p class="text1">Estamos construyendo la</p>
-          <p class="text2">IDENTIFICACIÓN DIGITAL</p>
+          <p class="text1">La herramienta de confianza para personas y empresas</p>
           <br>
-          <p class="text3">Trámites más fáciles, seguros <br> y privados en cualquier lugar</p>
+          <p class="text3">maat.ai te permite crear, ordenar y proteger tu identidad digital y verificar la identidad de los demás</p>
           <br>
-
-          <div class="row">
-            <a href="https://maatai.us19.list-manage.com/subscribe?u=d3818080d22dc397380995a4a&id=1243d5027b" target="_blank">
-              <button class="btnJoinUp">ÚNETE</button>
+          <div class="row" style="text-align: center">
+              <button class="btnJoinUp">Envía la app a tu teléfono</button>
+          </div>
+          <div class="row" style="text-align: center">
+            <a routerLink="/welcome">
+              <button class="btnLookVideo">Ve soluciones para empresas</button>
             </a>
-            <a href="#video">
-            <button class="btnLookVideo"><i class="far fa-play-circle"></i>  MIRAR VIDEO</button>
-          </a>
           </div>
         </div>
-        <div>
-          <!--img src="assets/1cel.png" alt="cel" class="cel1"-->
+        <div style="padding: 0%;text-align:right;">
+          <img src="assets/imagen_header.png" alt="cel" class="shareImg">
         </div>
     </div>
+  </section>
 </section>
+<app-solutions></app-solutions>
+<app-trust></app-trust>
+<app-cards></app-cards>
+<app-certifications></app-certifications>
+<app-footer></app-footer>

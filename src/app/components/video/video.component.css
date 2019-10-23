@@ -1,6 +1,66 @@
-.imgVideo {
-    overflow-x: hidden;
+.video {
+    text-align: center;
     align-items: center;
-    width: 60%;
-    margin: 0%;
+    margin-top: 2em;
+    max-width: 1000px;
+}
+
+iframe{
+    width: 100%;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .video {
+        text-align: center;
+        align-items: center;
+        margin-top: 2em;
+        width: 100%;
+    }
+    iframe {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .video {
+        text-align: center;
+        align-items: center;
+        margin-top: 2em;
+        width: 100%;
+    }
+    iframe {
+        width: 700px !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .video{
+        width: 100%;
+    }
+    iframe {
+        width: 900px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .video{
+        width: 100%;
+    }
+    iframe {
+        width: 900px !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .video{
+        width: 100%;
+    }
+    iframe {
+        width: 900px !important;
+    }
 }

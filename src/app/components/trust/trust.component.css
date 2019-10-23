@@ -1,11 +1,15 @@
 .trust {
     overflow-x: hidden;
-    background-color:  #C8E3EC;
     text-align: center;
-    color: #2E2C4F;
-    padding-top: 3em;
     margin: 0%;
     width: 100%;
+    font-family: 'Lato', sans-serif;
+    color: #146C94;
+}
+
+.clients {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .row {
@@ -20,34 +24,86 @@
 .column {
     padding-left: 1em;
     padding-right: 1em;
-}
-
-.c1 {
     width: 22%;
 }
 
-.c2 {
-    width: 30%;
-}
 h1 {
     padding-bottom: 1em;
     padding-top: 1em;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #146C94;
 }
 
 .logo1 {
-    width: 10em;
-    height: auto;
     padding-top: 1em;
     padding-bottom: 2em;
 }
 
 .logo2 {
-    width: 18em;
-    height: auto;
     padding-top: 2em;
     padding-bottom: 2em;
 }
-
-.chm {
-    width: 9em !important;
+.clientsMobile {
+    display: none;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .clients {
+        display: none;
+    }
+    .clientsMobile{
+        display: block;
+    }
+    .row {
+        padding: 0;
+    }
+    .c1 {
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 33%;
+    }
+    .c2 {
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 33%;
+    }
+    img {
+        padding: 0;
+        width: 100%;
+    }
+    .imgHabiqo {
+        width: 70% !important;
+    }
+    .imgScotiabank {
+        width: 120%;
+    }
+    .logo1 {
+        padding-top: .5em;
+        padding-bottom: 1em;
+    }
+    
+    .logo2 {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    h1 {
+        padding: .5em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

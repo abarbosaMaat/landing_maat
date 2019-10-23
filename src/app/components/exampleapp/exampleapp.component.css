@@ -1,0 +1,11 @@
+.example_app {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 2em;
+    align-items: center;
+    text-align: center;
+}
+
+.imgExample {
+    width: 70%;
+}

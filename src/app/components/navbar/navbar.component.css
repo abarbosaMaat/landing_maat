@@ -1,28 +1,45 @@
-.navbar {
+.navbarHome {
     overflow-x: hidden;
-    color: white;
-    margin: 0%;
+}
+
+.navbar {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    color: #2B3C5A;
     width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .d-inline{
-    width: 40%;
+    width: 70%;
 }
 
 .nav-link {
     margin-right: 2em;
+    width: 8em;
+    text-align: center;
 }
 
 a {
-    color: white !important;
-    font-size: 20px;
+    color: #2B3C5A !important;
+    font-size: 18px;
 }
 
-.callToAction {
-    color: white;
-    background-color: #FE3618;
-    border-radius: 5px;
-    border-color: #FE3618;
-    padding: 0 1em;
-    margin-top: 8px;
-}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

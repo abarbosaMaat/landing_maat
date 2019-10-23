@@ -1,16 +1,15 @@
 .footer {
-    /*background-image: url("../../../assets/fondo_footer.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: relative;*/
+    background-color: #2B3C5A;
     overflow-x: hidden;
     max-width: 100%;
-    max-height: 300px;
-    color: #2E2C4F;
     font-family: 'Lato', sans-serif;
     margin: 0;
+    text-align: center;
+}
 
+.containerFooter {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .row {
@@ -22,24 +21,81 @@
     padding-top: 1em;
     padding-bottom: 0;
 }
-.column {
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-.c1 {
-    width: 12%;
-}
 
 .redes {
-    width: 3em;
+    width: 35%;
+    margin: 0 auto !important;
+}
+
+.column {
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 22%;
+}
+
+h1 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;  
+    color: #FFFFFF;
+    width: 18em;
+    margin-top: 3em;
+}
+
+.btnSolutions {
+    background-color: #92D2E8;
+    border: #92D2E8;
+    color: #2B3C5A;
+    border-radius: 6px;
+    padding: 6px 15px; 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    width: 15em;
+    height: 2.4em;
+    margin-top: 3em;
 }
 
 p {
-    margin-bottom: 0%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
-.plast {
-    padding-bottom: 1em;
-    padding-left: 2.5em;
+.cta {
+    width: 10em;
+    height: 2.8em;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .redes {
+        width: 80%;
+    }
+    .cta {
+        width: 8.5em;
+    }
+    .c1 {
+        width: 50%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

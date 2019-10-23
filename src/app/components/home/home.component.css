@@ -1,41 +1,54 @@
 .home{
     overflow-x: hidden;
-    background-image: url("../../../assets/fondo.png");
-    background-position: center;
+    background-image: url("../../../assets/fondo3.png");
+    background-position: cover;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
     max-width: 100%;
-    height: 650px;
-    color: white;
+    height: 540px;
+    color: #2B3C5A;
     font-family: 'Lato', sans-serif;
     margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
 }
+
+.containerHome {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .flexbox-container {
     display: -ms-flex;
     display: -webkit-flex;
     display: flex;
-    padding: 2em;
 }
 
 .flexbox-container > div {
     width: 50%;
-    padding: 10px;
-    margin: 2em;
+    margin-top: .8em;
 }
 
 .flexbox-container > div:first-child {
-    margin-left: 8em;
+    margin-top: 1em;
+    margin-left: .8em;
 }
 
 .text1 {
-    font-size: 28px;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
+    padding-top: 1.5em;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
 }
 
 .text2 {
-    font-size: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
     padding-top: 0%;
     margin-bottom: 0%;
 }
@@ -49,25 +62,87 @@
 }
 
 .btnJoinUp {
-    background-color: #023C68;
-    border: #023C68;
-    border-radius: 5px;
+    background-color: #F86F60;
+    border: #F86F60;
+    border-radius: 6px;
     color: white;
-    padding: 3px 15px; 
-    margin-right: 1em;
+    padding: 6px 15px; 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    width: 19em;
+    height: 2.4em;
 }
 
 .btnLookVideo {
-    background-color: #FE3618;
-    border: #FE3618;
-    border-radius: 5px;
-    color: white;
-    padding: 2px 15px; 
-    margin-left: 1em; 
+    background-color: #FFFFFF;
+    border: 3px solid #92D2E8;
+    border-radius: 6px;
+    color: #2B3C5A;
+    padding: 6px 15px; 
+    margin-top: 1em;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    width: 19em;
+    height: 2.4em;
 }
 
-.cel1 {
-    width: 65%;
-    padding-left: 7em;
-    padding-top: 1em; 
+.shareImg {
+    width: 100%;
+    right: 0;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .home{
+        background-position: cover;
+        background-repeat: no-repeat;
+        background-size: 200% 100%;
+        position: relative;
+    }
+    .containerHome {
+        margin-top: 0%;
+    }
+    .flexbox-container > div {
+        width: 0%;
+    }
+    .flexbox-container > div:first-child {
+        margin-top: 0;
+        margin-left: .8em;
+        width: 100%;
+    }
+    .text3{
+        text-align: center;
+    }
+    .btnJoinUp, .btnLookVideo {
+        width: 15em;
+    }
+    .shareImg {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .shareImg {
+        height: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .shareImg {
+        height: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
