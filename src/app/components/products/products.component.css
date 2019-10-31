@@ -1,5 +1,6 @@
 .products {
     overflow-x: hidden;
+    overflow-y: hidden;
     display: flex;
     text-align: center;
     color: #263069;
@@ -45,10 +46,21 @@ p {
 .productsMobile {
     display: none;
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (min-width: 380px) and (max-width: 500px) {
+    .products {
+        margin: 0% !important;
+        max-height: 430px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
     .containerProducts {
         display: none;
+    }
+    h1 {
+        padding: .6em;
+        margin-bottom: 0%;
     }
     .productsMobile {
         display: block;
@@ -58,6 +70,39 @@ p {
     }
     .row {
         width: 100%;
+        padding: 5px 0px !important;
+    }
+    .column {
+        width: 50%;
+    }
+    .imgCertification {
+        width: 80%;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .products {
+        margin: 0% !important;
+        max-height: 430px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .containerProducts {
+        display: none;
+    }
+    h1 {
+        padding: .6em;
+        margin-bottom: 0%;
+    }
+    .productsMobile {
+        display: block;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .row {
+        width: 100%;
+        padding: 5px 0px !important;
     }
     .column {
         width: 50%;
@@ -67,16 +112,22 @@ p {
     }
 
 }
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    .products {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
     .containerProducts {
         width: 100%;
     }
     .row {
         width: 100%;
-        padding: 0%;
+        padding: 0px 0px !important;
         margin: 0%;
+    }
+    p {
+        margin: 0 !important;
     }
 }
 
@@ -84,10 +135,12 @@ p {
 @media only screen and (min-width: 768px) {
     .containerProducts {
         width: 100%;
+        max-height: 400px;
     }
     .row {
         width: 100%;
-        padding: 0%;
+        padding-top: 0% !important;
+        padding-bottom: 0% !important;
         margin: 0%;
     }
 }

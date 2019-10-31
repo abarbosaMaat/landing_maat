@@ -1,10 +1,18 @@
+body { padding-right: 0 !important }
 .footer2 {
+    padding-right: 0% !important;
     background-color: #2B3C5A;
     overflow-x: hidden;
     max-width: 100%;
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding-top: 4em;
+    padding-left: .8em;
+    padding-right: .8em;
+}
+.modal-open {
+    overflow:auto;
+    padding-right: 0% !important;
 }
 
 .containerFooter2 {
@@ -129,8 +137,47 @@ p {
      border: none;
      margin: 1.5em 0;
  }
+/*Extra extra small devices type iphone 5*/
+@media only screen and (max-width: 360px){
+    .footer2 {
+        padding-top: 0;
+    }
+    .btnContact {
+        margin-top: 0%;
+    }
+    .cta {
+        width: 8em !important;
+        height: 3.5em !important;
+        padding-left: 0%;
+    }
+    .c1 {
+        padding-left: 10px;
+    }
+}
+ /* Extra small devices (phones, 400px and down) */
+@media only screen and (min-width: 380px) and (max-width: 600px) {
+    .footer2 {
+        padding-top: 1em;
+    }
+    .btnContact {
+        margin-top: 0%;
+    }
+    .cta {
+        width: 10em !important;
+        height: 3.5em !important;
+    }
+    h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 28px;
+    }
+}
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .footer2 {
+        padding-top: 2em;
+    }
     .btnDesktop {
         margin: 0;
     }

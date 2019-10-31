@@ -1,0 +1,65 @@
+{
+    "navbar": {
+        "people": "Para personas",
+        "company": "Para empresas"
+    },
+    "home": {
+        "title": "La herramienta de confianza para personas y empresas",
+        "description": "maat.ai te permite crear, ordenar y proteger tu identidad digital y verificar la identidad de los demás.",
+        "btnSend": "Envía la app a tu teléfono",
+        "btnBusiness": "Ve soluciones para empresas"
+    },
+    "solutions": {
+        "create": "Crea tu cartera digital segura",
+        "textCreate": "Usamos Reconocimiento Facial para prevenir robo de identidad",
+        "upload": "Sube y guarda tus documentos",
+        "textUpload": "Validamos que no sean falsos o estén vencidos, y se guardan encriptados en nubes protegidas con máxima seguridad.",
+        "identity": "Identificate con maat.ai",
+        "textIdentity": "Comparte tus documentos con personas o empresas de manera rápida, fácil y segura."
+    },
+    "trust": {
+        "clients": "Clientes",
+        "allies": "Aliados"
+    },
+    "card": {
+        "titlePeople": "Para personas",
+        "textPeople": "Carga, ordena y certifica documentos de identificación personal de forma segura.",
+        "btnDownload": "Descarga la app en tu teléfono",
+        "titleTeams": "Para equipos",
+        "textTeams": "Solicita, almacena y protege documentos de tus empleados, clientes, proveedores y otros, de forma ordenada, fácil y segura.",
+        "btnTeams": "Ve soluciones para equipos"
+    },
+    "certifications": {
+        "titleCertifications": "Nuestros certificados"
+    },
+    "footer": {
+        "textFooter": "Mejora la experiencia, agilidad y eficiencia de tu empresa.",
+        "privacy": "Aviso de privacidad"
+    },
+    "welcome": {
+        "titleWelcome": "¡Bienvenido a la nueva red de confianza!",
+        "textWelcome": "Identifica a tus empleados, clientes y usuarios pidiendo documentos y expedientes digitales certificados de manera práctica y segura.",
+        "btnContact": "Contáctanos",
+        "suscribe": "Registrate a nuestro newsletter",
+        "textModal": "para ser de los primeros en tener su bóveda de identidad, o de solicitar documentos de forma segura y práctica.",
+        "email": "Correo electrónico",
+        "name": "Nombre",
+        "company": "Empresa",
+        "number": "Teléfono",
+        "comments": "Comentarios",
+        "btnSuscribe": "Suscribirme"
+    },
+    "products": {
+        "titleProducts": "Otros productos",
+        "facial": "Reconocimiento facial",
+        "document": "Certificación de documentos",
+        "list": "Revisión en listas"
+    },
+    "use": {
+        "titleUse": "Casos de uso",
+        "access": "Accesos",
+        "human": "RH",
+        "records": "Expedientes",
+        "sales": "Ventas"
+    }
+}

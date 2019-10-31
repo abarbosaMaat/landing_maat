@@ -1,0 +1,65 @@
+{
+    "navbar": {
+        "people": "For people",
+        "company": "For business"
+    },
+    "home": {
+        "title": "The trust tool for people and business",
+        "description": "maat.ai allows you to create, organize and protect your digital identity and veryfy other people's identity.",
+        "btnSend": "Send app to your phone",
+        "btnBusiness": "Go to business solutions"
+    },
+    "solutions": {
+        "create": "Create your secure digital wallet",
+        "textCreate": "We use facial recognition to prevent identity thefts.",
+        "upload": "Upload and save your documents",
+        "textUpload": "We authenticate them and check their validity. Then we encrypt and store them in clouds protected by maximum security.",
+        "identity": "Identity yourself with maat.ai",
+        "textIdentity": "Share your documents with people and business in an easy, fast and secure way."
+    },
+    "trust": {
+        "clients": "Clients",
+        "allies": "Allies"
+    },
+    "card": {
+        "titlePeople": "For people",
+        "textPeople": "Safely upload, organize and certify personal identity documents. Share them in an easy and reliable way.",
+        "btnDownload": "Download app in your phone",
+        "titleTeams": "For teams",
+        "textTeams": "Request, store and protect your client's, employee's and suplier´s documents in a safe, neat and easy way.",
+        "btnTeams": "Go to business solutions"
+    },
+    "certifications": {
+        "titleCertifications": "Our credentials"
+    },
+    "footer": {
+        "textFooter": "Improve the experience, agility and eficiency of your business.",
+        "privacy": "Privacy notice"
+    },
+    "welcome": {
+        "titleWelcome": "Welcome to our new Tribe of Trust!",
+        "textWelcome": "Identity your employees, clients and users through the request of documents and the creation of digital records, always certified in an easy and secure way.",
+        "btnContact": "Contact us",
+        "suscribe": "Suscribe to our newsletter",
+        "textModal": "and become one of the first to have an identity vault or request documents in an easy and practical way.",
+        "email": "Email",
+        "name": "Name",
+        "company": "Company",
+        "number": "Phone number",
+        "comments": "Comments",
+        "btnSuscribe": "SUBSCRIBE"
+    },
+    "products": {
+        "titleProducts": "Other products",
+        "facial": "Facial recognition",
+        "document": "Document certification",
+        "list": "List revision"
+    },
+    "use": {
+        "titleUse": "Use cases",
+        "access": "Access",
+        "human": "Human resources",
+        "records": "Records",
+        "sales": "Sales"
+    }
+}

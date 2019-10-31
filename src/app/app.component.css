@@ -2,4 +2,8 @@ body{
     font-family: 'Lato', sans-serif;
     width: 100%;
     padding: 10px;
+    padding-right: 0% !important;
+}
+.modal-close {
+    padding-right: 0% !important;
 }

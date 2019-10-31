@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en_US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="peopleHeader" datatype="html">
+        <source>Para personas</source>
+        <target>For people</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">Link que envía al perfil para personas</note>
+        <note priority="1" from="meaning">site header</note>
+      </trans-unit>
+      <trans-unit id="companyHeader" datatype="html">
+        <source>Para empresas</source>
+        <target>For business</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Link que envia al perfil para empresas</note>
+        <note priority="1" from="meaning">site header</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

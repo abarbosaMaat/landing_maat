@@ -41,7 +41,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
-    line-height: 38px;
+    line-height: 48px;
 }
 
 .text2 {
@@ -67,12 +67,12 @@
     border-radius: 6px;
     color: white;
     padding: 6px 15px; 
-    font-style: normal;
+    font-style: bold;
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    width: 19em;
+    width: 17em;
     height: 2.4em;
 }
 
@@ -83,12 +83,12 @@
     color: #2B3C5A;
     padding: 6px 15px; 
     margin-top: 1em;
-    font-style: normal;
+    font-style: bold;
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    width: 19em;
+    width: 17em;
     height: 2.4em;
 }
 
@@ -103,6 +103,7 @@
         background-position: cover;
         background-repeat: no-repeat;
         background-size: 200% 100%;
+        max-height: 430px;
         position: relative;
     }
     .containerHome {
@@ -114,13 +115,35 @@
     .flexbox-container > div:first-child {
         margin-top: 0;
         margin-left: .8em;
+        margin-right: .8em;
         width: 100%;
     }
-    .text3{
-        text-align: center;
+    .text1 {
+        padding-top: .3em;
+        margin-bottom: 0%;
     }
-    .btnJoinUp, .btnLookVideo {
+    .text3{
+        font-size: 18px;
+        line-height: 27px;
+        padding-left: .7em;
+    }
+    .btnJoinUp {
         width: 15em;
+        margin: 0 auto;
+    }
+    .btnLookVideo {
+        width: 15em;
+    }
+    .btn2 {
+        margin: 0 auto !important;
+    }
+    .row {
+        width: 100%;
+        padding: 0%;
+        margin-right: 0;
+        margin-left: 0%;
+        text-align: center !important;
+        align-items: center !important;
     }
     .shareImg {
         display: none;

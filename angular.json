@@ -29,6 +29,13 @@
             "es5BrowserSupport": true
           },
           "configurations": {
+            "en": {
+              "i18nFile": "src/locale/messages.en.xlf",
+              "i18nLocale": "en",
+              "i18nFormat": "xlf",
+              "aot": true,
+              "i18nMissingTranslation": "error"
+              },
             "production": {
               "fileReplacements": [
                 {
@@ -61,6 +68,9 @@
             "browserTarget": "landingMaat:build"
           },
           "configurations": {
+            "en": {
+              "browserTarget": "landingMaat:build:en"
+              },
             "production": {
               "browserTarget": "landingMaat:build:production"
             }
@@ -115,6 +125,9 @@
             "devServerTarget": "landingMaat:serve"
           },
           "configurations": {
+            "en": {
+              "devServerTarget": "landingMaat:serve:en"
+              },
             "production": {
               "devServerTarget": "landingMaat:serve:production"
             }

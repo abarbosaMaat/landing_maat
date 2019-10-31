@@ -1,7 +1,7 @@
 <section class="footer2">
     <section class="containerFooter2">
       <div class="row">
-        <button class="btn btn-primary btnContact" data-toggle="modal" data-target="#exampleModalCenter" style="margin-bottom: 1.5em;">Contáctanos</button>
+        <button class="btn btn-primary btnContact" data-toggle="modal" data-target="#exampleModalCenter" style="margin-bottom: 1.5em;">{{ 'welcome.btnContact' | translate }}</button>
       </div>
         <div class="row redes">
             <div class="column">
@@ -36,7 +36,7 @@
               </div>
           </div>
     <div class="row" style="margin-top: 2em; margin-bottom: 2.5em;">
-      <p>©2019 | All rigths reserved | <a href="https://www.maatai.com/aviso-de-privacidad/" target="_blank" style="color: #FFFFFF;">Aviso de privacidad</a> <br>
+      <p>©2019 | All rigths reserved | <a href="https://www.maatai.com/aviso-de-privacidad/" target="_blank" style="color: #FFFFFF;">{{ 'footer.privacy' | translate }}</a> <br>
       maat.ai - Trust and be trusted online</p>
     </div>
       <!-- Modal -->
@@ -46,34 +46,33 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <img src="assets/arrow_back.png" alt="Atrás" aria-hidden="true">
                 </button>
-            <h5 class="modal-title" id="exampleModalLongTitle">Registrate a nuestro newsletter</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">{{ 'welcome.suscribe' | translate }}</h5>
             <div class="row">
-              <p class="txtModal">para ser de los primeros en tener su bóveda de identidad, o de solicitar documentos de forma segura y práctica</p>
+              <p class="txtModal">{{ 'welcome.textModal' | translate }}</p>
             </div>
             <form>
                 <section class="login-form">
           
                   <div class="form-group offset-2">
-                    <input type="email" name="email" id="nameUser" placeholder="Correo electrónico" required class="form-control input-lg" />
+                    <input type="email" name="email" id="nameUser" placeholder="{{ 'welcome.email' | translate }}" required class="form-control input-lg" />
                   </div>
                   <div class="form-group offset-2">
-                    <input type="text" name="name" class="form-control input-lg" id="password" placeholder="Nombre" required="" />
+                    <input type="text" name="name" class="form-control input-lg" id="password" placeholder="{{ 'welcome.name' | translate }}" required="" />
                   </div>
                   <div class="form-group offset-2">
-                    <input type="email" name="email" id="nameUser" placeholder="Empresa" required class="form-control input-lg" />
+                    <input type="email" name="email" id="nameUser" placeholder="{{ 'welcome.company' | translate }}" required class="form-control input-lg" />
                   </div>
                   <div class="form-group offset-2">
-                    <input type="text" name="name" class="form-control input-lg" id="password" placeholder="Teléfono" required="" />
+                    <input type="text" name="name" class="form-control input-lg" id="password" placeholder="{{ 'welcome.number' | translate }}" required="" />
                   </div>
                   <div class="form-group offset-2">
-                      <input type="text" name="name" class="form-control input-lg comments" id="password" placeholder="Comentarios" required="" />
+                      <input type="text" name="name" class="form-control input-lg comments" id="password" placeholder="{{ 'welcome.comments' | translate }}" required="" />
                     </div>
                   <div class="btnDesktop">       
-                    <input type="button" name="signIn" value="Suscribirme" data-dismiss="modal" class="btn btn-primary btn-block btn-lg">      
+                    <input type="button" name="signIn" value="{{ 'welcome.btnSuscribe' | translate }}" data-dismiss="modal" class="btn btn-primary btn-block btn-lg">      
                   </div>
                 </section>
                 </form>
-          
         </div>
       </div>
     </div>

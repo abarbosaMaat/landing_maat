@@ -1,5 +1,7 @@
+body { padding-right: 0 !important }
 .welcome {
     overflow-x: hidden;
+    overflow-y: hidden;
     background-image: url("../../../assets/cubos.png");
     background-position: 50% 70%;
     background-repeat: no-repeat;
@@ -58,19 +60,19 @@ p {
     text-align: center;
     max-width: 720px; 
 }
- .close{
-     text-align: left !important;
-     margin-left: 15px !important;
-     margin-top: 15px !important;
- }
+.close{
+    text-align: left !important;
+    margin-left: 15px !important;
+    margin-top: 15px !important;
+}
 
- h5{
-     color: #263069;
-     font-style: normal;
+h5{
+    color: #263069;
+    font-style: normal;
     font-weight: normal;
     font-size: 28px;
     line-height: 24px;
- }
+}
 
 .txtModal{
     color: #263069;
@@ -78,40 +80,38 @@ p {
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
- }
-
- .input-lg {
+}
+.input-lg {
     width: 80%;
     height: 40px;
     border: 1px solid #FE3618;
     border-radius: 6px;
     align-items: center;
- }
+}
 
- .comments {
+.comments {
     border-bottom: 1px solid #FE3618 !important;
     border-top: none !important;
     border-left: none !important;
     border-right: none !important;
     border-radius: 0% !important;
- }
+}
 
- .btn-lg {
-     width: 12em !important;
-     background-color: #FE3618 !important;
-     color: white !important;
-     border: none;
-     margin: 1.5em 0;
- }
- .btnSuscript {
-     align-items: center;
-     text-align: center;
-     display: block;
- }
- .btnMobile {
-     display: none;
- }
-
+.btn-lg {
+    width: 12em !important;
+    background-color: #FE3618 !important;
+    color: white !important;
+    border: none;
+    margin: 1.5em 0;
+}
+.btnSuscript {
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+.btnMobile {
+    display: none;
+}
 
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -123,6 +123,7 @@ p {
         position: relative;
         max-width: 100%;
         height: auto;
+        padding: 0 1em;
     }
     h5 {
         font-size: 24px;

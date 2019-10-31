@@ -1,21 +1,18 @@
 <section class="navbarHome">
-<nav class="navbar navbar-expand-lg navbar-light d-flex bd-highlight">
+  <section class="navDesktop">
+<nav class="navbar navbar-expand navbar-light d-flex bd-highlight">
     <div class="p-2 w-80 bd-highlight">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <a class="navbar-brand" routerLink="/home">
         <img src="assets/black_transp.png" class="d-inline" alt="maat.ai">
       </a>
     </div>
-      <div class="collapse navbar-collapse ml-auto p-2 bd-highlight" id="navbarTogglerDemo01">
+      <div class="ml-auto p-2 bd-highlight" id="navbarTogglerDemo01">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active ml-5">
-            <a routerLink="" class="nav-link active">Para personas</a>
+            <a routerLink="" class="nav-link active">{{ 'navbar.people' | translate }}</a>
           </li>
           <li class="nav-item ml-3">
-            <a routerLink="/welcome" class="nav-link">Para empresas</a>
+            <a routerLink="/welcome" class="nav-link">{{ 'navbar.company' | translate }}</a>
           </li>
           <li class="nav-item mr-auto">
             <a href="https://www.maatai.com/blog/" target="_blank" class="nav-link">Blog</a>
@@ -23,4 +20,27 @@
         </ul>
       </div>
     </nav>
+  </section>
+  <section class="navMobile">
+      <div class="maat bd-highlight">
+          <a routerLink="/home">
+            <img src="assets/black_transp.png" class="d-inline" alt="maat.ai">
+          </a>
+        </div>
+    <nav class="navbar navbar-expand navbar-light d-flex bd-highlight">
+        <div class="text-center w-100 bd-highlight">
+          <ul class="navbar-nav center">
+            <li class="nav-item active">
+              <a routerLink="" class="nav-link active" i18n>{{ 'navbar.people' | translate }}</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/welcome" class="nav-link" i18n>{{ 'navbar.company' | translate }}</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.maatai.com/blog/" target="_blank" class="nav-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
   </section>

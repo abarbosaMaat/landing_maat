@@ -2,33 +2,33 @@
   <section class="containerCard">
     <div class="flexbox-container">
       <div>
-        <h1>Para personas</h1>
-        <p>Carga, ordena y certifica documentos de identificación personal de forma segura.</p>
+        <h1>{{ 'card.titlePeople' | translate }}</h1>
+        <p>{{ 'card.textPeople' | translate }}</p>
         <img src="assets/persona.png" alt="Personas" style="margin-top: 2em;"><br>
-        <button class="btnDownload">Descarga la app en tu teléfono</button>
+        <button class="btnDownload">{{ 'card.btnDownload' | translate }}</button>
       </div>
       <div>
-        <h1>Para equipos</h1>
-        <p>Solicita, almacena y protege documentos de tus empleados, clientes, proveedores y otros, de forma ordenada, fácil y segura.</p>
+        <h1>{{ 'card.titleTeams' | translate }}</h1>
+        <p>{{ 'card.textTeams' | translate }}</p>
         <img src="assets/equipos.png" alt="Equipos" style="margin-top: 1em;"><br>
         <a routerLink="/welcome">
-          <button class="btnSolutions">Ve soluciones para equipos</button>
+          <button class="btnSolutions">{{ 'card.btnTeams' | translate }}</button>
         </a>
       </div>
     </div>
   </section>
     <section class="backCard">
       <div class="row">
-        <h1 style="margin-right: 1em;">Para personas</h1><img src="assets/persona.png" alt="Personas" class="imgPerson">
+        <h1 style="margin-right: 1em;">{{ 'card.titlePeople' | translate }}</h1><img src="assets/persona.png" alt="Personas" class="imgPerson">
       </div>
-      <p>Carga, ordena y certifica documentos de identificación personal de forma segura.</p>
-      <button class="btnDownload">Descarga la app en tu teléfono</button>
+      <p>{{ 'card.textPeople' | translate }}</p>
+      <button class="btnDownload">{{ 'card.btnDownload' | translate }}</button>
       <div class="row" style="margin-top: 1em;">
-          <img src="assets/equipos.png" alt="Equipos" class="imgTeam" style="margin-right: 1em;"><h1>Para equipos</h1> 
+          <img src="assets/equipos.png" alt="Equipos" class="imgTeam" style="margin-right: 1em;"><h1>{{ 'card.titleTeams' | translate }}</h1> 
       </div>
-      <p>Solicita, almacena y protege documentos de tus empleados, clientes, proveedores y otros, de forma ordenada, fácil y segura.</p>
+      <p>{{ 'card.textTeams' | translate }}</p>
       <a routerLink="/welcome">
-        <button class="btnSolutions">Ve soluciones para equipos</button>
+        <button class="btnSolutions">{{ 'card.btnTeams' | translate }}</button>
       </a>
   </section>
 </section>

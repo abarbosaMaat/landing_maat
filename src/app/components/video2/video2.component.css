@@ -30,6 +30,8 @@
     iframe {
         width: 90%;
         height: auto;
+        margin: 0 !important;
+        padding: 0% !important;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */

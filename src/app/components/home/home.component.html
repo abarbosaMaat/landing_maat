@@ -3,16 +3,16 @@
   <section class="containerHome">
     <div class="flexbox-container">
         <div>
-          <p class="text1">La herramienta de confianza para personas y empresas</p>
+          <p class="text1">{{ 'home.title' | translate }}</p>
           <br>
-          <p class="text3">maat.ai te permite crear, ordenar y proteger tu identidad digital y verificar la identidad de los demás</p>
+          <p class="text3">{{ 'home.description' | translate }}</p>
           <br>
-          <div class="row" style="text-align: center">
-              <button class="btnJoinUp">Envía la app a tu teléfono</button>
+          <div class="row">
+              <button class="btnJoinUp">{{ 'home.btnSend' | translate }}</button>
           </div>
-          <div class="row" style="text-align: center">
-            <a routerLink="/welcome">
-              <button class="btnLookVideo">Ve soluciones para empresas</button>
+          <div class="row">
+            <a routerLink="/welcome" class="btn2">
+              <button class="btnLookVideo">{{ 'home.btnBusiness' | translate }}</button>
             </a>
           </div>
         </div>
