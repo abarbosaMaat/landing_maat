@@ -42,7 +42,13 @@ a {
     color: #2B3C5A !important;
     font-size: 18px;
 }
-
+/*Extra extra small devices (phones, max 330)*/
+@media only screen and (max-width: 320px){
+    .nav-link {
+        font-size: 12px !important;
+        line-height: 18px !important;
+    }
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .navDesktop {
@@ -50,18 +56,13 @@ a {
     }
     .navMobile {
         display: block;
-    }
-    .navbarHome {
-        max-width: 100%;
-        text-align: center;
         align-items: center;
+        text-align: center;
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     .maat {
-        text-align: center;
-        align-items: center;
-    }
-    .navbar {
-        width: 100%;
         text-align: center;
         align-items: center;
     }
@@ -70,6 +71,16 @@ a {
         text-align: center;
         align-items: center;
         margin-top: .7em;
+    }
+    .row {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    .column {
+        width: 33%;
+        text-align: center;
+        align-items: center;
     }
     .nav-link {
         font-size: 1em;

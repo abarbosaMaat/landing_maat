@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ExampleappComponent } from './components/exampleapp/exampleapp.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { CertificationsComponent } from './components/certifications/certifications.component';
+import { Certifications2Component } from './components/certifications2/certifications2.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { Video2Component } from './components/video2/video2.component';
 import { ProductsComponent } from './components/products/products.component';
@@ -44,6 +45,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     UseComponent,
     Footer2Component,
     ModalComponent,
+    Certifications2Component
   ],
   imports: [
     BrowserModule,
