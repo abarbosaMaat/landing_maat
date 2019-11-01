@@ -22,7 +22,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/web.config",
-              "i18n"
+              "src/assets/i18n"
             ],
             "styles": [
               "src/styles.css"
