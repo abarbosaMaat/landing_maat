@@ -24,11 +24,12 @@ import { ModalComponent } from './components/modal/modal.component';
 // import ngx-translate and the http loader
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClient, HttpClientModule, HttpBackend} from '@angular/common/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+
 
 // required for AOT compilation
-export function HttpLoaderFactory(httpBackend: HttpBackend): TranslateHttpLoader {
-  return new TranslateHttpLoader(new HttpClient(httpBackend));
+export function HttpLoaderFactory(httpClient: HttpClient) {
+  return new TranslateHttpLoader(httpClient, "i18n/", ".json");
 }
 
 @NgModule({
@@ -58,8 +59,8 @@ export function HttpLoaderFactory(httpBackend: HttpBackend): TranslateHttpLoader
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
-                useFactory: TranslateHttpLoader,
-                deps: [HttpBackend]
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
             }
         })
   ],
