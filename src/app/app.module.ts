@@ -29,7 +29,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 // required for AOT compilation
 export function HttpLoaderFactory(httpClient: HttpClient) {
-  return new TranslateHttpLoader(httpClient, "i18n/", ".json");
+  return new TranslateHttpLoader(httpClient, "./assets/i18n/", ".json");
 }
 
 @NgModule({
