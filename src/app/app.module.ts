@@ -20,15 +20,15 @@ import { UseComponent } from './components/use/use.component';
 import { Footer2Component } from './components/footer2/footer2.component';
 import { ModalComponent } from './components/modal/modal.component';
 
-//Internacionalización 
+//Internacionalización
 // import ngx-translate and the http loader
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {HttpClient, HttpClientModule, HttpBackend} from '@angular/common/http';
 
 // required for AOT compilation
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+export function HttpLoaderFactory(httpBackend: HttpBackend): TranslateHttpLoader {
+  return new TranslateHttpLoader(new HttpClient(httpBackend));
 }
 
 @NgModule({
@@ -58,8 +58,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
-                useFactory: HttpLoaderFactory,
-                deps: [HttpClient]
+                useFactory: TranslateHttpLoader,
+                deps: [HttpBackend]
             }
         })
   ],
