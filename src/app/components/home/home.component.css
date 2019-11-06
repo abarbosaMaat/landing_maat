@@ -59,7 +59,7 @@
 }
 
 .row {
-    padding-left: 2em; 
+    padding-left: 2em;
 }
 
 .btnJoinUp {
@@ -67,7 +67,7 @@
     border: #F86F60;
     border-radius: 6px;
     color: white;
-    padding: 6px 15px; 
+    padding: 6px 15px;
     font-style: bold;
     font-weight: bold;
     font-size: 18px;
@@ -82,7 +82,7 @@
     border: 3px solid #92D2E8;
     border-radius: 6px;
     color: #2B3C5A;
-    padding: 6px 15px; 
+    padding: 6px 15px;
     margin-top: 1em;
     font-style: bold;
     font-weight: bold;
@@ -130,7 +130,6 @@
     }
     .btnJoinUp {
         width: 15em;
-        margin: 0 auto;
     }
     .btnLookVideo {
         width: 15em;
