@@ -19,12 +19,14 @@ import { ProductsComponent } from './components/products/products.component';
 import { UseComponent } from './components/use/use.component';
 import { Footer2Component } from './components/footer2/footer2.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { LinkComponent } from './components/link/link.component';
 
 //Internacionalización
 // import ngx-translate and the http loader
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { RedirectComponent } from './components/redirect/redirect.component';
 
 
 // required for AOT compilation
@@ -50,7 +52,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     UseComponent,
     Footer2Component,
     ModalComponent,
-    Certifications2Component
+    Certifications2Component,
+    LinkComponent,
+    RedirectComponent
   ],
   imports: [
     BrowserModule,

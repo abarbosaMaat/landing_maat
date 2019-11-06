@@ -1,11 +1,42 @@
 .example_app {
     max-width: 1000px;
-    margin: 0 auto;
-    padding-top: 2em;
+    margin: 3em auto;
     align-items: center;
     text-align: center;
+    height: 380px;
+    margin-bottom: 0% !important;
 }
 
-.imgExample {
-    width: 70%;
+.img3 {
+  animation: first 2s;
+  position: absolute;
+}
+.img4 {
+  z-index: 1;
+  animation-duration: 2s;
+  animation-name: slideout;
+}
+@keyframes slideout {
+  0% {
+    padding-left: 0px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  100% {
+    padding-left: 200px;
+    position: absolute;
+    z-index: -1;
+  }
+}
+@keyframes first {
+  0% {
+    padding-left: 0px;
+    z-index: 1;
+  }
+
+  100% {
+    padding-left: 0px;
+    z-index: 1;
+  }
 }

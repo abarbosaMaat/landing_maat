@@ -1,0 +1,60 @@
+.body {
+  overflow-y: hidden;
+}
+.btnClose {
+  border: none;
+  background-color: white;
+  right: 50px !important;
+  top: 50px !important;
+  display: block;
+  position: absolute;
+}
+.linkApp {
+  max-width: 450px;
+  text-align: center;
+  align-items: center;
+  color: #263069;
+  font-family: 'Lato', sans-serif;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  margin: 14% auto;
+}
+h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 24px;
+}
+.number{
+  width: 15em !important;
+  align-items: center;
+  text-align: center;
+}
+.orange {
+  height: 40px;
+  border: 1px solid #FE3618;
+  border-radius: 6px;
+  align-items: center;
+  width: 12em;
+}
+.btnSend {
+  background-color: #FE3618 !important;
+  color: white !important;
+  border: none;
+  width: 10em;
+  height: 41px !important;
+  margin-left: 6px;
+}
+.cta {
+  width: 9em;
+  height: 2.8em;
+  margin: 2px;
+}
+.number::-webkit-input-placeholder { color: red; }
+.number::-moz-placeholder { /* Firefox 18- */ color: red; }
+.number:-moz-placeholder { /* Firefox 19+ */ color: red; }
+.number:-ms-input-placeholder { color: red; }
+.fa-times {
+  font-size: 22px;
+}

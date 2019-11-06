@@ -15,6 +15,8 @@ import { Video2Component } from './components/video2/video2.component';
 import { ProductsComponent } from './components/products/products.component';
 import { UseComponent } from './components/use/use.component';
 import { Footer2Component } from './components/footer2/footer2.component';
+import { LinkComponent } from './components/link/link.component';
+import { RedirectComponent } from './components/redirect/redirect.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -31,6 +33,8 @@ const routes: Routes = [
   {path: 'use', component: UseComponent},
   {path: 'footer2', component: Footer2Component},
   {path: 'certifications2', component: Certifications2Component},
+  {path: 'link', component: LinkComponent},
+  {path: 'redirect', component: RedirectComponent}
 ];
 
 @NgModule({
