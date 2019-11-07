@@ -61,5 +61,12 @@
         "human": "RH",
         "records": "Expedientes",
         "sales": "Ventas"
+    },
+    "link": {
+      "titleLink": "Descarga la app de maat.ai",
+      "textLink": "Envía un enlace a tu teléfono o descarga la app de maat.ai directamente desde",
+      "or": "o",
+      "number": "Número de teléfono",
+      "sendLink": "Enviar un enlace"
     }
 }

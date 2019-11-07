@@ -61,5 +61,12 @@
         "human": "Human resources",
         "records": "Records",
         "sales": "Sales"
+    },
+    "link": {
+      "titleLink": "Download the maat.ai app",
+      "textLink": "Send a link to your phone or download the maat.ai app directly from",
+      "or": "or",
+      "number": "Phone number",
+      "sendLink": "Send a link"
     }
 }

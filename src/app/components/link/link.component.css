@@ -10,7 +10,7 @@
   position: absolute;
 }
 .linkApp {
-  max-width: 450px;
+  max-width: 480px;
   text-align: center;
   align-items: center;
   color: #263069;
@@ -58,3 +58,45 @@ h2 {
 .fa-times {
   font-size: 22px;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .btnClose {
+    border: none;
+    background-color: white;
+    right: 25px !important;
+    top: 25px !important;
+    display: block;
+    position: absolute;
+  }
+  .linkApp {
+    margin: 4em 1.5em 0em 1.5em;
+    align-items: center;
+    text-align: center;
+  }
+  .btnSend {
+    width: 15em;
+    margin-top: .5em;
+    max-width: 100%;
+    margin-left: 0%;
+    align-items: center;
+  }
+  .btnMargin, .number {
+    margin: 0 auto !important;
+  }
+  .inputMobile {
+    width: 100%;
+    align-items: center !important;
+    text-align: center !important;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

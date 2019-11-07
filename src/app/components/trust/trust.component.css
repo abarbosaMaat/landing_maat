@@ -9,7 +9,7 @@
 
 .clients {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 2em auto;
 }
 
 .row {
@@ -25,7 +25,7 @@
     width: 22%;
 }
 .titleClients {
-    padding-top: 1.5em;
+    margin-bottom: 1em;
 }
 
 h1 {
@@ -86,7 +86,7 @@ h1 {
         padding-top: .5em;
         padding-bottom: 1em;
     }
-    
+
     .logo2 {
         padding-top: 1em;
         padding-bottom: 1em;

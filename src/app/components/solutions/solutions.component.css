@@ -23,7 +23,7 @@
 
 .containerSolutions {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 2em auto;
 }
 
 .row {
@@ -160,11 +160,11 @@ p {
         padding-left: .8em;
         padding-right: .8em !important;
     }
-    
+
     .flexbox-container > div {
         width: 50%;
     }
-    
+
     .flexbox-container > div:first-child {
         margin-top: 0;
         align-items: center;
