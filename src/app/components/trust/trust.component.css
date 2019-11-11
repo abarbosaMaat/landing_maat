@@ -57,6 +57,7 @@ h1 {
     }
     .clientsMobile{
         padding-top: .5em;
+        margin-bottom: 1.2em;
         display: block;
     }
     .row {

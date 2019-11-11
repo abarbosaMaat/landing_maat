@@ -79,9 +79,14 @@ a {
         margin: 0%;
     }
     .column {
-        width: 33%;
         text-align: center;
         align-items: center;
+    }
+    .c1, .c2 {
+      width: 35%;
+    }
+    .c3 {
+      width: 30%;
     }
     .nav-link {
         font-size: 1em;

@@ -131,7 +131,7 @@ p {
     }
     .carousel {
       margin: 0 .8em;
-      height: 375px;
+      height: 385px;
       align-items: center;
     }
     .carousel-inner {
@@ -150,7 +150,7 @@ p {
     .imgCel2 {
         max-width: 4em;
         height: 100%;
-        margin-top: 1em;
+        margin-top: .5em;
     }
     .imgControl {
         width: 5.5em !important;
@@ -174,8 +174,12 @@ p {
     max-width: 80%;
     margin: 0 auto;
     }
-    .carousel-indicators {
-      margin-top: 1em;
+    .carousel-indicators li {
+      margin-bottom: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      margin: 0 .3em;
     }
 }
 
