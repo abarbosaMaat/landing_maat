@@ -11,9 +11,9 @@ export class LinkComponent implements OnInit {
 
   ngOnInit() {
   }
-  close(number: string) {
-    console.log(number);
-    window.location.href ='https://maat-ia-development.appspot.com/ws/hp/sendDownloadlink?cel=${number}';
+  close(numberLink) {
+    console.log(numberLink);
+    window.location.href ='https://maat-ia-development.appspot.com/ws/hp/sendDownloadlink?cel=${numberLink}';
     //this.router.navigate(['/']);
     /*if (numberLink = '') {
       console.log("error");
