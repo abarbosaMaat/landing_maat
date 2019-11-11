@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-link',
@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./link.component.css']
 })
 export class LinkComponent implements OnInit {
+  public numberLink: string;
 
   constructor( public router: Router) { }
 
