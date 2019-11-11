@@ -10,9 +10,7 @@
       <input type="text" placeholder="{{ 'link.number' | translate }}" class="orange number" required name="number" id="name" [(ngModel)]="number">
     </div>
     <!--a href="https://Anavzqz.github.io/landing_maat/redirect" class="btnMargin"-->
-    <a href="https://maat-ia-development.appspot.com/ws/hp/sendDownloadlink?cel={{number}}" target="_blank">
-      <input type="button" class="orange btnSend" (click)="close()" value="{{ 'link.sendLink' | translate }}">
-    </a>
+      <input type="button" class="orange btnSend" (click)="close(number)" value="{{ 'link.sendLink' | translate }}">
   </div>
   </form>
 <div class="row" style="margin-top: 3em;">
