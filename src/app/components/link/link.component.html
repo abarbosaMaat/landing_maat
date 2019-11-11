@@ -7,7 +7,7 @@
   <form>
   <div class="row inputMobile form-number">
     <div class="form-group">
-      <input type="text" placeholder="{{ 'link.number' | translate }}" class="orange number" required name="numberLink" [(ngModel)]="numberLink">
+      <input type="text" placeholder="{{ 'link.number' | translate }}" class="form-control orange number" required name="numberLink" [(ngModel)]="numberLink">
     </div>
     <!--a href="https://Anavzqz.github.io/landing_maat/redirect" class="btnMargin"-->
       <input type="button" class="orange btnSend" (click)="close(numberLink)" value="{{ 'link.sendLink' | translate }}">
