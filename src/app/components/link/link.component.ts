@@ -17,7 +17,6 @@ export class LinkComponent implements OnInit {
     console.log(numberLink);
     window.location.href =`https://maat-ia-development.appspot.com/ws/hp/sendDownloadlink?cel=${numberLink}`;
     this.router.navigate(['/']);
-    //https://maat-ia-development.appspot.com/ws/hp/sendDownloadlink?cel={{number}}
 
   }
 
