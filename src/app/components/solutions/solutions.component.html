@@ -35,46 +35,31 @@
     <section class="mobileSol">
       <div class="gradient">
       </div>
-      <div class="flexbox-container">
-      <div>
-        <div class="row">
-          <div class="column c1">
-            <img src="assets/cel2.png" alt="cel" class="imgCel2">
-          </div>
-        </div>
-        <div class="row">
-          <div class="divText column">
-              <h5>{{ 'solutions.upload' | translate }}</h5>
-              <p>{{ 'solutions.textUpload' | translate }}</p>
-          </div>
-        </div>
-        <div class="row">
-            <div class="column c3">
-              <img src="assets/imgLiberty.png" alt="Libertad" class="imgLiberty">
-            </div>
-        </div>
-      </div>
-      <div>
-          <div class="row">
-              <div class="column divText">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/cel2.png" alt="cel" class="imgCel2 d-block">
                   <h5>{{ 'solutions.create' | translate }}</h5>
                   <p>{{ 'solutions.textCreate' | translate }}</p>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/imgControl.png" alt="control" class="imgControl d-block">
+                  <h5>{{ 'solutions.upload' | translate }}</h5>
+                  <p>{{ 'solutions.textUpload' | translate }}</p>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/imgLiberty.png" alt="Libertad" class="imgLiberty d-block">
+                  <h5>{{ 'solutions.identity' | translate }}</h5>
+                  <p>{{ 'solutions.textIdentity' | translate }}</p>
+                </div>
               </div>
-          </div>
-          <div class="row">
-              <div class="column c2">
-                    <img src="assets/imgControl.png" alt="control" class="imgControl">          
-              </div>
-          </div>
-          <div class="row">
-            <div class="divText column">
-              <h5>{{ 'solutions.identity' | translate }}</h5>
-              <p>{{ 'solutions.textIdentity' | translate }}</p>
             </div>
-          </div>
-        </div>
-      </div>
       <app-video></app-video>
       </section>
-      
+
 </section>

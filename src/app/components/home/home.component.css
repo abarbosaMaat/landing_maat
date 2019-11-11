@@ -115,20 +115,22 @@
     }
     .flexbox-container > div:first-child {
         margin-top: 0;
-        margin-left: .8em;
-        margin-right: .8em;
+        margin-left: 1.5em !important;
+        margin-right: 1.5em !important;
         width: 100%;
+        align-items: center !important;
     }
     .text1 {
-        padding-top: .3em;
+        padding-top: .5em;
         margin-bottom: 0%;
         font-size: 26px;
-        line-height: 34px;
+        line-height: 30px;
+        text-align: justify;
     }
     .text3{
         font-size: 18px;
         line-height: 27px;
-        padding-left: .7em;
+        text-align: justify;
     }
     .btnJoinUp {
         width: 15em;
@@ -150,12 +152,24 @@
     .shareImg {
         display: none;
     }
+    .desktopBtn {
+      display: block;
+    }
+    .mobileBtn {
+      display: none;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     .shareImg {
         height: 100%;
+    }
+    .desktopBtn {
+      display: none;
+    }
+    .mobileBtn {
+      display: block;
     }
 }
 
@@ -163,6 +177,12 @@
 @media only screen and (min-width: 768px) {
     .shareImg {
         height: 100%;
+    }
+    .desktopBtn {
+      display: block;
+    }
+    .mobileBtn {
+      display: none;
     }
 }
 

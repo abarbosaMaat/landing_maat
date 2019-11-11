@@ -12,6 +12,20 @@
     align-items: center;
     margin-top: 2em;
 }
+@media only screen and (min-width: 300px) and (max-width: 360px){
+  .video2 {
+    background-image: url("../../../assets/backUse.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 190% 115%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin-top: 3em;
+    width: 100%;
+    max-height: 1000px !important;
+}
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -19,18 +33,18 @@
         background-image: url("../../../assets/backUse.png");
         background-position: cover;
         background-repeat: no-repeat;
-        background-size: 180% 108%;
+        background-size: 190% 115%;
         position: relative;
         text-align: center;
         align-items: center;
-        margin-top: 2em;
+        margin-top: 3em;
         width: 100%;
-        max-height: 1050px;
+        max-height: 1060px;
     }
     iframe {
         width: 90%;
         height: 200px;
-        margin-top: 0;
+        margin-top: 1em !important;
         padding: 0% !important;
     }
 }

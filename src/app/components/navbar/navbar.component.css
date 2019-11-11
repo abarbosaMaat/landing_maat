@@ -47,6 +47,7 @@ a {
     .nav-link {
         font-size: 12px !important;
         line-height: 18px !important;
+        margin: .7em 0;
     }
 }
 /* Extra small devices (phones, 600px and down) */
@@ -70,7 +71,7 @@ a {
         width: 40%;
         text-align: center;
         align-items: center;
-        margin-top: .7em;
+        margin: .5em 0;
     }
     .row {
         width: 100%;

@@ -23,7 +23,7 @@
 
 .containerSolutions {
     max-width: 1000px;
-    margin: 2em auto;
+    margin: 3em auto;
 }
 
 .row {
@@ -126,58 +126,56 @@ p {
     }
     .mobileSol {
         display: block;
+        width: 100%;
+        align-items: center;
+    }
+    .carousel {
+      margin: 0 .8em;
+      height: 375px;
+      align-items: center;
+    }
+    .carousel-inner {
+      align-items: center;
+    }
+    .carousel-item {
+      width: 100%;
+      align-items: center !important;
+      margin: 0 auto;
     }
     img {
         align-items: center !important;
         text-align: center !important;
+        margin: 0 auto;
     }
     .imgCel2 {
-        width: 5em;
+        max-width: 4em;
         height: 100%;
-        vertical-align: middle;
         margin-top: 1em;
     }
     .imgControl {
-        width: 8em !important;
+        width: 5.5em !important;
         height: 100%;
-        vertical-align: middle;
         margin-top: .8em;
-        justify-content: center;
     }
     .imgLiberty {
-        width: 6em !important;
+        width: 4.3em !important;
         height: 100%;
-        vertical-align: middle;
         margin-top: .8em;
     }
-    .flexbox-container {
-        display: -ms-flex;
-        display: -webkit-flex;
-        display: flex;
-        width: 100%;
-        font-size: 14px !important;
-        text-align: center;
-        padding-left: .8em;
-        padding-right: .8em !important;
+    h5 {
+    font-size: 22px;
+    line-height: 28px;
+    max-width: 80%;
+    margin: 1em auto;
     }
-
-    .flexbox-container > div {
-        width: 50%;
+    p {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 80%;
+    margin: 0 auto;
     }
-
-    .flexbox-container > div:first-child {
-        margin-top: 0;
-        align-items: center;
-        text-align: center;
-    }
-    .divText {
-        padding: 0%;
-    }
-    .row {
-        margin-top: .5em;
-    }
-    .column{
-        width: 100%;
+    .carousel-indicators {
+      margin-top: 1em;
     }
 }
 

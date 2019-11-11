@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,14 +21,13 @@ import { UseComponent } from './components/use/use.component';
 import { Footer2Component } from './components/footer2/footer2.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { LinkComponent } from './components/link/link.component';
+import { RedirectComponent } from './components/redirect/redirect.component';
 
 //Internacionalización
 // import ngx-translate and the http loader
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-import { RedirectComponent } from './components/redirect/redirect.component';
-
 
 // required for AOT compilation
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -59,6 +59,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
         TranslateModule.forRoot({
             loader: {

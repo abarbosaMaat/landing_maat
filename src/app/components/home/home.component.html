@@ -7,10 +7,13 @@
           <br>
           <p class="text3">{{ 'home.description' | translate }}</p>
           <br>
-          <div class="row">
+          <div class="row desktopBtn">
             <a routerLink="/link" class="btn2">
               <button class="btnJoinUp">{{ 'home.btnSend' | translate }}</button>
             </a>
+          </div>
+          <div class="row mobileBtn">
+              <button class="btnJoinUp" (click)="detect()">{{ 'home.btnSend' | translate }}</button>
           </div>
           <div class="row">
             <a routerLink="/welcome" class="btn2">

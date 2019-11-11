@@ -4,12 +4,17 @@
 <section class="linkApp">
   <h2 style="margin-bottom: 1em;">{{ 'link.titleLink' | translate }}</h2>
   <p>{{ 'link.textLink' | translate }} <a href="https://apps.apple.com/mx/app/maatai/id1482680056">App store</a> {{ 'link.or' | translate}} <a href="https://play.google.com/store/apps/details?id=com.maatai.maatapp&hl=es-419&ah=pny3Z6zoy162CNptM1OYajk5NF0">Google play</a>. </p>
-  <div class="row inputMobile">
-    <input type="text" placeholder="{{ 'link.number' | translate }}" class="orange number">
-    <a href="https://Anavzqz.github.io/landing_maat/redirect" class="btnMargin">
-      <button class="orange btnSend">{{ 'link.sendLink' | translate }}</button>
+  <form>
+  <div class="row inputMobile form-number">
+    <div class="form-group">
+      <input type="text" placeholder="{{ 'link.number' | translate }}" class="orange number" required name="number" id="name" [(ngModel)]="number">
+    </div>
+    <!--a href="https://Anavzqz.github.io/landing_maat/redirect" class="btnMargin"-->
+    <a href="https://maat-ia-development.appspot.com/ws/hp/sendDownloadlink?cel={{number}}" target="_blank">
+      <input type="button" class="orange btnSend" (click)="close()" value="{{ 'link.sendLink' | translate }}">
     </a>
   </div>
+  </form>
 <div class="row" style="margin-top: 3em;">
     <div class="column c1">
         <img src="assets/appstore.png" alt="App store" class="cta">
