@@ -12,7 +12,7 @@
     align-items: center;
     margin-top: 2em;
 }
-@media only screen and (min-width: 300px) and (max-width: 360px){
+@media only screen and (min-width: 300px) and (max-width: 340px){
   .video2 {
     background-image: url("../../../assets/backUse.png");
     background-position: cover;
