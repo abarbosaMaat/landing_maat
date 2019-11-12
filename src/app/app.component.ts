@@ -11,12 +11,16 @@ declare var gtag;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  public browserLang: string;
   title = 'landingMaat';
   constructor(public translate: TranslateService) {
     this.translate.addLangs(['en', 'es']);
-    this.translate.setDefaultLang('en');
-    let browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|es/) ? browserLang: 'en');
+    this.translate.setDefaultLang('es');
+    this.browserLang = translate.getBrowserLang();
+    translate.use(this.browserLang.match(/en|es/) ? this.browserLang: 'es');
+}
+
+ngOnInit(){
 }
 
  /* constructor(private router: Router) {
