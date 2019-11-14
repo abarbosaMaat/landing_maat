@@ -13,7 +13,6 @@
     color: #ffffff;
     padding-top: 2em;
     padding-bottom: 1em;
-    background-color: #2E608E;
     max-height: 270px;
 }
 h1 {
@@ -24,6 +23,7 @@ h1 {
     line-height: 29px;
     text-align: center;
     color: #ffffff;
+    margin-bottom: 2em;
 }
 
 .carousel-control-prev {
@@ -42,6 +42,10 @@ h1 {
 @media only screen and (max-width: 600px) {
     .certifications {
         font-size: 20px !important;
+        padding-top: 1.5em;
+        padding-bottom: 4em;
+        max-height: 300px;
+        border: none !important;
     }
     h1 {
         font-family: Lato;
@@ -52,7 +56,7 @@ h1 {
         text-align: center;
         padding-left: 1em;
         padding-right: 1em;
-        padding-top: .8em;
+        margin-bottom: 1.5em;
     }
     .carouselDesktop {
         display: none;

@@ -102,22 +102,17 @@ h1 {
     .card {
         display: block;
         max-width: 100%;
-        background-image: url("../../../assets/backCardMobile.png");
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
         position: relative;
         align-items: center;
-        margin: 0%;
-        padding: 0%;
-        height: 870px;
+        margin: 0;
+        height: 580px;
+        border: none !important;
     }
 
     .backCard {
         display: block;
         max-width: 270px;
         margin: 0 auto;
-        margin-top: 3em !important;
         background-color: white;
         border-radius: 9px;
         padding: 1em;
