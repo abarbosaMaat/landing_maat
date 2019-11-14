@@ -3,7 +3,9 @@
     <div class="flexbox-container">
       <div>
         <h1>{{ 'card.titlePeople' | translate }}</h1>
-        <p>{{ 'card.textPeople' | translate }}</p>
+        <div class="textCard">
+          <p>{{ 'card.textPeople' | translate }}</p>
+        </div>
         <img src="assets/persona.png" alt="Personas" style="margin-top: 2em;"><br>
         <a href="/link">
           <button class="btnDownload">{{ 'card.btnDownload' | translate }}</button>
@@ -33,5 +35,4 @@
         <button class="btnSolutions">{{ 'card.btnTeams' | translate }}</button>
       </a>
   </section>
-  <app-certifications2></app-certifications2>
 </section>

@@ -1,12 +1,12 @@
 {
     "navbar": {
         "people": "For people",
-        "company": "For business"
+        "company": "For businesses"
     },
     "home": {
-        "title": "The trust tool for people and business",
-        "description": "maat.ai allows you to create, organize and protect your digital identity and veryfy other people's identity.",
-        "btnSend": "Send app to your phone",
+        "title": "The tool for building trust between people and businesses",
+        "description": "maat.ai allows you to create, protect, and share your digital identity. It's the evolution of verification.",
+        "btnSend": "Download app",
         "btnBusiness": "Go to business solutions"
     },
     "solutions": {
@@ -19,14 +19,14 @@
     },
     "trust": {
         "clients": "Clients",
-        "allies": "Allies"
+        "allies": "Strategic Partnerships"
     },
     "card": {
         "titlePeople": "For people",
-        "textPeople": "Safely upload, organize and certify personal identity documents. Share them in an easy and reliable way.",
-        "btnDownload": "Download app in your phone",
-        "titleTeams": "For teams",
-        "textTeams": "Request, store and protect your client's, employee's and suplier´s documents in a safe, neat and easy way.",
+        "textPeople": "Safely upload, organize, and certify personal identity documents. Share them in an easy and reliable way.",
+        "btnDownload": "Download Download our app",
+        "titleTeams": "For businesses",
+        "textTeams": "Request, store, and protect your client's, employee's, and suplier's documents in a secure, private, and orderly way.",
         "btnTeams": "Go to business solutions"
     },
     "certifications": {
