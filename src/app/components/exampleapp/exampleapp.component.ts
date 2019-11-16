@@ -6,10 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exampleapp.component.css']
 })
 export class ExampleappComponent implements OnInit {
+  public detectLanguage: string;
+  //visibleDivEs: boolean;
+  //visibleDivEn: boolean;
 
   constructor() { }
 
   ngOnInit() {
+    this.changeImages();
+  }
+
+  changeImages() {
+    this.detectLanguage = navigator.language;
+    console.log(this.detectLanguage);
+    if(this.detectLanguage == 'es-419') {
+      document.getElementById('imgEs').style.display='block';
+      document.getElementById('imgEn').style.display='none';
+    }else if(this.detectLanguage == 'en-US'){
+      document.getElementById('imgEs').style.display='none';
+      document.getElementById('imgEn').style.display='block';
+    }else {
+      console.log("error en carga de imagenes");
+    }
   }
 
 }
