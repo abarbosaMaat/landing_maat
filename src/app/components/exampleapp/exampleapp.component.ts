@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExampleappComponent implements OnInit {
   public detectLanguage: string;
-  //visibleDivEs: boolean;
-  //visibleDivEn: boolean;
+  visibleDivEs: boolean;
+  visibleDivEn: boolean;
 
   constructor() { }
 
@@ -21,10 +21,12 @@ export class ExampleappComponent implements OnInit {
     console.log(this.detectLanguage);
     if(this.detectLanguage == 'es-419') {
       //document.getElementById('imgEn').style.display='none';
-      document.getElementById('imgEs').style.display='block';
+      this.visibleDivEs = true;
+      //document.getElementById('imgEs').style.display='block';
     }else if(this.detectLanguage == 'en-US'){
+      this.visibleDivEn = true;
       //document.getElementById('imgEs').style.display='none';
-      document.getElementById('imgEn').style.display='block';
+      //document.getElementById('imgEn').style.display='block';
     }else {
       console.log("error en carga de imagenes");
     }
