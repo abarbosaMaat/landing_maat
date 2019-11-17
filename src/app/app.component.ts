@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import {TranslateService} from '../../node_modules/@ngx-translate/core';
-//import { filter } from 'rxjs/operators';
+import { GoogleAnalyticsEventsService } from './services/google-analytics-events-service';
+
+declare var ga: Function;
 
 declare var gtag;
 
@@ -13,11 +15,21 @@ declare var gtag;
 export class AppComponent {
   public browserLang: string;
   title = 'landingMaat';
-  constructor(public translate: TranslateService) {
+  constructor(public translate: TranslateService, public router: Router, public googleAnalyticsEventsService: GoogleAnalyticsEventsService) {
     this.translate.addLangs(['en', 'es']);
     this.translate.setDefaultLang('es');
     this.browserLang = translate.getBrowserLang();
     translate.use(this.browserLang.match(/en|es/) ? this.browserLang: 'es');
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        ga('set', 'page', event.urlAfterRedirects);
+        ga('send', 'pageview');
+      }
+    });
+  }
+  submitEvent() { // event fired from home.component.html element (button, link, ... )
+    this.googleAnalyticsEventsService.emitEvent("testCategory", "testAction", "testLabel", 10);
+
 }
 
 ngOnInit(){

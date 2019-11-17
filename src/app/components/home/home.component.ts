@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
+import { GoogleAnalyticsEventsService } from '../../services/google-analytics-events-service';
+import { Router, NavigationEnd } from '@angular/router';
 
-declare let ga:Function; // Declare ga as a function
+declare var ga: Function;
 
 @Injectable()
 
@@ -13,7 +15,14 @@ declare let ga:Function; // Declare ga as a function
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router, public googleAnalyticsEventsService: GoogleAnalyticsEventsService) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        ga('set', 'page', event.urlAfterRedirects);
+        ga('send', 'pageview');
+      }
+    });
+  }
 
   ngOnInit() {
   }
@@ -28,11 +37,12 @@ export class HomeComponent implements OnInit {
       console.log("no funciono");
       window.location.href = "https://apps.apple.com/mx/app/maatai/id1482680056";
     }
+    this.googleAnalyticsEventsService.emitEvent("sendMesg", "sendApp", "userLabel", 1);
   }
 }
 export class GoogleAnalyticsService {
 
-    //create our event emitter to send our data to Google Analytics
+  /*  //create our event emitter to send our data to Google Analytics
     public eventEmitter(eventCategory: string,
       eventAction: string,
       eventLabel: string = null,
@@ -44,5 +54,5 @@ export class GoogleAnalyticsService {
   eventValue: eventValue
   });
 
-      }
+      }*/
 }

@@ -16,8 +16,13 @@ export class LinkComponent implements OnInit {
   }
   close(numberLink) {
     console.log(numberLink);
-    window.location.href =`https://maat-ia-development.appspot.com/ws/hp/sendDownloadlink?cel=${numberLink}`;
+    if(numberLink == ""){
+      alert("Error en número");
+      this.router.navigate(['/']);
+    }else {
+      window.location.href =`https://maat-ia-development.appspot.com/ws/hp/sendDownloadlink?cel=${numberLink}`;
     this.router.navigate(['/']);
+    }
 
   }
 

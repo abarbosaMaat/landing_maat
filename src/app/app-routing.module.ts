@@ -16,6 +16,7 @@ import { UseComponent } from './components/use/use.component';
 import { Footer2Component } from './components/footer2/footer2.component';
 import { LinkComponent } from './components/link/link.component';
 import { RedirectComponent } from './components/redirect/redirect.component';
+import { from } from 'rxjs';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
