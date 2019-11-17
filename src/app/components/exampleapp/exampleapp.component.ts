@@ -20,8 +20,8 @@ export class ExampleappComponent implements OnInit {
     this.detectLanguage = navigator.language;
     console.log(this.detectLanguage);
     if(this.detectLanguage == 'es-419') {
-      document.getElementById('imgEs').style.display='block';
       document.getElementById('imgEn').style.display='none';
+      document.getElementById('imgEs').style.display='block';
     }else if(this.detectLanguage == 'en-US'){
       document.getElementById('imgEs').style.display='none';
       document.getElementById('imgEn').style.display='block';
