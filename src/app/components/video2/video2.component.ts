@@ -19,11 +19,12 @@ export class Video2Component implements OnInit {
   getVideo() {
     this.detectLanguage = navigator.language;
     console.log(this.detectLanguage);
-    if(this.detectLanguage == 'es-419') {
+    if(this.detectLanguage == 'es-419' || this.detectLanguage == 'es' || this.detectLanguage == 'es-US' || this.detectLanguage == 'es-MX') {
       this.url2 = "//www.youtube.com/embed/OiXmaJs4HlE?autoplay=1";
-    }else if(this.detectLanguage == 'en-US'){
+    }else if(this.detectLanguage == 'en-US' || this.detectLanguage == 'en' || this.detectLanguage == 'en-CA'){
       this.url2 = "//www.youtube.com/embed/3VVnoDL58qE?autoplay=1";
     }else {
+      this.url2 = "//www.youtube.com/embed/lnuOPdi5J2U?autoplay=1";
       console.log("error en carga de video");
     }
     this.urlSanitizer2 = this.sanitizer.bypassSecurityTrustResourceUrl(this.url2);
