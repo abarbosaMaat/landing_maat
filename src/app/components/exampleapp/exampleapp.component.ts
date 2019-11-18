@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-exampleapp',
@@ -20,17 +20,21 @@ export class ExampleappComponent implements OnInit {
     this.detectLanguage = navigator.language;
     console.log(this.detectLanguage);
     if(this.detectLanguage == 'es-419' || this.detectLanguage == 'es' || this.detectLanguage == 'es-US' || this.detectLanguage == 'es-MX') {
-      //document.getElementById('imgEn').style.display='none';
       this.visibleDivEs = true;
-      //document.getElementById('imgEs').style.display='block';
     }else if(this.detectLanguage == 'en-US' || this.detectLanguage == 'en' || this.detectLanguage == 'en-CA'){
       this.visibleDivEn = true;
-      //document.getElementById('imgEs').style.display='none';
-      //document.getElementById('imgEn').style.display='block';
     }else {
       this.visibleDivEs = true;
       console.log("error en carga de imagenes");
     }
   }
+
+
+  /*@HostListener("scroll", ['$event'])
+  doSomethingOnInternalScroll($event:Event){
+    let scrollOffset = document.documentElement.scrollTop > 600;
+    //$event.srcElement.offsetTop > 600;
+    console.log("scroll: ", scrollOffset);
+  }*/
 
 }

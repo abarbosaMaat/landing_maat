@@ -5,6 +5,7 @@
     text-align: center;
     height: 380px;
     margin-bottom: 0% !important;
+    display: block;
 }
 /*#imgEs {
   display: none;

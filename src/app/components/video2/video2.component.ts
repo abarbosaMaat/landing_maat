@@ -8,8 +8,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class Video2Component implements OnInit {
   public detectLanguage: string;
- public url2: string;
- public urlSanitizer2;
+  public url2: string;
+  public urlSanitizer2;
 
   constructor(private sanitizer: DomSanitizer) { }
 

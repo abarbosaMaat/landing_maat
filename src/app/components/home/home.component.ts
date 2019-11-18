@@ -39,6 +39,7 @@ export class HomeComponent implements OnInit {
     }
     this.googleAnalyticsEventsService.emitEvent("sendMesg", "sendApp", "userLabel", 1);
   }
+
 }
 export class GoogleAnalyticsService {
 
