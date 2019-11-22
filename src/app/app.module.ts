@@ -19,9 +19,8 @@ import { Video2Component } from './components/video2/video2.component';
 import { ProductsComponent } from './components/products/products.component';
 import { UseComponent } from './components/use/use.component';
 import { Footer2Component } from './components/footer2/footer2.component';
-import { ModalComponent } from './components/modal/modal.component';
 import { LinkComponent } from './components/link/link.component';
-import { RedirectComponent } from './components/redirect/redirect.component';
+import { DownloadComponent } from './components/download/download.component';
 
 //Internacionalización
 // import ngx-translate and the http loader
@@ -50,10 +49,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ProductsComponent,
     UseComponent,
     Footer2Component,
-    ModalComponent,
     Certifications2Component,
     LinkComponent,
-    RedirectComponent
+    DownloadComponent
   ],
   imports: [
     BrowserModule,

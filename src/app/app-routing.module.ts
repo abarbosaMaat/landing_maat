@@ -15,7 +15,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { UseComponent } from './components/use/use.component';
 import { Footer2Component } from './components/footer2/footer2.component';
 import { LinkComponent } from './components/link/link.component';
-import { RedirectComponent } from './components/redirect/redirect.component';
+import { DownloadComponent } from './components/download/download.component';
 import { from } from 'rxjs';
 
 const routes: Routes = [
@@ -33,7 +33,7 @@ const routes: Routes = [
   {path: 'footer2', component: Footer2Component},
   {path: 'certifications2', component: Certifications2Component},
   {path: 'link', component: LinkComponent},
-  {path: 'redirect', component: RedirectComponent}
+  {path: 'download', component: DownloadComponent}
 ];
 
 @NgModule({

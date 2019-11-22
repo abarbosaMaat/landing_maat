@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { detectChanges } from '@angular/core/src/render3';
 
 @Component({
-  selector: 'app-redirect',
-  templateUrl: './redirect.component.html',
-  styleUrls: ['./redirect.component.css']
+  selector: 'app-download',
+  templateUrl: './download.component.html',
+  styleUrls: ['./download.component.css']
 })
-export class RedirectComponent implements OnInit {
+export class DownloadComponent implements OnInit {
 
   constructor() { }
 
