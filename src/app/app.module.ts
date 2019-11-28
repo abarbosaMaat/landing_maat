@@ -21,6 +21,9 @@ import { UseComponent } from './components/use/use.component';
 import { Footer2Component } from './components/footer2/footer2.component';
 import { LinkComponent } from './components/link/link.component';
 import { DownloadComponent } from './components/download/download.component';
+import { AvisoDePrivacidadComponent } from './components/aviso-de-privacidad/aviso-de-privacidad.component';
+import { AvisoDePrivacidadColaboradoresComponent } from './components/aviso-de-privacidad-colaboradores/aviso-de-privacidad-colaboradores.component';
+import { PoliticaDeCumplimientoComponent } from './components/politica-de-cumplimiento/politica-de-cumplimiento.component';
 
 //Internacionalización
 // import ngx-translate and the http loader
@@ -51,7 +54,10 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     Footer2Component,
     Certifications2Component,
     LinkComponent,
-    DownloadComponent
+    DownloadComponent,
+    AvisoDePrivacidadComponent,
+    AvisoDePrivacidadColaboradoresComponent,
+    PoliticaDeCumplimientoComponent
   ],
   imports: [
     BrowserModule,

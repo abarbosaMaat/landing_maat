@@ -16,7 +16,10 @@ import { UseComponent } from './components/use/use.component';
 import { Footer2Component } from './components/footer2/footer2.component';
 import { LinkComponent } from './components/link/link.component';
 import { DownloadComponent } from './components/download/download.component';
-import { from } from 'rxjs';
+import { AvisoDePrivacidadComponent } from './components/aviso-de-privacidad/aviso-de-privacidad.component';
+import { AvisoDePrivacidadColaboradoresComponent } from './components/aviso-de-privacidad-colaboradores/aviso-de-privacidad-colaboradores.component';
+import { PoliticaDeCumplimientoComponent } from './components/politica-de-cumplimiento/politica-de-cumplimiento.component';
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -33,11 +36,14 @@ const routes: Routes = [
   {path: 'footer2', component: Footer2Component},
   {path: 'certifications2', component: Certifications2Component},
   {path: 'link', component: LinkComponent},
-  {path: 'download', component: DownloadComponent}
+  {path: 'download', component: DownloadComponent},
+  {path: 'aviso-de-privacidad', component: AvisoDePrivacidadComponent},
+  {path: 'aviso-de-privacidad-colaboradores', component: AvisoDePrivacidadColaboradoresComponent},
+  {path: 'politica-de-cumplimiento', component: PoliticaDeCumplimientoComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

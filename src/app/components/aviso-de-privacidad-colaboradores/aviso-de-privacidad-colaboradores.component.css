@@ -1,0 +1,22 @@
+.privacyEmployees {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  color: #000000;
+}
+h4 {
+  text-align: center;
+}
+p, li{
+  font-size: 14px;
+  line-height: 21px;
+  text-align: justify;
+  color: #000000;
+}
+.upgrade {
+  text-align: right;
+}
