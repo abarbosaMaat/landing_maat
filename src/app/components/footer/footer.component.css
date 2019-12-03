@@ -75,6 +75,15 @@ p {
     width: 10em;
     height: 2.8em;
 }
+.btnEs, .btnEn {
+  color: #FFFFFF;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.line {
+  color: #FFFFFF;
+}
 
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (min-width: 380px) and (max-width: 500px) {

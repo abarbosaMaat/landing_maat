@@ -72,6 +72,7 @@ h1 {
     width: 15em;
     height: 2.4em;
     margin-top: 2em;
+    cursor: pointer;
 }
 
 .btnSolutions {
@@ -88,6 +89,7 @@ h1 {
     width: 15em;
     height: 2.4em;
     margin-top: 2em;
+    cursor: pointer;
 }
 
 /* Extra small devices (phones, 600px and down) */

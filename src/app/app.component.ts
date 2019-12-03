@@ -19,7 +19,7 @@ export class AppComponent {
     this.translate.addLangs(['en', 'es']);
     this.translate.setDefaultLang('es');
     this.browserLang = translate.getBrowserLang();
-    console.log(this.browserLang);
+    //console.log(this.browserLang);
     translate.use(this.browserLang.match(/en|es/) ? this.browserLang: 'es');
     //Google analytics
     this.router.events.subscribe(event => {

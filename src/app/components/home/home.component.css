@@ -75,6 +75,7 @@
     text-align: center;
     width: 17em;
     height: 2.4em;
+    cursor: pointer;
 }
 
 .btnLookVideo {
@@ -90,6 +91,7 @@
     text-align: center;
     width: 17em;
     height: 2.4em;
+    cursor: pointer;
 }
 
 .shareImg {
