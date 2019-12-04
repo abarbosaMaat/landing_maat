@@ -5,13 +5,13 @@
     },
     "home": {
         "title": "La herramienta de confianza para personas y empresas",
-        "description": "maat.ai te permite crear, ordenar y proteger tu identidad digital y verificar la identidad de los demás.",
+        "description": "maat.ai te permite crear, ordenar y proteger tu identidad digital, y verificar la de los demás.",
         "btnSend": "Envía la app a tu teléfono",
-        "btnBusiness": "Ve soluciones para empresas"
+        "btnBusiness": "Soluciones para empresas"
     },
     "solutions": {
-        "create": "Crea tu cartera digital segura",
-        "textCreate": "Usamos Reconocimiento Facial para prevenir robo de identidad",
+        "create": "Crea tu cartera digital",
+        "textCreate": "Usamos Reconocimiento Facial para prevenir robo de identidad.",
         "upload": "Sube y guarda tus documentos",
         "textUpload": "Validamos que no sean falsos o estén vencidos, y se guardan encriptados en nubes protegidas con máxima seguridad.",
         "identity": "Identificate con maat.ai",
@@ -37,7 +37,7 @@
     },
     "welcome": {
         "titleWelcome": "¡Bienvenido a la nueva red de confianza!",
-        "textWelcome": "Identifica a tus empleados, clientes y usuarios pidiendo documentos y expedientes digitales certificados de manera práctica y segura.",
+        "textWelcome": "Identifica a tus empleados, clientes y usuarios solicitando certificados y creando expedientes digitales de manera práctica y segura.",
         "btnContact": "Contáctanos",
         "suscribe": "Registrate a nuestro newsletter",
         "textModal": "para ser de los primeros en tener su bóveda de identidad, o de solicitar documentos de forma segura y práctica.",

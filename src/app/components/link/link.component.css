@@ -8,6 +8,7 @@
   top: 50px !important;
   display: block;
   position: absolute;
+  cursor: pointer;
 }
 .linkApp {
   max-width: 480px;
@@ -37,6 +38,7 @@ h2 {
   border-radius: 6px;
   align-items: center;
   width: 12em;
+  cursor: pointer;
 }
 .btnSend {
   background-color: #FE3618 !important;

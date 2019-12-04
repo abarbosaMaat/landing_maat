@@ -15,7 +15,7 @@
         "upload": "Upload and save your documents",
         "textUpload": "We authenticate them and check their validity. Then we encrypt and store them in clouds protected by maximum security.",
         "identity": "Identity yourself with maat.ai",
-        "textIdentity": "Share your documents with people and business in an easy, fast and secure way."
+        "textIdentity": "Share your documents with people and businesses in an easy, fast and secure way."
     },
     "trust": {
         "clients": "Clients",
@@ -36,8 +36,8 @@
         "privacy": "Privacy notice"
     },
     "welcome": {
-        "titleWelcome": "Welcome to our new Tribe of Trust!",
-        "textWelcome": "Identity your employees, clients and users through the request of documents and the creation of digital records, always certified in an easy and secure way.",
+        "titleWelcome": "Welcome to our new Community of Trust!",
+        "textWelcome": "Identify your employees, clients and users requesting their certified documents and creating digital records in an easy and secure way.",
         "btnContact": "Contact us",
         "suscribe": "Suscribe to our newsletter",
         "textModal": "and become one of the first to have an identity vault or request documents in an easy and practical way.",
