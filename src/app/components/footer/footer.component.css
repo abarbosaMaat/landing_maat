@@ -73,7 +73,7 @@ p {
 
 .cta {
     width: 10em;
-    height: 2.8em;
+    height: auto;
 }
 .btnEs, .btnEn {
   color: #FFFFFF;

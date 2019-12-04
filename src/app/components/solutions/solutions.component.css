@@ -67,7 +67,9 @@
     width: auto;
     vertical-align: middle;
 }
-
+.imgCel2 {
+  top: 0 !important;
+}
 .imgControl {
     margin-top: 2.5em;
     margin-bottom: 0;

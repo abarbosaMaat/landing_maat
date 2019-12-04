@@ -8,6 +8,8 @@ import {TranslateService} from '../../../../node_modules/@ngx-translate/core';
 })
 export class FooterComponent implements OnInit {
   public browserLang: string;
+  visibleDivEs: boolean;
+  visibleDivEn: boolean;
 
   constructor(public translate: TranslateService) {
     this.translate.addLangs(['en', 'es']);
@@ -18,14 +20,26 @@ export class FooterComponent implements OnInit {
   changeEs(){
     this.browserLang = 'es';
     this.translate.use(this.browserLang);
+    this.visibleDivEs = true;
+    this.visibleDivEn = false;
   }
   changeEn(){
     this.browserLang = 'en';
     this.translate.use(this.browserLang);
-    console.log(this.browserLang);
+    this.visibleDivEn = true;
+    this.visibleDivEs = false;
   }
 
   ngOnInit() {
+    this.checkLanguage();
+  }
+
+  checkLanguage() {
+    if(this.browserLang == 'es') {
+      this.visibleDivEs = true;
+    } else {
+      this.visibleDivEn = true;
+    }
   }
 
 }

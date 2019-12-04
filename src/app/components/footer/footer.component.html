@@ -1,17 +1,29 @@
 <section class="footer">
   <section class="containerFooter">
-      <div class="row" style="margin-top: 2em; margin-bottom: 2em;">
+      <div class="row" style="margin-top: 2em; margin-bottom: 2em;" *ngIf="visibleDivEs">
           <div class="column c1">
             <a href="https://apps.apple.com/mx/app/maatai/id1482680056" target="_blank">
-              <img src="assets/appstore.svg" alt="" class="cta appStore">
+              <img src="assets/appstoreEs.svg" alt="App store" class="cta">
             </a>
           </div>
           <div class="column c1">
             <a href="https://play.google.com/store/apps/details?id=com.maatai.maatapp&hl=en" target="_blank">
-              <img src="assets/googlePlay.png" alt="Play store" class="cta">
+              <img src="assets/googleEs.svg" alt="Play store" class="cta">
             </a>
           </div>
+      </div>
+      <div class="row" style="margin-top: 2em; margin-bottom: 2em;" *ngIf="visibleDivEn">
+        <div class="column c1">
+          <a href="https://apps.apple.com/mx/app/maatai/id1482680056" target="_blank">
+            <img src="assets/appstoreEn.svg" alt="App store" class="cta">
+          </a>
         </div>
+        <div class="column c1">
+          <a href="https://play.google.com/store/apps/details?id=com.maatai.maatapp&hl=en" target="_blank">
+            <img src="assets/googlePlay.png" alt="Play store" class="cta">
+          </a>
+        </div>
+    </div>
   <div class="row redes">
     <div class="column">
       <a href="https://www.facebook.com/maataimx/" target="_blank">

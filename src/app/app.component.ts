@@ -21,6 +21,7 @@ export class AppComponent {
     this.browserLang = translate.getBrowserLang();
     //console.log(this.browserLang);
     translate.use(this.browserLang.match(/en|es/) ? this.browserLang: 'es');
+
     //Google analytics
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
