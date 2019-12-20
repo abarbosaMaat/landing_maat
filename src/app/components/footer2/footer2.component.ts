@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {TranslateService} from '../../../../node_modules/@ngx-translate/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { LanguageService } from '../../services/language.service';
 
 
 @Component({
@@ -12,23 +12,27 @@ export class Footer2Component implements OnInit {
   visibleDivEs: boolean;
   visibleDivEn: boolean;
 
-  constructor(public translate: TranslateService) {
-    this.translate.addLangs(['en', 'es']);
-    this.translate.setDefaultLang('es');
-    this.browserLang = translate.getBrowserLang();
-    translate.use(this.browserLang.match(/en|es/) ? this.browserLang: 'es');
+  @Output()
+  public langEs: string;
+  public langEn: string;
+
+  constructor(public language: LanguageService) {
   }
   changeEs(){
     this.browserLang = 'es';
-    this.translate.use(this.browserLang);
+    this.language.translate.use(this.browserLang);
     this.visibleDivEs = true;
     this.visibleDivEn = false;
+    this.langEs = 'es';
+    this.language.setLanguageEs(this.langEs);
   }
   changeEn(){
     this.browserLang = 'en';
-    this.translate.use(this.browserLang);
+    this.language.translate.use(this.browserLang);
     this.visibleDivEn = true;
     this.visibleDivEs = false;
+    this.langEn = 'en';
+    this.language.setLanguageEn(this.langEn);
   }
 
   ngOnInit() {

@@ -11,6 +11,9 @@
     max-width: 1000px;
     margin: 2em auto;
 }
+.allies {
+  margin-top: 2em;
+}
 
 .row {
     align-items: center;
@@ -25,7 +28,7 @@
     width: 22%;
 }
 .titleClients {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 h1 {
@@ -78,10 +81,16 @@ h1 {
         width: 100%;
     }
     .imgHabiqo {
-        width: 70% !important;
+        width: 40% !important;
     }
     .imgScotiabank {
         width: 120%;
+    }
+    .imgBedu {
+      width: 60%;
+    }
+    .imgChm, .imgKiban, .imgFil {
+      width: 70%;
     }
     .logo1 {
         padding-top: .5em;
@@ -101,6 +110,12 @@ h1 {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
+
+@media only screen and (max-width: 767px){
+  img {
+    max-width: 120px;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}

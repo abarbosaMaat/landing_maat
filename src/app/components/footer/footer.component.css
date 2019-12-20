@@ -84,12 +84,19 @@ p {
 .line {
   color: #FFFFFF;
 }
-
+@media only screen and (max-width: 400px) {
+  .cta {
+    width: 8em !important;
+  }
+  .c1 {
+    width: 50% !important;
+  }
+}
 /* Extra small devices (phones, 400px and down) */
-@media only screen and (min-width: 380px) and (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
     .cta {
         width: 10em !important;
-        height: 3.5em !important;
+        height: auto !important;
     }
     h1 {
         font-style: normal;
@@ -97,6 +104,9 @@ p {
         font-size: 23px;
         line-height: 28px;
     }
+    .c1 {
+      width: 50% !important;
+  }
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -104,10 +114,10 @@ p {
         width: 80%;
     }
     .cta {
-        width: 8.5em;
+        width: 10.5em;
     }
     .c1 {
-        width: 50%;
+        width: 40%;
     }
     .row {
         padding: 0%;
@@ -123,6 +133,14 @@ p {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
 
+@media only screen and (min-width: 600px) and (max-width: 800px){
+  img.cta {
+    width: 10em !important;
+  }
+  .c1 {
+    width: 30%;
+  }
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
 

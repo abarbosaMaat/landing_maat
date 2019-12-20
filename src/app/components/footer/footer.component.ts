@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {TranslateService} from '../../../../node_modules/@ngx-translate/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-footer',
@@ -11,31 +11,33 @@ export class FooterComponent implements OnInit {
   visibleDivEs: boolean;
   visibleDivEn: boolean;
 
-  constructor(public translate: TranslateService) {
-    this.translate.addLangs(['en', 'es']);
-    this.translate.setDefaultLang('es');
-    this.browserLang = translate.getBrowserLang();
-    console.log(this.browserLang);
+  @Output()
+  public langEs: string;
+  public langEn: string;
+
+  constructor(public language: LanguageService) {
   }
   changeEs(){
-    this.browserLang = 'es';
-    this.translate.use(this.browserLang);
+    this.language.translate.use('es');
     this.visibleDivEs = true;
     this.visibleDivEn = false;
+    this.langEs = 'es';
+    this.language.setLanguageEs(this.langEs);
   }
   changeEn(){
-    this.browserLang = 'en';
-    this.translate.use(this.browserLang);
+    this.language.translate.use('en');
     this.visibleDivEn = true;
     this.visibleDivEs = false;
+    this.langEn = 'en';
+    this.language.setLanguageEn(this.langEn);
   }
-
   ngOnInit() {
     this.checkLanguage();
   }
 
+
   checkLanguage() {
-    if(this.browserLang == 'es') {
+    if(this.language.browserLang == 'es') {
       this.visibleDivEs = true;
     } else {
       this.visibleDivEn = true;

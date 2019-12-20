@@ -5,7 +5,8 @@
     },
     "home": {
         "title": "La herramienta de confianza para personas y empresas",
-        "description": "maat.ai te permite crear, ordenar y proteger tu identidad digital, y verificar la de los demás.",
+        "maat": "maat.ai",
+        "description": " te permite crear, ordenar y proteger tu identidad digital, y verificar la de los demás.",
         "btnSend": "Envía la app a tu teléfono",
         "btnBusiness": "Soluciones para empresas"
     },
@@ -13,7 +14,7 @@
         "create": "Crea tu cartera digital",
         "textCreate": "Usamos Reconocimiento Facial para prevenir robo de identidad.",
         "upload": "Sube y guarda tus documentos",
-        "textUpload": "Validamos que no sean falsos o estén vencidos, y se guardan encriptados en nubes protegidas con máxima seguridad.",
+        "textUpload": "Se guardan encriptados en nubes protegidas con máxima seguridad.",
         "identity": "Identificate con maat.ai",
         "textIdentity": "Comparte tus documentos con personas o empresas de manera rápida, fácil y segura."
     },

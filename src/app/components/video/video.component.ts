@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-video',
@@ -7,30 +8,31 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./video.component.css']
 })
 export class VideoComponent implements OnInit {
- public detectLanguage: string;
- public url: string;
- public urlSanitizer;
+  public urlEs: string;
+  public urlEn: string;
+  public urlSanitizerEs;
+  public urlSanitizerEn;
 
-
-  constructor(private sanitizer: DomSanitizer) {}
+  constructor(private sanitizer: DomSanitizer,
+    public language: LanguageService
+    ) {}
 
   ngOnInit() {
     this.getTranslate();
   }
 
   getTranslate() {
-    this.detectLanguage = navigator.language;
-    console.log(this.detectLanguage);
-    if(this.detectLanguage == 'es-419' || this.detectLanguage == 'es' || this.detectLanguage == 'es-US' || this.detectLanguage == 'es-MX') {
-     this.url = "//www.youtube.com/embed/lnuOPdi5J2U?autoplay=1";
-    }else if(this.detectLanguage == 'en-US' || this.detectLanguage == 'en' || this.detectLanguage == 'en-CA'){
-      console.log("Aqui url");
-      this.url = "//www.youtube.com/embed/INck5NfO0HY?autoplay=0";
+    this.urlEs = "//www.youtube.com/embed/lnuOPdi5J2U?autoplay=1";
+    this.urlEn = "//www.youtube.com/embed/INck5NfO0HY?autoplay=0";
+    if(this.language.browserLang == 'es') {
+      this.language.visibleDivEs = true;
+    }else if(this.language.browserLang == 'en'){
+      this.language.visibleDivEn = true;
     }else {
-      this.url = "//www.youtube.com/embed/lnuOPdi5J2U?autoplay=1";
+      this.language.visibleDivEs = true;
       console.log("error en carga de video");
     }
-    this.urlSanitizer = this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
-    console.log(this.url);
+    this.urlSanitizerEs = this.sanitizer.bypassSecurityTrustResourceUrl(this.urlEs);
+    this.urlSanitizerEn = this.sanitizer.bypassSecurityTrustResourceUrl(this.urlEn);
   }
 }

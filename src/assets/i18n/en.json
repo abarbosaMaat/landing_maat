@@ -5,7 +5,8 @@
     },
     "home": {
         "title": "The ultimate tool for creating trust between people and businesses",
-        "description": "maat.ai allows you to create, protect, and share your digital identity. It's the evolution of verification.",
+        "maat": "maat.ai",
+        "description": " allows you to create, protect, and share your digital identity. It's the evolution of verification.",
         "btnSend": "Download app",
         "btnBusiness": "Go to business solutions"
     },
@@ -13,7 +14,7 @@
         "create": "Create your secure digital wallet",
         "textCreate": "We use facial recognition to prevent identity thefts.",
         "upload": "Upload and save your documents",
-        "textUpload": "We authenticate them and check their validity. Then we encrypt and store them in clouds protected by maximum security.",
+        "textUpload": "Then we encrypt and store them in clouds protected by maximum security.",
         "identity": "Identity yourself with maat.ai",
         "textIdentity": "Share your documents with people and businesses in an easy, fast and secure way."
     },
@@ -24,7 +25,7 @@
     "card": {
         "titlePeople": "For people",
         "textPeople": "Safely upload, organize, and certify personal identity documents. Share them in an easy and reliable way.",
-        "btnDownload": "Download Download our app",
+        "btnDownload": "Download our app",
         "titleTeams": "For businesses",
         "textTeams": "Request, store, and protect your client's, employee's, and suplier's documents in a secure, private, and orderly way.",
         "btnTeams": "Go to business solutions"

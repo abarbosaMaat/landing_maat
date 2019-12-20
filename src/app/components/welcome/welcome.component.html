@@ -1,4 +1,45 @@
-<app-navbar></app-navbar>
+<section class="navbarHome">
+  <section class="navDesktop">
+  <nav class="navbar navbar-expand navbar-light d-flex bd-highlight">
+    <div class="p-2 w-80 bd-highlight">
+      <a class="navbar-brand" routerLink="/home">
+        <img src="assets/black_transp.png" class="d-inline" alt="maat.ai">
+      </a>
+    </div>
+      <div class="ml-auto p-2 bd-highlight" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ml-5">
+            <a routerLink="" data-toggle="tab" class="nav-link">{{ 'navbar.people' | translate }}</a>
+          </li>
+          <li class="nav-item ml-3">
+            <a routerLink="/welcome" data-toggle="tab" class="nav-link active">{{ 'navbar.company' | translate }}</a>
+          </li>
+          <li class="nav-item mr-auto">
+            <a href="https://www.blog.maatai.com/blog" target="_blank" class="nav-link">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <section class="navMobile">
+      <div class="maat bd-highlight">
+          <a routerLink="/home">
+            <img src="assets/black_transp.png" class="d-inline" alt="maat.ai">
+          </a>
+        </div><br>
+        <div class="row">
+            <div class="column c1">
+              <a routerLink="" class="nav-link" i18n>{{ 'navbar.people' | translate }}</a>
+            </div>
+            <div class="column c2">
+              <a routerLink="/welcome" class="nav-link active" i18n>{{ 'navbar.company' | translate }}</a>
+            </div>
+            <div class="column c3">
+              <a href="https://www.blog.maatai.com/blog" target="_blank" class="nav-link">Blog</a>
+            </div>
+        </div>
+    </section>
+  </section>
 <section class="welcome">
   <section class="containerWelcome">
       <h1>{{ 'welcome.titleWelcome' | translate }}</h1>

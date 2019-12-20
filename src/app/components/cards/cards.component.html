@@ -23,12 +23,13 @@
   </section>
     <section class="backCard">
       <div class="row">
-        <h1 style="margin-right: 1em;">{{ 'card.titlePeople' | translate }}</h1><img src="assets/persona.png" alt="Personas" class="imgPerson">
+        <h1>{{ 'card.titlePeople' | translate }}</h1>
       </div>
       <p>{{ 'card.textPeople' | translate }}</p>
       <button class="btnDownload" (click)="detectMobile()">{{ 'card.btnDownload' | translate }}</button>
-      <div class="row" style="margin-top: 1em;">
-          <img src="assets/equipos.png" alt="Equipos" class="imgTeam" style="margin-right: 1em;"><h1>{{ 'card.titleTeams' | translate }}</h1>
+      <br><br>
+      <div class="row">
+        <h1>{{ 'card.titleTeams' | translate }}</h1>
       </div>
       <p>{{ 'card.textTeams' | translate }}</p>
       <a routerLink="/welcome">

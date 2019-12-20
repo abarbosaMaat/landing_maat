@@ -6,7 +6,6 @@ import { GoogleAnalyticsEventsService } from './services/google-analytics-events
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { VideoComponent } from './components/video/video.component';
 import { SolutionsComponent } from './components/solutions/solutions.component';
 import { TrustComponent } from './components/trust/trust.component';
@@ -30,6 +29,8 @@ import { PoliticaDeCumplimientoComponent } from './components/politica-de-cumpli
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { LanguageService } from './services/language.service';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 // required for AOT compilation
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -40,7 +41,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent,
     VideoComponent,
     SolutionsComponent,
     TrustComponent,
@@ -57,7 +57,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     DownloadComponent,
     AvisoDePrivacidadComponent,
     AvisoDePrivacidadColaboradoresComponent,
-    PoliticaDeCumplimientoComponent
+    PoliticaDeCumplimientoComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +73,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
             }
         })
   ],
-  providers: [GoogleAnalyticsEventsService],
+  providers: [GoogleAnalyticsEventsService, LanguageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

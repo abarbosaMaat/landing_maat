@@ -1,111 +1,102 @@
 .navbarHome {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .navDesktop {
-    display: block;
+  display: block;
 }
 
 .navMobile {
-    display: none;
+  display: none;
 }
 
 .navbar {
-    max-width: 1000px;
-    margin: 0 auto;
-    overflow-x: hidden;
-    color: #2B3C5A;
-    width: 100%;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 22px;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  color: #2B3C5A;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .d-inline{
-    width: 70%;
+  width: 70%;
 }
 
 .nav-link {
-    margin-right: 2em;
-    width: 8em;
-    text-align: center;
-    color: #2B3C5A;
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    font-style: bold;
-    font-size: 18px;
-    line-height: 22px;
+  margin-right: 2em;
+  width: 8em;
+  text-align: center;
+  color: #2B3C5A;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-style: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+.active {
+border-bottom: 2px solid #F86F60;
 }
 
 a {
-    color: #2B3C5A !important;
-    font-size: 18px;
+  color: #2B3C5A !important;
+  font-size: 18px;
 }
+
 /*Extra extra small devices (phones, max 330)*/
 @media only screen and (max-width: 320px){
-    .nav-link {
-        font-size: 12px !important;
-        line-height: 18px !important;
-        margin: .7em 0;
-    }
+  .nav-link {
+      font-size: 12px !important;
+      line-height: 18px !important;
+      margin: .7em 0;
+  }
 }
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .navDesktop {
-        display: none;
-    }
-    .navMobile {
-        display: block;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-    .maat {
-        text-align: center;
-        align-items: center;
-    }
-    .d-inline {
-        width: 40%;
-        text-align: center;
-        align-items: center;
-        margin: .5em 0;
-    }
-    .row {
-        width: 100%;
-        padding: 0%;
-        margin: 0%;
-    }
-    .column {
-        text-align: center;
-        align-items: center;
-    }
-    .c1, .c2 {
-      width: 35%;
-    }
-    .c3 {
-      width: 30%;
-    }
-    .nav-link {
-        font-size: 1em;
-        margin: 0;
-        width: 100%;
-        text-align: center !important;
-        align-items: center;
-        padding: 5px;
-    }
+  .navDesktop {
+    display: none;
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+.navMobile {
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.maat {
+    text-align: center;
+    align-items: center;
+}
+.d-inline {
+    width: 40%;
+    text-align: center;
+    align-items: center;
+    margin: .5em 0;
+}
+.row {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+.column {
+    text-align: center;
+    align-items: center;
+}
+.c1, .c2 {
+  width: 35%;
+}
+.c3 {
+  width: 30%;
+}
+.nav-link {
+    font-size: 1em;
+    margin: 0;
+    width: 100%;
+    text-align: center !important;
+    align-items: center;
+    padding: 5px;
+}
+}

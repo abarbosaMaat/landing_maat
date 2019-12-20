@@ -53,10 +53,10 @@ h2 {
   height: 2.8em;
   margin: 2px;
 }
-.number::-webkit-input-placeholder { color: red; }
-.number::-moz-placeholder { /* Firefox 18- */ color: red; }
-.number:-moz-placeholder { /* Firefox 19+ */ color: red; }
-.number:-ms-input-placeholder { color: red; }
+.number::-webkit-input-placeholder { color: gray; }
+.number::-moz-placeholder { /* Firefox 18- */ color: gray; }
+.number:-moz-placeholder { /* Firefox 19+ */ color: gray; }
+.number:-ms-input-placeholder { color: gray; }
 .fa-times {
   font-size: 22px;
 }
