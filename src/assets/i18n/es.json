@@ -7,13 +7,13 @@
         "title": "La herramienta de confianza para personas y empresas",
         "maat": "maat.ai",
         "description": " te permite crear, ordenar y proteger tu identidad digital, y verificar la de los demás.",
-        "btnSend": "Envía la app a tu teléfono",
+        "btnSend": "Descarga la app en tu teléfono",
         "btnBusiness": "Soluciones para empresas"
     },
     "solutions": {
         "create": "Crea tu cartera digital",
         "textCreate": "Usamos Reconocimiento Facial para prevenir robo de identidad.",
-        "upload": "Sube y guarda tus documentos",
+        "upload": "Guarda tus documentos",
         "textUpload": "Se guardan encriptados en nubes protegidas con máxima seguridad.",
         "identity": "Identificate con maat.ai",
         "textIdentity": "Comparte tus documentos con personas o empresas de manera rápida, fácil y segura."
@@ -28,7 +28,7 @@
         "btnDownload": "Descarga la app en tu teléfono",
         "titleTeams": "Para equipos",
         "textTeams": "Solicita, almacena y protege documentos de tus empleados, clientes, proveedores y otros, de forma ordenada, fácil y segura.",
-        "btnTeams": "Ve soluciones para equipos"
+        "btnTeams": "Soluciones para equipos"
     },
     "certifications": {
         "titleCertifications": "Nuestros certificados"
@@ -51,9 +51,9 @@
     },
     "products": {
         "titleProducts": "Otros productos",
-        "facial": "Reconocimiento facial",
-        "document": "Certificación de documentos",
-        "list": "Revisión en listas"
+        "facial": "Prevén el robo de identidad al comparar el rostro de tu cliente con su identificación.",
+        "verify": "Confirma la vigencia y validez de los documentos oficiales que te entregan.",
+        "mobile": "Identifica a tus clientes con certeza, ofréceles una experiencia rápida y privada."
     },
     "use": {
         "titleUse": "Casos de uso",
@@ -67,6 +67,6 @@
       "textLink": "Envía un enlace a tu teléfono o descarga la app de maat.ai directamente desde",
       "or": "o",
       "number": "Número de teléfono",
-      "sendLink": "Enviar un enlace"
+      "sendLink": "Enviar enlace"
     }
 }

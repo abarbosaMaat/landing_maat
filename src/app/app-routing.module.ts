@@ -9,7 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ExampleappComponent } from './components/exampleapp/exampleapp.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { Certifications2Component } from './components/certifications2/certifications2.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
+import { EmpresasComponent } from './components/empresas/empresas.component';
 import { Video2Component } from './components/video2/video2.component';
 import { ProductsComponent } from './components/products/products.component';
 import { UseComponent } from './components/use/use.component';
@@ -19,7 +19,7 @@ import { DownloadComponent } from './components/download/download.component';
 import { AvisoDePrivacidadComponent } from './components/aviso-de-privacidad/aviso-de-privacidad.component';
 import { AvisoDePrivacidadColaboradoresComponent } from './components/aviso-de-privacidad-colaboradores/aviso-de-privacidad-colaboradores.component';
 import { PoliticaDeCumplimientoComponent } from './components/politica-de-cumplimiento/politica-de-cumplimiento.component';
-
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -29,7 +29,7 @@ const routes: Routes = [
   {path: 'footer', component: FooterComponent},
   {path: 'Example', component: ExampleappComponent},
   {path: 'cards', component: CardsComponent},
-  {path: 'welcome', component: WelcomeComponent},
+  {path: 'empresas', component: EmpresasComponent},
   {path: 'video2', component: Video2Component},
   {path: 'products', component: ProductsComponent},
   {path: 'use', component: UseComponent},
@@ -39,7 +39,8 @@ const routes: Routes = [
   {path: 'download', component: DownloadComponent},
   {path: 'aviso-de-privacidad', component: AvisoDePrivacidadComponent},
   {path: 'aviso-de-privacidad-colaboradores', component: AvisoDePrivacidadColaboradoresComponent},
-  {path: 'politica-de-cumplimiento', component: PoliticaDeCumplimientoComponent}
+  {path: 'politica-de-cumplimiento', component: PoliticaDeCumplimientoComponent},
+  {path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({

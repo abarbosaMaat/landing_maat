@@ -1,7 +1,11 @@
 <section class="video2" id="video2">
     <!-- [src]="urlSaneada" -->
-    <iframe width="853" height="480" [src]="urlSanitizerEs2" frameborder="0" allowfullscreen *ngIf="language.visibleDivEs"></iframe>
-    <iframe width="853" height="480" [src]="urlSanitizerEn2" frameborder="0" allowfullscreen *ngIf="language.visibleDivEn"></iframe>
+    <section class="video" id="video" *ngIf="language.visibleDivEs">
+      <iframe width="853" height="480" [src]="urlSanitizerEs2" frameborder="0" allowfullscreen></iframe>
+    </section>
+    <section class="video" id="video" *ngIf="language.visibleDivEn">
+      <iframe width="853" height="480" [src]="urlSanitizerEn2" frameborder="0" allowfullscreen></iframe>
+    </section>
     <app-products></app-products>
     <app-use></app-use>
 </section>

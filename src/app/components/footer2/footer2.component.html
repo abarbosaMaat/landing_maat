@@ -1,9 +1,16 @@
 <section class="footer2">
     <section class="containerFooter2">
       <div class="row">
-        <a href="http://eepurl.com/dHGFpf" target="_blank">
-          <button class="btn btn-primary btnContact" data-toggle="modal" data-target="#exampleModalCenter" style="margin-bottom: 1.5em;">{{ 'welcome.btnContact' | translate }}</button>
-        </a>
+        <section *ngIf="language.visibleDivEs">
+          <a href="https://share.hsforms.com/1FMTgQpikQZKRYUpwNlu-hg45fg7" target="_blank">
+            <button class="btn btn-primary btnContact" type="button">{{ 'welcome.btnContact' | translate }}</button>
+          </a>
+        </section>
+        <section *ngIf="language.visibleDivEn">
+          <a href="https://share.hsforms.com/1VxxqHhYFT0SeGAT1v-MMlg45fg7" target="_blank">
+            <button class="btn btn-primary btnContact" type="button">{{ 'welcome.btnContact' | translate }}</button>
+          </a>
+        </section>
       </div>
         <div class="row redes">
             <div class="column">
@@ -26,26 +33,33 @@
                 <img src="assets/whatsapp.svg" alt="Whatsapp">
               </a>
             </div>
+            <div class="column">
+              <a href="https://www.linkedin.com/company/maat-ai/" target="_blank">
+                <img src="assets/linkedin.svg" alt="LinkedIn">
+              </a>
+            </div>
           </div>
-          <div class="row" style="margin-top: 2em; margin-bottom: 2em;" *ngIf="visibleDivEs">
-            <div class="column c1">
+          <div class="row" style="margin-bottom: 2em; padding-right: 5px;" *ngIf="visibleDivEs">
+            <div class="column c1 c2">
               <a href="https://apps.apple.com/mx/app/maatai/id1482680056" target="_blank">
                 <img src="assets/appstoreEs.svg" alt="App store" class="cta">
               </a>
             </div>
-            <div class="column c1">
+            <div class="lienzo"></div>
+            <div class="column c1 c3">
               <a href="https://play.google.com/store/apps/details?id=com.maatai.maatapp&hl=en" target="_blank">
                 <img src="assets/googleEs.svg" alt="Play store" class="cta">
               </a>
             </div>
         </div>
-        <div class="row" style="margin-top: 2em; margin-bottom: 2em;" *ngIf="visibleDivEn">
-          <div class="column c1">
+        <div class="row" style="margin-top: 2em; margin-bottom: 2em; padding-right: 5px;" *ngIf="visibleDivEn">
+          <div class="column c1 c2">
             <a href="https://apps.apple.com/mx/app/maatai/id1482680056" target="_blank">
               <img src="assets/appstoreEn.svg" alt="App store" class="cta">
             </a>
           </div>
-          <div class="column c1">
+          <div class="lienzo"></div>
+          <div class="column c1 c3">
             <a href="https://play.google.com/store/apps/details?id=com.maatai.maatapp&hl=en" target="_blank">
               <img src="assets/googlePlay.png" alt="Play store" class="cta">
             </a>
@@ -55,8 +69,8 @@
             <button class="btnEs" (click)="changeEs()">ES</button><span class="line">|</span>
             <button class="btnEn" (click)="changeEn()">EN</button>
           </div>
-    <div class="row" style="margin-top: 2em; margin-bottom: 2.5em;">
-      <p>©2019 | All rigths reserved | <a href="https://www.maatai.com/aviso-de-privacidad/" target="_blank" style="color: #FFFFFF;">{{ 'footer.privacy' | translate }}</a> <br>
+    <div class="row" style="margin-top: 2em; margin-bottom: 1.5em;">
+      <p>©2020 | All rights reserved | <a routerLink="/aviso-de-privacidad" target="_blank" style="color: #FFFFFF;">{{ 'footer.privacy' | translate }}</a> <br>
       maat.ai - Trust and be trusted online.</p>
     </div>
   </section>

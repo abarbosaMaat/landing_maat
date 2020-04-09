@@ -13,7 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ExampleappComponent } from './components/exampleapp/exampleapp.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { Certifications2Component } from './components/certifications2/certifications2.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
+import { EmpresasComponent } from './components/empresas/empresas.component';
 import { Video2Component } from './components/video2/video2.component';
 import { ProductsComponent } from './components/products/products.component';
 import { UseComponent } from './components/use/use.component';
@@ -31,6 +31,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { LanguageService } from './services/language.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 // required for AOT compilation
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -47,7 +48,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     FooterComponent,
     ExampleappComponent,
     CardsComponent,
-    WelcomeComponent,
+    EmpresasComponent,
     Video2Component,
     ProductsComponent,
     UseComponent,
@@ -58,7 +59,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AvisoDePrivacidadComponent,
     AvisoDePrivacidadColaboradoresComponent,
     PoliticaDeCumplimientoComponent,
-    NavbarComponent
+    NavbarComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

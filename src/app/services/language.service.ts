@@ -20,11 +20,14 @@ export class LanguageService {
   setLanguageEs(langEs) {
     this.langFooterEs = langEs;
     this.langFooterEs = this.translate.use("es");
+    this.browserLang = "es";
     this.visibleDivEs = true;
     this.visibleDivEn = false;
   }
   setLanguageEn(langEn) {
     this.langFooterEn = langEn;
+    this.langFooterEs = this.translate.use("en");
+    this.browserLang = "en";
     this.visibleDivEn = true;
     this.visibleDivEs = false;
   }

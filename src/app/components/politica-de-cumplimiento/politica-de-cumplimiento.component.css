@@ -1,5 +1,6 @@
 .politics {
   max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   font-family: Lato;
   font-style: normal;
@@ -19,4 +20,8 @@ p, li{
 }
 .upgrade {
   text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  font-size: 14px;
 }

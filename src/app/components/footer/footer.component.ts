@@ -19,6 +19,7 @@ export class FooterComponent implements OnInit {
   }
   changeEs(){
     this.language.translate.use('es');
+    this.language.translate.use(this.browserLang);
     this.visibleDivEs = true;
     this.visibleDivEn = false;
     this.langEs = 'es';
@@ -26,6 +27,7 @@ export class FooterComponent implements OnInit {
   }
   changeEn(){
     this.language.translate.use('en');
+    this.language.translate.use(this.browserLang);
     this.visibleDivEn = true;
     this.visibleDivEs = false;
     this.langEn = 'en';
@@ -39,8 +41,10 @@ export class FooterComponent implements OnInit {
   checkLanguage() {
     if(this.language.browserLang == 'es') {
       this.visibleDivEs = true;
+      this.visibleDivEn = false;
     } else {
       this.visibleDivEn = true;
+      this.visibleDivEs = false;
     }
   }
 

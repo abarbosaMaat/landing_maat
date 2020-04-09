@@ -69,16 +69,16 @@ h1 {
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-    width: 16em;
+    width: 17em;
     height: 2.4em;
     margin-top: 2em;
     cursor: pointer;
 }
 
 .btnSolutions {
-    background-color: #92D2E8;
-    border: #92D2E8;
-    color: #2B3C5A;
+    background-color: #2B3C5A;
+    border: #2B3C5A;
+    color: #FFFFFF;
     border-radius: 6px;
     padding: 6px 15px;
     font-style: normal;
@@ -86,7 +86,7 @@ h1 {
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-    width: 16em;
+    width: 17em;
     height: 2.4em;
     margin-top: 2em;
     cursor: pointer;
@@ -142,7 +142,24 @@ h1 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  .card {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+  img {
+    width: 45%;
+  }
+  .btnDownload, .btnSolutions {
+    width: 16em;
+    font-size: 12px;
+  }
+  .txtPeople {
+    margin-bottom: 4em;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}

@@ -1,11 +1,10 @@
 .footer2 {
-    padding-right: 0% !important;
     background-color: #2B3C5A;
     overflow-x: hidden;
     max-width: 100%;
     font-family: 'Lato', sans-serif;
     margin: 0;
-    padding-top: 2em;
+    padding-top: 3.3em;
     padding-left: .8em;
     padding-right: .8em;
 }
@@ -25,25 +24,27 @@
     width: 100%;
     margin-left: 0% !important;
     margin-right: 0% !important;
-    padding-top: 1em;
-    padding-bottom: 0;
+    padding: 0;
 }
 
 .redes {
-    width: 35%;
-    margin: 0 auto !important;
+    width: 45%;
+    margin: 4.3em auto !important;
 }
 
 .column {
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 22%;
+    width: 18%;
     align-items: center;
-        text-align: center;
+    text-align: center;
 }
 .c1 {
-  align-items: center;
-        text-align: center;
+  width: 10em;
+}
+.c2 {
+  text-align: right;
+}
+.c3 {
+  text-align: left;
 }
 
 h1 {
@@ -68,8 +69,13 @@ p {
 }
 
 .cta {
-    width: 9.5em !important;
-    height: 2.8em;
+    width: 9em;
+    height: auto;
+}
+.lienzo {
+  width: 30px;
+  height: 60px;
+  background: #2B3C5A;
 }
 
 .btnContact {
@@ -97,60 +103,6 @@ p {
   color: #FFFFFF;
 }
 
-/*Modal*/
-.modal-content {
-    border: 2px solid #FE3618 !important;
-    text-align: center;
-    max-width: 720px;
-}
- .close{
-     text-align: left !important;
-     margin-left: 15px !important;
-     margin-top: 15px !important;
- }
-
- h5{
-    color: #263069;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 24px;
-    margin: 0%;
- }
-
-.txtModal{
-    font-family: 'Lato', sans-serif;
-    color: #263069;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
- }
-
- .input-lg {
-    width: 80%;
-    height: 40px;
-    border: 1px solid #FE3618;
-    border-radius: 6px;
-    align-items: center;
- }
-
- .comments {
-    border-bottom: 1px solid #FE3618 !important;
-    border-top: none !important;
-    border-left: none !important;
-    border-right: none !important;
-    border-radius: 0% !important;
- }
-
- .btn-lg {
-     width: 12em !important;
-     background-color: #FE3618 !important;
-     color: white !important;
-     border: none;
-     margin: 1.5em 0;
- }
 /*Extra extra small devices type iphone 5*/
 @media only screen and (max-width: 399px){
     .footer2 {
@@ -160,14 +112,11 @@ p {
         margin-top: 0%;
     }
     .cta {
-      width: 7.5em !important;
+      width: 7em !important;
       height: auto !important;
-      padding-left: 0%;
     }
     .c1 {
-        padding-left: 10px;
-        align-items: center;
-        text-align: center;
+      width: 40%;
     }
 }
  /* Extra small devices (phones, 400px and down) */
@@ -179,7 +128,7 @@ p {
         margin-top: 0%;
     }
     .cta {
-      width: 10em !important;
+      width: 10em;
       height: auto !important;
     }
     h1 {
@@ -201,26 +150,28 @@ p {
         width: 80%;
     }
     .cta {
-      width: 10.5em;
+      width: 8em;
     }
+
+.lienzo {
+  width: 30px;
+  height: 60px;
+  background: #2B3C5A;
+}
     .c1 {
-        width: 50%;
-        align-items: center;
-        text-align: center;
+        width: 40%;
+    }
+    .c2 {
+      text-align: right;
+    }
+    .c3 {
+      text-align: left;
     }
     h5 {
         margin: 0% !important;
         font-size: 24px;
         margin-left: 0% !important;
         margin-right: 0% !important;
-    }
-    .modal-title {
-        margin: 0% !important;
-        width: 100%;
-    }
-    .txtModal {
-        font-size: 16px;
-        padding: 1em 0;
     }
 }
 

@@ -25,12 +25,12 @@
 }
 
 .redes {
-    width: 35%;
+    width: 45%;
     margin: 0 auto !important;
 }
 
 .column {
-    width: 22%;
+    width: 18%;
 }
 
 h1 {
@@ -70,10 +70,23 @@ p {
     color: #FFFFFF;
     margin: 0%;
 }
-
+.c1 {
+  width: 10em;
+}
+.c2 {
+  text-align: right;
+}
+.c3 {
+  text-align: left;
+}
 .cta {
     width: 10em;
     height: auto;
+}
+.lienzo {
+  width: 30px;
+  height: 60px;
+  background: #2B3C5A;
 }
 .btnEs, .btnEn {
   color: #FFFFFF;
@@ -84,18 +97,18 @@ p {
 .line {
   color: #FFFFFF;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 410px) {
   .cta {
-    width: 8em !important;
+    width: 7em !important;
   }
   .c1 {
-    width: 50% !important;
+    width: 7em;
   }
 }
 /* Extra small devices (phones, 400px and down) */
-@media only screen and (min-width: 400px) and (max-width: 500px) {
+@media only screen and (min-width: 440px) and (max-width: 500px) {
     .cta {
-        width: 10em !important;
+        width: 7em;
         height: auto !important;
     }
     h1 {
@@ -105,7 +118,7 @@ p {
         line-height: 28px;
     }
     .c1 {
-      width: 50% !important;
+      width: 8em;
   }
 }
 /* Extra small devices (phones, 600px and down) */
@@ -114,13 +127,20 @@ p {
         width: 80%;
     }
     .cta {
-        width: 10.5em;
+        width: 9em;
     }
     .c1 {
-        width: 40%;
+      width: 40%;
+    }
+    .c2 {
+      text-align: right;
+    }
+    .c3 {
+      text-align: left;
     }
     .row {
         padding: 0%;
+        width: 100%;
     }
     h1 {
         font-style: normal;
@@ -138,7 +158,7 @@ p {
     width: 10em !important;
   }
   .c1 {
-    width: 30%;
+    width: 10em !important;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */

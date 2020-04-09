@@ -22,7 +22,7 @@ export class VideoComponent implements OnInit {
   }
 
   getTranslate() {
-    this.urlEs = "//www.youtube.com/embed/lnuOPdi5J2U?autoplay=1";
+    this.urlEs = "//www.youtube.com/embed/lnuOPdi5J2U?autoplay=0";
     this.urlEn = "//www.youtube.com/embed/INck5NfO0HY?autoplay=0";
     if(this.language.browserLang == 'es') {
       this.language.visibleDivEs = true;

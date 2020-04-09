@@ -40,10 +40,12 @@ export class Footer2Component implements OnInit {
   }
 
   checkLanguage() {
-    if(this.browserLang == 'es') {
+    if(this.language.browserLang == 'es') {
       this.visibleDivEs = true;
+      this.visibleDivEn = false;
     } else {
       this.visibleDivEn = true;
+      this.visibleDivEs = false;
     }
   }
 

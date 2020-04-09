@@ -22,8 +22,8 @@ export class Video2Component implements OnInit {
   }
 
   getVideo() {
-    this.urlEs2 = "//www.youtube.com/embed/OiXmaJs4HlE?autoplay=1";
-    this.urlEn2 = "//www.youtube.com/embed/3VVnoDL58qE?autoplay=1";
+    this.urlEs2 = "//www.youtube.com/embed/OiXmaJs4HlE?autoplay=0";
+    this.urlEn2 = "//www.youtube.com/embed/3VVnoDL58qE?autoplay=0";
     if(this.language.browserLang == 'es') {
       this.language.visibleDivEs = true;
     }else if(this.language.browserLang == 'en'){

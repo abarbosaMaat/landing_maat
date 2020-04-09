@@ -1,0 +1,19 @@
+h2 {
+  margin: 1em 0 0 2em;
+}
+button {
+  margin: 1.5em 0 0 6em;
+  background-color: #F86F60;
+  border: #F86F60;
+  border-radius: 6px;
+  color: white;
+  padding: 6px 15px;
+  font-style: bold;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  width: 10em;
+  height: 2.4em;
+  cursor: pointer;
+}

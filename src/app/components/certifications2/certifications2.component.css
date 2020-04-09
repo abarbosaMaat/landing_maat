@@ -7,20 +7,20 @@
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 30px;
+    line-height: 44px;
     text-align: center;
     color: #ffffff;
     padding-top: 2em;
     padding-bottom: 3em;
-    max-height: 340px;
+    max-height: 370px;
 }
 h1 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 30px;
+    line-height: 44px;
     text-align: center;
     color: #ffffff;
     margin-bottom: 2em;
@@ -71,7 +71,7 @@ h1 {
 
 @media only screen and (max-width: 768px) {
   .d-inline-block {
-    width: 110px !important;
+    width: 100px !important;
   }
 }
 

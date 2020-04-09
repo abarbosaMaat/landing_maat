@@ -25,7 +25,7 @@
     "card": {
         "titlePeople": "For people",
         "textPeople": "Safely upload, organize, and certify personal identity documents. Share them in an easy and reliable way.",
-        "btnDownload": "Download our app",
+        "btnDownload": "Download app",
         "titleTeams": "For businesses",
         "textTeams": "Request, store, and protect your client's, employee's, and suplier's documents in a secure, private, and orderly way.",
         "btnTeams": "Go to business solutions"
@@ -51,9 +51,9 @@
     },
     "products": {
         "titleProducts": "Other products",
-        "facial": "Facial recognition",
-        "document": "Document certification",
-        "list": "List revision"
+        "facial": "Prevent identity theft by comparing your client's face with his or her Official ID.",
+        "verify": "Confirm the validity of the official documents you receive.",
+        "mobile": "Identify your clients with certainty, offer a fast and safe online experience."
     },
     "use": {
         "titleUse": "Use cases",

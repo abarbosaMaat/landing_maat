@@ -15,7 +15,7 @@
             <a routerLink="/welcome" data-toggle="tab" class="nav-link active">{{ 'navbar.company' | translate }}</a>
           </li>
           <li class="nav-item mr-auto">
-            <a href="https://www.blog.maatai.com/blog" target="_blank" class="nav-link">Blog</a>
+            <!--a href="https://www.blog.maatai.com/" target="_blank" class="nav-link">Blog</a-->
           </li>
         </ul>
       </div>
@@ -35,7 +35,7 @@
               <a routerLink="/welcome" class="nav-link active" i18n>{{ 'navbar.company' | translate }}</a>
             </div>
             <div class="column c3">
-              <a href="https://www.blog.maatai.com/blog" target="_blank" class="nav-link">Blog</a>
+              <!--a href="https://www.blog.maatai.com/" target="_blank" class="nav-link">Blog</a-->
             </div>
         </div>
     </section>
@@ -44,10 +44,17 @@
   <section class="containerWelcome">
       <h1>{{ 'welcome.titleWelcome' | translate }}</h1>
       <p>{{ 'welcome.textWelcome' | translate }}</p>
-      <a href="http://eepurl.com/dHGFpf" target="_blank">
-        <button class="btn btn-primary btnContact" type="button">{{ 'welcome.btnContact' | translate }}</button>
-      </a>
-      <img src="assets/block.png" alt="Saludo" class="imgWelcome">
+      <section *ngIf="language.visibleDivEs">
+        <a href="https://share.hsforms.com/1FMTgQpikQZKRYUpwNlu-hg45fg7" target="_blank">
+          <button class="btn btn-primary btnContact" type="button">{{ 'welcome.btnContact' | translate }}</button>
+        </a>
+      </section>
+      <section *ngIf="language.visibleDivEn">
+        <a href="https://share.hsforms.com/1VxxqHhYFT0SeGAT1v-MMlg45fg7" target="_blank">
+          <button class="btn btn-primary btnContact" type="button">{{ 'welcome.btnContact' | translate }}</button>
+        </a>
+      </section>
+      <!--img src="assets/block.svg" alt="Saludo" class="imgWelcome"-->
   </section>
 </section>
 <app-video2></app-video2>
