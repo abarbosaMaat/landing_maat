@@ -78,21 +78,6 @@ p {
   background: #2B3C5A;
 }
 
-.btnContact {
-    background-color: #F86F60;
-    border: #F86F60;
-    border-radius: 6px;
-    color: #FAF9F9;
-    padding: 6px 15px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    width: 12em;
-    height: 2.4em;
-    margin-top: 1em;
-}
 .btnEs, .btnEn {
   color: #FFFFFF;
   background: none;
@@ -102,7 +87,11 @@ p {
 .line {
   color: #FFFFFF;
 }
-
+@media only screen and (max-width: 340px){
+  .hs-cta-img {
+    max-width: 7em !important;
+  }
+}
 /*Extra extra small devices type iphone 5*/
 @media only screen and (max-width: 399px){
     .footer2 {
@@ -117,6 +106,9 @@ p {
     }
     .c1 {
       width: 40%;
+    }
+    .hs-cta-img {
+      max-width: 8em;
     }
 }
  /* Extra small devices (phones, 400px and down) */
@@ -136,6 +128,9 @@ p {
         font-weight: 500;
         font-size: 23px;
         line-height: 28px;
+    }
+    .hs-cta-img {
+      max-width: 10em;
     }
 }
  /* Extra small devices (phones, 600px and down) */

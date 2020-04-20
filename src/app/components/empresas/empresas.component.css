@@ -88,15 +88,19 @@ p {
     border: #F86F60;
     border-radius: 6px;
     color: #FAF9F9;
-    padding: 6px 15px;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    width: 12em;
-    height: 2.4em;
+    width: 212px;
+    height: 44px;
     margin-top: 1em;
+}
+.hs-cta-wrapper {
+  width: 216px;
+  height: 2.5em;
 }
 
 .imgWelcome {
@@ -182,6 +186,11 @@ p {
         display: block;
     }
 }
+@media only screen and (max-width: 470px){
+  .hs-cta-img {
+    max-width: 8em;
+  }
+}
 /*Extra extra small devices (phones, max 330)*/
 @media only screen and (max-width: 400px){
   .nav-link {
@@ -198,6 +207,9 @@ p {
     max-width: 100%;
     height: auto;
     padding: 0 1em;
+}
+.hs-cta-img {
+  max-width: 6em;
 }
 }
 

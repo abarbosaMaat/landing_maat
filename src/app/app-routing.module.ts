@@ -22,14 +22,14 @@ import { PoliticaDeCumplimientoComponent } from './components/politica-de-cumpli
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'video', component: VideoComponent},
+  {path: '', component: HomeComponent, data: { titulo: 'maat.ai | Home'}},
+  {path: 'video', component: VideoComponent,},
   {path: 'solutions', component: SolutionsComponent},
   {path: 'trust', component: TrustComponent},
   {path: 'footer', component: FooterComponent},
   {path: 'Example', component: ExampleappComponent},
   {path: 'cards', component: CardsComponent},
-  {path: 'empresas', component: EmpresasComponent},
+  {path: 'empresas', component: EmpresasComponent, data: { titulo: 'maat.ai | Empresas'}},
   {path: 'video2', component: Video2Component},
   {path: 'products', component: ProductsComponent},
   {path: 'use', component: UseComponent},

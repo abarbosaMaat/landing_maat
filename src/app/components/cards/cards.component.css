@@ -46,7 +46,7 @@
     margin: 2em;
 }
 
-h1 {
+h2 {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -146,7 +146,7 @@ h1 {
   .card {
     font-size: 14px;
   }
-  h1 {
+  h2 {
     font-size: 16px;
   }
   img {

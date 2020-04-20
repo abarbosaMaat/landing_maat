@@ -1,19 +1,112 @@
-h2 {
-  margin: 1em 0 0 2em;
+.pageNot {
+  background-image: url("../../../assets/pageNot.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-size: cover;
+  min-height: 625px;
+  margin: 0;
+  width: 100%;
 }
 button {
-  margin: 1.5em 0 0 6em;
+  position: absolute;
+  top:45%;
+  left: 15%;
+  font-family: Lato;
   background-color: #F86F60;
   border: #F86F60;
   border-radius: 6px;
   color: white;
-  padding: 6px 15px;
-  font-style: bold;
+  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  width: 10em;
-  height: 2.4em;
+  width: 11.4em;
+  height: 2.8em;
   cursor: pointer;
+}
+@media only screen and (max-width: 1100px){
+  button {
+    top: 40%;
+    left: 12%;
+  }
+}
+@media only screen and (max-width: 900px){
+  button {
+    top: 40%;
+    left: 8%;
+  }
+}
+@media only screen and (max-width: 800px){
+  .pageNot {
+    background-size: unset;
+    background-position: top;
+    width: 100%;
+  }
+  button {
+    top: 30%;
+    left: 14%;
+    width: 8em;
+    height: 2.3em;
+  }
+}
+@media only screen and (max-width: 700px){
+  .pageNot {
+    background-size: contain;
+    background-position: top;
+    width: 100%;
+  }
+  button {
+    top: 26%;
+    left: 14%;
+    width: 8em;
+    height: 2.3em;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .pageNot {
+    background-size: contain;
+    background-position: top;
+    width: 100%;
+  }
+  button {
+    top: 22%;
+    left: 14%;
+    width: 8em;
+    height: 2.3em;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .pageNot {
+    background-size: contain;
+    background-position: top;
+    width: 100%;
+  }
+  button {
+    top: 16%;
+    left: 10%;
+    width: 8em;
+    height: 2.3em;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 400px){
+  .pageNot {
+    background-size: contain;
+    background-position: top;
+    width: 100%;
+  }
+  button {
+    top: 14%;
+    left: 11%;
+    width: 6em;
+    height: 2.3em;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

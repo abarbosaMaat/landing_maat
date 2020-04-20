@@ -15,7 +15,7 @@
     padding-bottom: 3em;
     max-height: 370px;
 }
-h1 {
+h2 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -47,7 +47,7 @@ h1 {
         max-height: 300px;
         border: none !important;
     }
-    h1 {
+    h2 {
         font-family: Lato;
         font-style: normal;
         font-weight: bold;
