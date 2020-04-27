@@ -3,14 +3,22 @@
   background-repeat: no-repeat;
   background-position: 50% 25%;
   background-size: cover;
-  min-height: 625px;
+  min-height: 600px;
   margin: 0;
   width: 100%;
+  overflow-y: hidden;
+}
+div {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+}
+img{
+  width: 22em;
 }
 button {
   position: absolute;
-  top:45%;
-  left: 15%;
+  left: 21%;
   font-family: Lato;
   background-color: #F86F60;
   border: #F86F60;
@@ -25,17 +33,16 @@ button {
   height: 2.8em;
   cursor: pointer;
 }
-@media only screen and (max-width: 1100px){
-  button {
-    top: 40%;
-    left: 12%;
+@media only screen and (min-width: 1100px){
+  .pageNot {
+    min-height: 800px;
   }
 }
 @media only screen and (max-width: 900px){
-  button {
+  /*button {
     top: 40%;
     left: 8%;
-  }
+  }*/
 }
 @media only screen and (max-width: 800px){
   .pageNot {
@@ -43,70 +50,70 @@ button {
     background-position: top;
     width: 100%;
   }
-  button {
+  /*button {
     top: 30%;
     left: 14%;
     width: 8em;
     height: 2.3em;
-  }
+  }*/
 }
 @media only screen and (max-width: 700px){
-  .pageNot {
+  /*.pageNot {
     background-size: contain;
     background-position: top;
     width: 100%;
-  }
-  button {
+  }*/
+  /*button {
     top: 26%;
     left: 14%;
     width: 8em;
     height: 2.3em;
     font-size: 14px;
     line-height: 18px;
-  }
+  }*/
 }
 @media only screen and (max-width: 600px){
   .pageNot {
-    background-size: contain;
-    background-position: top;
-    width: 100%;
+    background-position: 70% 30%;
   }
   button {
-    top: 22%;
-    left: 14%;
-    width: 8em;
-    height: 2.3em;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 18px;
   }
+  img {
+    max-width: 18em;
+  };
 }
 @media only screen and (max-width: 500px){
+  div {
+    top: 3%;
+    left: 50%;
+    margin-left: -144px;
+  }
   .pageNot {
-    background-size: contain;
-    background-position: top;
-    width: 100%;
+    background-position: 65% 20%;
   }
   button {
-    top: 16%;
-    left: 10%;
-    width: 8em;
-    height: 2.3em;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 18px;
   }
+  img {
+    max-width: 18em;
+  };
 }
 @media only screen and (max-width: 400px){
   .pageNot {
-    background-size: contain;
-    background-position: top;
-    width: 100%;
+    background-position: 65% 20%;
+    overflow-x: hidden;
+  }
+  div {
+    left: 50%;
+    margin-left: -144px;
   }
   button {
-    top: 14%;
-    left: 11%;
-    width: 6em;
-    height: 2.3em;
-    font-size: 14px;
-    line-height: 18px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
+
 }

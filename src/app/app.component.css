@@ -1,9 +1,9 @@
 body{
     font-family: 'Lato', sans-serif;
     width: 100%;
-    padding: 10px;
     padding-right: 0% !important;
+    padding: 10px;
 }
-.modal-close {
+.modal-close, .modal-open {
     padding-right: 0% !important;
 }

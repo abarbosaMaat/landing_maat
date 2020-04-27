@@ -1,6 +1,6 @@
 User-agent: *
 # Sitemap Principal
-Sitemap: https://www.maatai.com/#/sitemap.xml
+Sitemap: https://www.maatai.com/sitemap.xml
 
 # Sitemap Blog
 Sitemap: https://blog.maatai.com/sitemap_index.xml
