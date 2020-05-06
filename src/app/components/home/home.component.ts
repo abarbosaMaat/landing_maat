@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
-import { GoogleAnalyticsEventsService } from '../../services/google-analytics-events-service';
 import { Router, NavigationEnd } from '@angular/router';
 
 declare var ga: Function;
@@ -15,7 +14,7 @@ declare var ga: Function;
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public router: Router, public googleAnalyticsEventsService: GoogleAnalyticsEventsService) {
+  constructor(public router: Router) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         ga('set', 'page', event.urlAfterRedirects);
@@ -37,23 +36,6 @@ export class HomeComponent implements OnInit {
       console.log("no funciono");
       window.location.href = "https://testflight.apple.com/join/0Zrc0HME";
     }
-    this.googleAnalyticsEventsService.emitEvent("sendMesg", "sendApp", "userLabel", 1);
   }
 
-}
-export class GoogleAnalyticsService {
-
-  /*  //create our event emitter to send our data to Google Analytics
-    public eventEmitter(eventCategory: string,
-      eventAction: string,
-      eventLabel: string = null,
-      eventValue: number = null) {
-  ga('send', 'event', {
-  eventCategory: eventCategory,
-  eventLabel: eventLabel,
-  eventAction: eventAction,
-  eventValue: eventValue
-  });
-
-      }*/
 }

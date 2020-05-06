@@ -1,0 +1,33 @@
+.companies {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 800px;
+  margin: 3em auto;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #777777;
+  padding: 0 2em;
+}
+h2{
+  font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 38px;
+text-align: center;
+
+color: #2B3C5A;
+}
+h3 {
+  font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+color: #777777;
+}

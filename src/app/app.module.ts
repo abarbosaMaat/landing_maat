@@ -1,12 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { GoogleAnalyticsEventsService } from './services/google-analytics-events-service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { VideoComponent } from './components/video/video.component';
+import { CompaniesComponent } from './components/companies/companies.component';
+import { DescriptionComponent } from './components/description/description.component';
 import { SolutionsComponent } from './components/solutions/solutions.component';
 import { TrustComponent } from './components/trust/trust.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -43,6 +44,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AppComponent,
     HomeComponent,
     VideoComponent,
+    CompaniesComponent,
+    DescriptionComponent,
     SolutionsComponent,
     TrustComponent,
     FooterComponent,
@@ -75,7 +78,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
             }
         })
   ],
-  providers: [GoogleAnalyticsEventsService, LanguageService],
+  providers: [LanguageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
