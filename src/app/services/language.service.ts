@@ -1,21 +1,24 @@
-import { Injectable } from '@angular/core';
-import { TranslateService } from 'node_modules/@ngx-translate/core';
+import { Injectable, Inject } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { REQUEST } from '@nguniversal/express-engine/tokens';
+import { Request } from 'express';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LanguageService {
-  public browserLang: string;
   public langFooterEs;
   public langFooterEn;
   public visibleDivEs: boolean;
   public visibleDivEn: boolean;
 
+  public browserLang = 'en';
+
   constructor(public translate: TranslateService) {
     this.translate.addLangs(['en', 'es']);
     this.translate.setDefaultLang('es');
     this.browserLang = translate.getBrowserLang();
-    translate.use(this.browserLang.match(/en|es/) ? this.browserLang: 'es');
   }
   setLanguageEs(langEs) {
     this.langFooterEs = langEs;

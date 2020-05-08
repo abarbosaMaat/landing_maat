@@ -66,7 +66,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     PageNotFoundComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FormsModule,
     HttpClientModule,

@@ -13,11 +13,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
+            "preserveSymlinks": true,
             "assets": [
               "src/favicon.ico",
               "src/assets",
@@ -39,7 +40,7 @@
               "i18nFormat": "xlf",
               "aot": true,
               "i18nMissingTranslation": "error"
-              },
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -47,7 +48,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": false,
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
@@ -74,7 +75,7 @@
           "configurations": {
             "en": {
               "browserTarget": "landingMaat:build:en"
-              },
+            },
             "production": {
               "browserTarget": "landingMaat:build:production"
             }
@@ -114,6 +115,24 @@
               "**/node_modules/**"
             ]
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "src/tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
         }
       }
     },
@@ -131,7 +150,7 @@
           "configurations": {
             "en": {
               "devServerTarget": "landingMaat:serve:en"
-              },
+            },
             "production": {
               "devServerTarget": "landingMaat:serve:production"
             }
