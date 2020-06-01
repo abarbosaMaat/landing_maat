@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, } from '@angular/core';
 import { Injectable } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import { Router, NavigationEnd } from '@angular/router';
@@ -24,6 +24,25 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.checkAcceptCookies();
+  }
+  visible: boolean = true;
+  @Output() close: EventEmitter<any> = new EventEmitter();
+
+  checkAcceptCookies() {
+    if (localStorage.getItem('acceptCookies') == 'true') {
+      this.visible = !this.visible;
+    } else {
+      this.visible = true;
+    }
+}
+
+  onGRDP() {
+    localStorage.acceptCookies = 'true';
+    this.visible = !this.visible;
+      if (this.visible) {
+        this.close.emit(null);
+      }
   }
 
   detect(){

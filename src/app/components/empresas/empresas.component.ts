@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
 
 declare var hbspt: any;
@@ -16,6 +16,25 @@ export class EmpresasComponent implements OnInit {
     this.getForm();
     this.contact();
     this.contactEn();
+    this.checkAcceptCookies();
+  }
+  visible: boolean = true;
+  @Output() close: EventEmitter<any> = new EventEmitter();
+
+  checkAcceptCookies() {
+    if (localStorage.getItem('acceptCookies') == 'true') {
+      this.visible = !this.visible;
+    } else {
+        this.visible = true;
+    }
+}
+
+  onGRDP() {
+    localStorage.acceptCookies = 'true';
+    this.visible = !this.visible;
+      if (this.visible) {
+        this.close.emit(null);
+      }
   }
 
   getForm(){

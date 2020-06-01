@@ -15,7 +15,7 @@
             <a routerLink="/empresas" data-toggle="tab" class="nav-link active">{{ 'navbar.company' | translate }}</a>
           </li>
           <li class="nav-item mr-auto">
-            <!--a href="https://www.blog.maatai.com/" target="_blank" class="nav-link">Blog</a-->
+            <a href="https://www.blog.maatai.com/" target="_blank" class="nav-link">Blog</a>
           </li>
         </ul>
       </div>
@@ -35,7 +35,7 @@
               <a routerLink="/empresas" class="nav-link active" i18n>{{ 'navbar.company' | translate }}</a>
             </div>
             <div class="column c3">
-              <!--a href="https://www.blog.maatai.com/" target="_blank" class="nav-link">Blog</a-->
+              <a href="https://www.blog.maatai.com/" target="_blank" class="nav-link">Blog</a>
             </div>
         </div>
     </section>
@@ -100,3 +100,14 @@
 <app-certifications2></app-certifications2>
 <app-companies></app-companies>
 <app-footer2></app-footer2>
+<div class="alert alert-warning grdp row" role="alert" [hidden]="!visible">
+  <div class="txt-cookies">
+    <p>
+      {{ 'cookies.noticeCookies' | translate }}
+    </p>
+    <p>{{ 'cookies.infoCookies' | translate }} <a href="https://www.maatai.com/#/aviso-de-privacidad" style="color: #165299; font-weight: bold; font-size: 16px;"> {{ 'cookies.alertCookies' | translate }}</a>.</p>
+  </div>
+  <div class="cookies">
+    <button type="button" class="btn btn-success bcgrdp" (click)="onGRDP()" style="margin: 0 auto !important;">{{ 'cookies.acceptCookies' | translate }}</button>
+  </div>
+</div>
