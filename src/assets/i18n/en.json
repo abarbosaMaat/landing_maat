@@ -34,7 +34,7 @@
         "titleCertifications": "Our credentials"
     },
     "footer": {
-        "privacy": "Privacy notice"
+        "privacy": "Privacy Notice"
     },
     "welcome": {
         "titleWelcome": "Welcome to our new Community of Trust!",
@@ -68,5 +68,38 @@
       "or": "or",
       "number": "Phone number",
       "sendLink": "Send a link"
+    },
+    "description": {
+      "titleDescription": "Generate, protect, manage, and share your digital identity, easily and securely, using maat.ai!",
+      "protect": "Protecting our digital identity is of vital importance, especially in an era like ours, in which every step we take on the internet leaves a record that makes us vulnerable to theft and fraud.",
+      "bornMaat": "That is why maat.ai was born. A platform that uses blockchain, advanced cryptography and high security servers, it allows people to identify themselves and manage their information with confidence and security.",
+      "subtitle": "How does maat.ai work?",
+      "shareMaat": "With the maat.ai mobile app (available for iOS and Android), you can upload and encrypt personal identity documents in clouds protected with maximum security. It also allows you to share them easily and quickly with whoever you decide.",
+      "elements": "Our platform protects your identity through three elements:",
+      "youNow": "With something that only you know:",
+      "yourPass": "your password.",
+      "youHave": "With something that only you have:",
+      "yourPhone": "your cell phone.",
+      "youAre": "With something that only you are:",
+      "yourFace": "your face and its biometric records."
+    },
+    "companies": {
+      "titleCompanies": "Digitize your company, make it more efficient, by requesting documents quickly, remotely and securely.",
+      "info": "By using the maat.ai Business platform, you can share information, in addition to requesting official documents from your employees, customers, suppliers and users in a practical and safe way.",
+      "maatVerify": "We verify the identity of your clients using biometrics and Facial Maatch, as well as the validity of their official documents through Maat Verify.",
+      "blockchain": "For our team, your safety is the most important thing. All your files are encrypted and stored on maximum security servers; all transactions are confidential, and they are recorded on the blockchain.",
+      "subtitle": "With maat.ai you can manage the digital identity of your clients and create files.",
+      "companiMaat": "With maat.ai for Business you can:",
+      "rh": "Identify your employees and new prospects in the human resources area.",
+      "improve": "Improve security at all accesses of your business or company.",
+      "create": "Create and store digital records.",
+      "sales": "Make purchases, sales and digital credit applications, easily and remotely.",
+      "protectYou": "Protect yourself from identity theft and your business from bad loans, fraud and money laundering (KYC/AML compliance)."
+    },
+    "cookies": {
+      "noticeCookies": "This website uses cookies to offer you the best possible experience. By continuing to browse it, you consent to our use of cookies.",
+      "infoCookies": "For more information about the cookies we use, see our",
+      "alertCookies": "Privacy Notice",
+      "acceptCookies": "Accept"
     }
 }

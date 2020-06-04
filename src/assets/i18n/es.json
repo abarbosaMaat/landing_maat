@@ -68,5 +68,38 @@
       "or": "o",
       "number": "Número de teléfono",
       "sendLink": "Enviar enlace"
+    },
+    "description": {
+      "titleDescription": "¡Con maat.ai genera, protege, administra y comparte tu identidad digital de forma sencilla y segura!",
+      "protect": "Proteger la identidad digital es de vital importancia, sobre todo en una época como la nuestra, en la que cada paso que damos en internet deja un registro que nos vuelve vulnerables a robos y fraudes.",
+      "bornMaat": "Por eso nació maat.ai, una plataforma que utiliza blockchain, criptografía avanzada y servidores de alta seguridad para que las personas puedan identificarse y administrar sus información con confianza y seguridad.",
+      "subtitle": "¿Cómo funciona maat.ai?",
+      "shareMaat": "En la app móvil de maat.ai (disponible para iOS y Android) es posible guardar y encriptar documentos de identidad personal, en nubes protegidas con máxima seguridad. De esta manera, es posible compartirlos de forma fácil y rápida con quien el usuario decida.",
+      "elements": "La plataforma de maat.ai protege la identidad de sus usuarios a través de tres elementos:",
+      "youNow": "Con algo que sólo tú sabes:",
+      "yourPass": "tu contraseña.",
+      "youHave": "Con algo que sólo tú tienes:",
+      "yourPhone": "tu celular.",
+      "youAre": "Con algo que sólo tú eres:",
+      "yourFace": "tu rostro y sus registros biométricos."
+    },
+    "companies": {
+      "titleCompanies": "Digitaliza  tu empresa, hazla más eficiente, al solicitar documentos de manera rápida, remota y segura.",
+      "info": "Con maat.ai para Empresas puedes compartir información, además de solicitar documentos oficiales a tus empleados, clientes, proveedores y usuarios de forma práctica y segura, a través de nuestra plataforma.",
+      "maatVerify": "Nosotros comprobamos la identidad de tus clientes utilizando biométricos y Facial Maatch, así como la vigencia y validez de sus documentos oficiales a través de Maat Verify.",
+      "blockchain": "Para nuestro equipo, tu seguridad es lo más importante. Todos tus archivos son encriptados y almacenados en servidores de máxima seguridad; cualquier movimiento es confidencial y se registra en blockchain.",
+      "subtitle": "Con maat.ai administra la identidad digital de tus clientes y crea expedientes.",
+      "companiMaat": "Con maat.ai para Empresas podrás:",
+      "rh": "Identificar a tus empleados y nuevos prospectos en el área de recursos humanos.",
+      "improve": "Mejorar la seguridad en todos los accesos a tu negocio o empresa.",
+      "create": "Crear y almacenar expedientes digitales.",
+      "sales": "Realizar compras, ventas y originación digital de créditos de forma fácil y remota.",
+      "protectYou": "Protegerte del robo de identidad y cuentas incobrables (KYC), fraudes y lavado de dinero (AMD/PLD)."
+    },
+    "cookies": {
+      "noticeCookies": "Nuestra página utiliza cookies para ofrecerte la mejor experiencia posible. Continuar navegando en nuestra página web implica el consentimiento de su uso por nuestra parte.",
+      "infoCookies": "Para más información sobre las cookies que usamos, consulta nuestro",
+      "alertCookies": "Aviso de privacidad",
+      "acceptCookies": "Aceptar"
     }
 }
