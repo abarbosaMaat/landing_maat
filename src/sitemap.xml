@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.maatai.com/</loc>
+    <loc>https://www.maatai.com/#/</loc>
     <lastmod>2020-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.maatai.com/#/empresas</loc>
+    <lastmod>2020-06-03</lastmod>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>
