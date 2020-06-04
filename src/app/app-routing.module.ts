@@ -27,7 +27,7 @@ const routes: Routes = [
   {path: 'solutions', component: SolutionsComponent},
   {path: 'trust', component: TrustComponent},
   {path: 'footer', component: FooterComponent},
-  {path: 'Example', component: ExampleappComponent},
+  {path: 'example', component: ExampleappComponent},
   {path: 'cards', component: CardsComponent},
   {path: 'empresas', component: EmpresasComponent, data: { titulo: 'maat.ai | Empresas'}},
   {path: 'video2', component: Video2Component},

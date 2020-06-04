@@ -1,7 +1,6 @@
 import { Component, OnInit, Output, EventEmitter, } from '@angular/core';
 import { Injectable } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
-import { Router, NavigationEnd } from '@angular/router';
 
 declare var ga: Function;
 
@@ -14,13 +13,7 @@ declare var ga: Function;
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public router: Router) {
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        ga('set', 'page', event.urlAfterRedirects);
-        ga('send', 'pageview');
-      }
-    });
+  constructor() {
   }
 
   ngOnInit() {
