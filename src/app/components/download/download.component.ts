@@ -24,7 +24,7 @@ export class DownloadComponent implements OnInit {
       window.location.href = "https://apps.apple.com/us/app/maat-ai/id1482680056";
     }
     else {
-      window.location.href = "https://www.maatai.com/#/link";
+      window.location.href = "https://www.maatai.com/link";
     }
   }
 
