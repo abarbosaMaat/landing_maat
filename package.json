@@ -1,9 +1,13 @@
 {
   "name": "landing-maat",
   "version": "0.0.0",
+  "engines": {
+    "node": "12.x.x",
+    "npm": "6.14.5"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -33,6 +37,7 @@
     "cookie-parser": "^1.4.5",
     "core-js": "^2.6.11",
     "express": "^4.15.2",
+    "express-favicon": "^2.0.1",
     "ngx-translate-cache": "^9.0.2",
     "rxjs": "^6.5.5",
     "rxjs-compat": "^6.5.5",
