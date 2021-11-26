@@ -19,15 +19,13 @@ export class LinkComponent implements OnInit {
   ngOnInit() {
   }
   close(numberLink) {
-    console.log(numberLink);
-    if(numberLink = ""){
-      alert("Error en número");
-    }else {
+    if(numberLink != ""){
       this.http.get(`https://maat-ia-development.appspot.com/ws/hp/sendDownloadlink?cel=${numberLink}`)
       .subscribe(data => {
         console.log("si funciona");
       });window.location.href = `https://www.maatai.com/`;
-      //window.location.href =`https://maat-ia-development.appspot.com/ws/hp/sendDownloadlink?cel=${numberLink}`;
+    }else {
+      alert("Error en número");
     }
   }
 
