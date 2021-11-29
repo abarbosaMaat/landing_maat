@@ -49,7 +49,6 @@ export class EmpresasComponent implements OnInit {
   }
 
   contact() {
-    console.log("funciono weee");
     hbspt.forms.create({
 	    portalId: "6971767",
       formId: "14c4e042-98a4-4192-9161-4a70365bbe86",
@@ -58,7 +57,6 @@ export class EmpresasComponent implements OnInit {
 //window.scrollTo (0, 0);
   }
   contactEn() {
-    console.log("funciono wee");
     hbspt.forms.create({
       portalId: "6971767",
       formId: "571c6a1e-1605-4f44-9e18-04f5bfe30c96",

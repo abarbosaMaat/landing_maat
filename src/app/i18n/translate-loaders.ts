@@ -51,9 +51,9 @@ export class TranslateFSLoader implements TranslateLoader {
   }
 }
 
-export function translateLoaderFactory(httpClient: HttpClient, transferState: TransferState, platform: any) {
+export function translateLoaderFactory(http: HttpClient, transferState: TransferState, platform: any) {
   const prefix = './assets/i18n/autogen/';
   return isPlatformBrowser(platform)
-    ? new TranslateBrowserLoader(transferState, httpClient, prefix)
+    ? new TranslateBrowserLoader(transferState, http, prefix)
     : new TranslateFSLoader(transferState, prefix);
 }
