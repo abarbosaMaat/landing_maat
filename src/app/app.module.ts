@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +15,9 @@ import { ExampleappComponent } from './components/exampleapp/exampleapp.componen
 import { CardsComponent } from './components/cards/cards.component';
 import { Certifications2Component } from './components/certifications2/certifications2.component';
 import { EmpresasComponent } from './components/empresas/empresas.component';
+import { DesuscribirseComponent } from './components/desuscribirse/desuscribirse.component';
+import { LoginComponent } from './components/deleteProfile/login/login.component';
+import { ConfirmCodeComponent } from './components/deleteProfile/confirm-code/confirm-code.component';
 import { Video2Component } from './components/video2/video2.component';
 import { ProductsComponent } from './components/products/products.component';
 import { UseComponent } from './components/use/use.component';
@@ -52,6 +55,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ExampleappComponent,
     CardsComponent,
     EmpresasComponent,
+    DesuscribirseComponent,
+    LoginComponent,
+    ConfirmCodeComponent,
     Video2Component,
     ProductsComponent,
     UseComponent,
@@ -69,6 +75,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
         TranslateModule.forRoot({
             loader: {

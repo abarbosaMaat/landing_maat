@@ -10,6 +10,7 @@ import { ExampleappComponent } from './components/exampleapp/exampleapp.componen
 import { CardsComponent } from './components/cards/cards.component';
 import { Certifications2Component } from './components/certifications2/certifications2.component';
 import { EmpresasComponent } from './components/empresas/empresas.component';
+import { DesuscribirseComponent } from './components/desuscribirse/desuscribirse.component';
 import { Video2Component } from './components/video2/video2.component';
 import { ProductsComponent } from './components/products/products.component';
 import { UseComponent } from './components/use/use.component';
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path: 'example', component: ExampleappComponent},
   {path: 'cards', component: CardsComponent},
   {path: 'empresas', component: EmpresasComponent, data: { titulo: 'maat.ai | Empresas'}},
+  {path: 'desuscribirse', component: DesuscribirseComponent, data: { titulo: 'maat.ai | Desuscribirse'}},
   {path: 'video2', component: Video2Component},
   {path: 'products', component: ProductsComponent},
   {path: 'use', component: UseComponent},

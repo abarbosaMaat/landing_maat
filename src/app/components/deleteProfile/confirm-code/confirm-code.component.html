@@ -1,0 +1,16 @@
+<!-- formulario.component.html -->
+<h1>Confirma tu número</h1>
+<p>Escribe el código de verificación que hemos enviado al:</p>
+<p class="phone-number">+52 55 55 55 55 17.</p>
+
+<form class="confirm-code-form">
+  <div class="form-group">
+    <input formControlName="confirmCode" type="text" class="form-control input-bordered" id="confirmCode"
+      name="confirmCode">
+    <div class="link-wrapper">
+      <p>¿No llegó tu código? <span class="input-link">Reenviar</span></p> 
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-maat">Verificar</button>
+</form>
