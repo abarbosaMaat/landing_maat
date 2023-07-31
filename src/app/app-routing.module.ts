@@ -31,7 +31,7 @@ const routes: Routes = [
   {path: 'example', component: ExampleappComponent},
   {path: 'cards', component: CardsComponent},
   {path: 'empresas', component: EmpresasComponent, data: { titulo: 'maat.ai | Empresas'}},
-  {path: 'demo-carros', component: LandingCarDealerComponent, data: { titulo: 'Car Loan'}},
+  {path: 'demo/carros', component: LandingCarDealerComponent, data: { titulo: 'Demo Autos'}},
   {path: 'video2', component: Video2Component},
   {path: 'products', component: ProductsComponent},
   {path: 'use', component: UseComponent},
