@@ -15,7 +15,7 @@ import { ExampleappComponent } from './components/exampleapp/exampleapp.componen
 import { CardsComponent } from './components/cards/cards.component';
 import { Certifications2Component } from './components/certifications2/certifications2.component';
 import { EmpresasComponent } from './components/empresas/empresas.component';
-import { DesuscribirseComponent } from './components/desuscribirse/desuscribirse.component';
+import { LandingCarDealerComponent } from './components/car-dealer/landing/landing.component';
 import { LoginComponent } from './components/deleteProfile/login/login.component';
 import { ConfirmCodeComponent } from './components/deleteProfile/confirm-code/confirm-code.component';
 import { Video2Component } from './components/video2/video2.component';
@@ -55,7 +55,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ExampleappComponent,
     CardsComponent,
     EmpresasComponent,
-    DesuscribirseComponent,
+    LandingCarDealerComponent,
     LoginComponent,
     ConfirmCodeComponent,
     Video2Component,
@@ -69,7 +69,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AvisoDePrivacidadColaboradoresComponent,
     PoliticaDeCumplimientoComponent,
     NavbarComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

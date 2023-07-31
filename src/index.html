@@ -38,10 +38,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
   <link rel="icon" type="image/x-icon" href="assets/maatLogo.png">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
 
 </head>
@@ -75,5 +74,17 @@
 <![endif]-->
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
 <!-- End of HubSpot Embed Code -->
+
+<script language="javascript">
+  function maat_loaded() {
+    Maat.setCallback(maat_callback);
+  }
+  function maat_callback(numero) {
+    console.log("El Numero es:");
+    console.log(numero);
+    console.log(numero.detail);
+  }
+</script>
+<script src="https://demo.maatai.com/widget/js/widget.v2.js" onload="maat_loaded"></script>
 </body>
 </html>
