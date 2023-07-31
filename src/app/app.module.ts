@@ -16,8 +16,6 @@ import { CardsComponent } from './components/cards/cards.component';
 import { Certifications2Component } from './components/certifications2/certifications2.component';
 import { EmpresasComponent } from './components/empresas/empresas.component';
 import { LandingCarDealerComponent } from './components/car-dealer/landing/landing.component';
-import { LoginComponent } from './components/deleteProfile/login/login.component';
-import { ConfirmCodeComponent } from './components/deleteProfile/confirm-code/confirm-code.component';
 import { Video2Component } from './components/video2/video2.component';
 import { ProductsComponent } from './components/products/products.component';
 import { UseComponent } from './components/use/use.component';
@@ -56,8 +54,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     CardsComponent,
     EmpresasComponent,
     LandingCarDealerComponent,
-    LoginComponent,
-    ConfirmCodeComponent,
     Video2Component,
     ProductsComponent,
     UseComponent,
