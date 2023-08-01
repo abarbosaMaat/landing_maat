@@ -11,6 +11,7 @@ import { CardsComponent } from './components/cards/cards.component';
 import { Certifications2Component } from './components/certifications2/certifications2.component';
 import { EmpresasComponent } from './components/empresas/empresas.component';
 import { LandingCarDealerComponent } from './components/car-dealer/landing/landing.component';
+import { MicroCreditoComponent } from './components/microcredito/landing/landing.component';
 import { Video2Component } from './components/video2/video2.component';
 import { ProductsComponent } from './components/products/products.component';
 import { UseComponent } from './components/use/use.component';
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path: 'cards', component: CardsComponent},
   {path: 'empresas', component: EmpresasComponent, data: { titulo: 'maat.ai | Empresas'}},
   {path: 'demo/carros', component: LandingCarDealerComponent, data: { titulo: 'Demo Autos'}},
+  {path: 'demo/microcredito', component: MicroCreditoComponent, data: { titulo: 'Demo Microcreditos'}},
   {path: 'video2', component: Video2Component},
   {path: 'products', component: ProductsComponent},
   {path: 'use', component: UseComponent},
