@@ -1,0 +1,28 @@
+<!-- formulario.component.html -->
+<h1>Confirma tu número</h1>
+<p>Escribe el código de verificación que hemos enviado al:</p>
+<!-- TODO: tiene que venir del userData -->
+<p class="phone-number">+52 55 55 55 55 17.</p> 
+
+<form 
+  class="confirm-code-form" 
+  [formGroup]="form2fa" 
+>
+  <div class="form-group">
+    <input formControlName="verificationCode" type="text" class="form-control input-bordered" id="confirmCode"
+      name="confirmCode">
+
+    <div class="link-wrapper">
+      <p>¿No llegó tu código? <span class="input-link">Reenviar</span></p> 
+    </div>
+
+    <ng-container *ngIf="verificationCode.invalid && verificationCode.touched">
+      <p class="error-message">
+        <span *ngIf="verificationCode.errors?.required">Este campo es obligatorio</span>
+        <span *ngIf="verificationCode.errors?.minlength">El código de verifiación debe contener 6 dígitos</span>
+      </p>
+    </ng-container>
+  </div>
+
+  <button type="submit" class="btn btn-maat">Verificar</button>
+</form>

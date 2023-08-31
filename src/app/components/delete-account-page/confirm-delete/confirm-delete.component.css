@@ -1,0 +1,75 @@
+* {
+    font-family: 'Mulish';
+    color: #26314D;
+}
+p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 30px 0;
+}
+
+.label-component {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.label-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Estilos para los radio buttons personalizados */
+.custom-radio {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.custom-radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    height: 16px;
+    width: 16px;
+    border: 1px solid #667085;
+    background-color: white;
+    display: flex;
+    border-radius: 0.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkmark svg {
+    width: 12px;
+    height: 13px;
+}
+
+.custom-radio input:checked ~ .checkmark {
+    background-color: #023C68; /* Color cuando está seleccionado */
+    border: 1px solid #023C68;
+}
+
+.option-description {
+    padding-left: 24px;
+    margin-top: 12px;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+}
+

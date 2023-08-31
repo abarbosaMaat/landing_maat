@@ -1,0 +1,73 @@
+<!-- formulario.component.html -->
+<div class="login-container">
+  <h1>Eliminar cuenta</h1>
+  <p>Lamentamos que ya no quieras formar parte <br>de <strong>maat.ai</strong>. </p>
+  <p>Los datos de tu cuenta serán eliminados, revisar nuestro <a href="#" class="link-maat">Aviso de Privacidad</a> para más información sobre como usamos tu información.
+  </p>
+  <p>Si de verdad quieres irte 😢, <br>
+    inicia sesión para continuar con el proceso.
+  </p>
+
+  <form 
+    [formGroup]="loginForm" 
+    class="login-form"
+  >
+
+    <div class="form-group input-phone">
+      <div class="input-group input-bordered">
+
+        <div class="input-group-prepend">
+          <custom-select 
+            [title]="currentCountry" 
+            [options]="transformCountries" 
+            (currentValueChange)="dropdownValueChanged($event)"
+          ></custom-select>
+        </div>
+    
+        <input 
+          formControlName="phoneNumber"
+          type="text" 
+          id="phoneNumber" 
+          name="phoneNumber" 
+          placeholder="Celular (10 dígitos)"
+          class="form-control" 
+          required
+          autocomplete="off"
+        >
+      </div>
+      <ng-container *ngIf="phoneNumber.invalid && phoneNumber.touched">
+        <p class="error-message">
+          <span *ngIf="phoneNumber.errors?.required">Este campo es obligatorio</span>
+        </p>
+      </ng-container>
+
+    </div>
+
+    <div class="form-group">
+      <input 
+        formControlName="password"
+        type="password" 
+        id="password" 
+        name="password" 
+        placeholder="Escribe tu contraseña"
+        class="form-control input-bordered"
+        required
+        autocomplete="off"
+      >
+    
+      <ng-container *ngIf="password.invalid && password.touched">
+        <p class="error-message">
+          <span *ngIf="password.errors?.required">Este campo es obligatorio</span>
+          <span *ngIf="password.errors?.minlength">Este campo tiene que tener minimo</span>  
+        </p>
+      </ng-container>
+    </div>
+
+    <ng-container *ngIf="loginError">
+      <p class="error-message">{{loginError}}</p>
+    </ng-container>
+    
+    <button type="submit" class="btn btn-maat" [disabled]="!loginForm.valid" (click)="submitLoginForm($event)">Iniciar sesión</button>
+
+  </form>
+</div>

@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  maatUrl: 'https://maat-api-ykdgcrhh2a-uc.a.run.app/api/v4'
 };
 
 /*
