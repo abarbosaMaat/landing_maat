@@ -1,38 +1,57 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
-export class LocalStorageService {
 
-  set(key: string, value: any): void {
-    localStorage.setItem(key, JSON.stringify(value));
+/**
+ * Servicio para gestionar el localstorage
+ *
+ * @export
+ * @class LocalStorageService
+ */
+export default class LocalStorageService {
+  constructor() {}
+
+  setItem(key: string, value: any): void {
+    try {
+      const stringValue = JSON.stringify(value);
+      localStorage.setItem(key, stringValue);
+    } catch (error) {
+      console.error("Error al guardar en localStorage:", error);
+    }
   }
 
-  get(key: string): any {
-    const value = localStorage.getItem(key);
-    return value ? JSON.parse(value) : null;
+  getItem<T>(key: string): T | null {
+    try {
+      const item = localStorage.getItem(key);
+      if (item) {
+        return JSON.parse(item) as T;
+      }
+      return null;
+    } catch (error) {
+      console.error("Error al leer de localStorage:", error);
+      return null;
+    }
   }
 
-  remove(key: string): void {
-    localStorage.removeItem(key);
+  updateItem(key: string, value: any): void {
+    this.setItem(key, value);
+  }
+
+  removeItem(key: string): void {
+    try {
+      localStorage.removeItem(key);
+    } catch (error) {
+      console.error("Error al eliminar de localStorage:", error);
+    }
   }
 
   clearAll(): void {
-    localStorage.clear();
+    try {
+      localStorage.clear();
+    } catch (error) {
+      console.error("Error al limpiar el localStorage:", error);
+    }
   }
 }
-
-
-// constructor(private localStorageService: LocalStorageService) {}
-
-// submitLoginForm() {
-//   // Después de un inicio de sesión exitoso
-//   const user = { id: 1, name: 'John Doe' };
-//   this.localStorageService.set('user', user);
-// }
-
-// constructor(private localStorageService: LocalStorageService) {
-//   this.user = this.localStorageService.get('user');
-// }
-

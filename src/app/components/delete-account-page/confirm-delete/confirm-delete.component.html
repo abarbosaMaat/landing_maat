@@ -1,68 +1,62 @@
-<!-- formulario.component.html -->
-<!-- <h1>Eliminar cuenta</h1> -->
-
-
 <div class="">
-  <!-- <h2>Select an Option</h2> -->
-
-  <p>Lamentamos que ya no quieras formar parte de <strong>maat.ai</strong> ayúdanos a mejorar seleccionando la razón por la que eliminarás tu cuenta:</p>
+  <p>
+    Lamentamos que ya no quieras formar parte de
+    <strong>maat.ai</strong> ayúdanos a mejorar seleccionando la razón por la
+    que eliminarás tu cuenta:
+  </p>
 
   <div class="options-list">
     <label *ngFor="let option of options" class="custom-radio">
-      <div style="display: flex;" class="label-component">
-        <input type="radio" name="selectedOption" [(ngModel)]="selectedOption" [value]="option.value" (change)="toggleSection()" />
+      <div style="display: flex" class="label-component">
+        <input
+          type="radio"
+          name="selectedOption"
+          [(ngModel)]="selectedOption"
+          [value]="option.value"
+        />
         <span class="checkmark">
-          <svg width="14" height="15" viewBox="0 0 14 15" stroke="#ffffff" fill="none">
-            <path d="M11.6666 3.52539L5.24992 9.94206L2.33325 7.02539" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+          <svg
+            width="14"
+            height="15"
+            viewBox="0 0 14 15"
+            stroke="#ffffff"
+            fill="none"
+          >
+            <path
+              d="M11.6666 3.52539L5.24992 9.94206L2.33325 7.02539"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </span>
         <span class="label-text">{{ option.label }}</span>
       </div>
       <div *ngIf="selectedOption == option.value" class="option-description">
-        <!-- <p>Seleccionaste: {{ selectedOption }}</p> -->
-        <p>{{option.description}}</p>
+        <p>{{ option.description }}</p>
         <div *ngIf="option.withInput">
           <div class="form-group">
-            <input 
-              class="form-control input-underline" 
-              id="moreInformation" 
-              name="moreInformation" 
+            <input
+              class="form-control input-underline"
+              id="moreInformation"
+              name="moreInformation"
               placeholder="Cuentanos más"
-            >
+            />
           </div>
         </div>
-
       </div>
     </label>
   </div>
-
-  <!-- Input confirma con tu password -->
-  <div class="form-group">
-    <label for="password" class="input-label">Para continuar confirma con tu contraseña</label>
-    <!-- <input 
-      formControlName="password" 
-      class="form-control input-bordered" 
-      id="passwordInput" 
-      name="password" 
-      placeholder="Escribe tu contraseña"
-      [(ngModel)]="password" 
-      (input)="checkPassword()"
-    > -->
-    <input 
-      class="form-control input-bordered" 
-      id="passwordInput" 
-      name="password" 
-      placeholder="Escribe tu contraseña"
-    >
-    <div class="link-wrapper">
-      <span class="input-link">Olvide mi contraseña</span>
-    </div>
-  </div>
-  <!-- <button type="submit" class="btn btn-maat" [disabled]="!isPasswordValid">Confirmar</button> -->
   <div class="buttons-container">
-    <button type="submit" class="btn btn-tertiary">Otra oportunidad</button>
-    <button type="submit" class="btn btn-maat-outline" [disabled]="!isPasswordValid">Eliminar</button>
+    <button class="btn btn-tertiary">Otra oportunidad</button>
+    <button
+      class="btn btn-maat-outline"
+      [disabled]="!selectedOption || loader"
+      (click)="submit()"
+    >
+      <span *ngIf="!loader"> Eliminar</span>
+      <span *ngIf="loader"> Enviando...</span>
+    </button>
   </div>
-  <!-- <input type="password" [(ngModel)]="password" (input)="checkPassword()" placeholder="Enter password" />
-  <button [disabled]="!isPasswordValid">Continue</button> -->
 </div>
