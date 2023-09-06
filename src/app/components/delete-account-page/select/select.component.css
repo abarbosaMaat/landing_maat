@@ -74,3 +74,14 @@
   display: block;
 }
   
+.search-country {
+  width: 100%;
+  border: none;
+  padding: 6px 14px;
+  border-bottom: 1px solid #98A2B3;
+  color: #98A2B3;
+}
+.search-country:focus-visible {
+  outline-offset: unset;
+  outline: none;
+}

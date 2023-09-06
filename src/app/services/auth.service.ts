@@ -8,7 +8,6 @@ import { BehaviorSubject, throwError } from "rxjs";
 import { environment } from "../../environments/environment";
 import { LoginBody, Body2fa, Body2faValid } from "../models/login.model";
 import LocalStorageService from "./localstorage.service";
-import { Router } from "@angular/router";
 
 @Injectable({
   providedIn: "root",
@@ -28,17 +27,17 @@ export default class AuthService {
   public loader = this._loader.asObservable();
   private _isLoggedIn = new BehaviorSubject<boolean>(this.checkLoginStatus());
   public isLoggedIn$ = this._isLoggedIn.asObservable();
-  private _require2fAuth = new BehaviorSubject<boolean>(
-    this.check2FatokenStatus()
-  );
+  private _require2fAuth = new BehaviorSubject<boolean>(this.check2FatokenStatus());
   public require2fAuth$ = this._require2fAuth.asObservable();
   private _error = new BehaviorSubject<string>("");
   public error = this._error.asObservable();
 
+  private _endProcess = new BehaviorSubject<boolean>(this.checkEndStatus());
+  public endProcess = this._endProcess.asObservable();
+
   constructor(
     private _http: HttpClient,
     private _localStaroge: LocalStorageService,
-    private router: Router
   ) {}
 
   private checkLoginStatus(): boolean {
@@ -51,6 +50,12 @@ export default class AuthService {
     return !!fa_token;
   }
 
+  private checkEndStatus(): boolean {
+    const end_process = this._localStaroge.getItem<string>("end_process");
+    return !!end_process;
+  }
+
+  // private headers(token?: string) {
   private headers(token?: string) {
     return {
       withCredentials: false,
@@ -122,25 +127,45 @@ export default class AuthService {
     this._loader.next(false);
   }
 
-  async deleteUser(delete_reason: string) {
+  async deleteUser(state: string) {
     this._loader.next(true);
+
+    try {
+      const user: any = this._localStaroge.getItem<string>("user");
+      const accessToken = user.access_token
+        ? user.access_token
+        : user.user.token.access_token;
+
+      const response: any = await this._http
+        .delete(
+          `${environment.maatUrl}/user`,
+          this.headers(accessToken)
+        )
+        .toPromise();
+
+      if (response) {
+        this._endProcess.next(!!state);
+        this._localStaroge.clearAll();
+        this._localStaroge.setItem("end_process", state);
+      }
+    } catch (error) {
+      this.handleError(error);
+    }
+    this._loader.next(false);
+  }
+
+  async leaveReason(body: any) {
+    this._loader.next(true);
+    
     try {
       const user: any = this._localStaroge.getItem<string>("user");
       const accessToken = user.access_token
         ? user.access_token
         : user.user.token.access_token;
       const response: any = await this._http
-        .post(
-          `${environment.maatUrl}/user/delete`,
-          { delete_reason: delete_reason },
-          this.headers(accessToken)
-        )
+        .post(`${environment.maatUrl}/user/leave-reason`, body, this.headers(accessToken))
         .toPromise();
 
-      if (response) {
-        this._localStaroge.clearAll();
-        this.router.navigate(["/"]);
-      }
     } catch (error) {
       this.handleError(error);
     }
@@ -150,10 +175,16 @@ export default class AuthService {
   private handleError(error: HttpErrorResponse) {
     console.error(
       error.status === 0
-        ? `An error occurred: ${error.error}`
-        : `Backend returned code ${error.status}, body was: ${error.error}`
+        ? `An error occurred: ${error.error.message}`
+        : `Backend returned code ${error.status}, body was: ${error.error.message}`
     );
-    this._error.next(error.error);
+    this._error.next(error.error.message);
     return throwError(new Error("Something went wrong. Please try again!"));
+  }
+
+  cancelProcess(state: string) {
+    this._endProcess.next(!!state);
+    this._localStaroge.clearAll();
+    this._localStaroge.setItem("end_process", state);
   }
 }

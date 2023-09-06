@@ -17,9 +17,8 @@ export class AppComponent {
     public title: Title,
     translate:  TranslateService
     ) {
-      const  currentLanguage  =  translate.getBrowserLang();
-      translate.setDefaultLang('en');
-      translate.use(currentLanguage);
+      const currentLanguage  =  translate.getBrowserLang();
+      translate.use(currentLanguage.match(/en|es/) ? currentLanguage : 'en');
       console.log(this.language.browserLang);
       console.log("AQUI SERVICIO DE TRADUCCION");
   }

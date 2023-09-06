@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, OnDestroy } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import AuthService from "src/app/services/auth.service";
 
 @Component({
@@ -7,8 +7,10 @@ import AuthService from "src/app/services/auth.service";
   styleUrls: ["./delete-account-page.component.css"],
 })
 export class DeleteAccountPage implements OnInit {
+
   userLoginOn: boolean = false;
   user2fAuth: boolean = false;
+  endProcess: boolean;
 
   constructor(private _authService: AuthService) {}
 
@@ -23,7 +25,10 @@ export class DeleteAccountPage implements OnInit {
         this.user2fAuth = user2fAuth;
       },
     });
-    console.log(this.userLoginOn);
-    console.log(this.user2fAuth);
+
+    this._authService.endProcess.subscribe((state: boolean) => {
+      this.endProcess = state
+    }) 
   }
+
 }

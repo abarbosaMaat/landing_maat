@@ -1,6 +1,5 @@
 * {
   font-family: 'Mulish', sans-serif;
-  color: #26314D;
 }
 
 .page-container {
@@ -20,6 +19,12 @@
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
+}
+.navbar-brand {
+  height: 55px;
+}
+.navbar-brand img {
+  height: 100%;
 }
 .container.thin-container{
   max-width: 1000px; 
@@ -42,47 +47,75 @@
 .form-image{
   width: 100%;
 }
-.self-center{
-  align-self: center;
+.thin-container {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -webkit-scrollbar-width: none; 
 }
 
- /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-}
-@media only screen and (max-width: 470px){
-
-}
-/*Extra extra small devices (phones, max 330)*/
-@media only screen and (max-width: 400px){
-
+/* Firefox */
+.thin-container::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 655px) {
-
+@media only screen and (min-width: 480px) {
+  
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 742px) {
-  .d-inline {
-    width: 130px;
+@media only screen and (max-width: 767px) {
+  section.container.thin-container {
+    padding: 0;
+    height: 100%;
+    overflow-y: unset;
+    overflow-x: hidden;
+  }
+  section.thin-container .row {
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  section.thin-container .row > div {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 24px 4rem;
+    min-height: 100%;
+  }
+  .right-img {
+    display: none;
+  }
+  .bottom-img{
+    display: block;
+  }
+  .page-container{
+    height: auto;
   }
 }
-
 @media only screen and (min-width: 768px) {
-  .d-inline {
-    width: 180px;
+  .right-img {
+    display: block;
   }
-}
-@media only screen and (max-width: 850px) {
- 
+  .bottom-img {
+    display: none;
+  }
+  .right-img {
+    align-self: center;
+  }
+  
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 926px) {
-
+@media only screen and (min-width: 1024px) {
+  /* .right-img {
+    align-self: flex-start;
+    padding-top: 4%;
+  } */
 }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1280px) {
+  /* .right-img {
+    align-self: flex-start;
+    padding-top: 4%;
+  } */
+}

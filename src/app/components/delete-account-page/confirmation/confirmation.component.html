@@ -1,17 +1,15 @@
 <div class="confirmation-container">
 
-  <div *ngIf="deletedAccount; else sadConfirmation">
-    <h2>¡Gracias por darnos otra oportunidad!</h2>
-  
-    <p>Seguiremos trabajando para ser mejores</p>
-    <p>Queremos que más empresas e instituciones acepten los documentos almacenados en nuestra plataforma. También para que puedas subir más documentos y compartirlos con otras personas, y no sólo con empresas.</p>
+  <div *ngIf="endProcessLayout === 'cancelProcess'">
+    <h1>{{ 'deleteAccountConfirmation.cancelTitle' | translate }}</h1>
+    <p>{{ 'deleteAccountConfirmation.cancelDesc1' | translate }}</p>
+    <p>{{ 'deleteAccountConfirmation.cancelDesc2' | translate }}</p>
   </div>
   
-  <ng-template #sadConfirmation>
-    <h2>¡Nos pone muy tristes perderte!</h2>
-  
-    <p>Seguiremos trabajando para ser mejores</p>
-    <p>Queremos que más empresas e instituciones acepten los documentos almacenados en nuestra plataforma. También para que puedas subir más documentos y compartirlos con otras personas, y no sólo con empresas.</p>
-  </ng-template>
+  <div *ngIf="endProcessLayout === 'deleteAccount'">
+    <h1>{{ 'deleteAccountConfirmation.deleteTitle' | translate }}</h1>  
+    <p>{{ 'deleteAccountConfirmation.deleteDesc1' | translate }}</p>
+    <p>{{ 'deleteAccountConfirmation.deletelDesc2' | translate }}</p>
+  </div>
 
 </div>

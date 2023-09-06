@@ -1,51 +1,56 @@
-<h1>Confirma tu número</h1>
-<p>Escribe el código de verificación que hemos enviado al:</p>
-<p class="phone-number">+{{ phone }}</p>
+<div class="container">
+  <h1>{{ 'deleteAccountVerificationCode.confirmNumberTitle' | translate }}</h1>
+  <p>{{ 'deleteAccountVerificationCode.verificationCodeText' | translate }}</p>
+  <p class="phone-number">+{{ phone }}</p>
 
-<form class="confirm-code-form" [formGroup]="form2fa">
-  <div class="form-group">
-    <input
-      formControlName="verificationCode"
-      type="text"
-      class="form-control input-bordered"
-      id="confirmCode"
-      name="confirmCode"
-    />
+  <form class="confirm-code-form" [formGroup]="form2fa">
+    <div class="form-group">
+      <input
+        formControlName="verificationCode"
+        type="text"
+        class="form-control input-bordered"
+        id="confirmCode"
+        name="confirmCode"
+        autocomplete="off"
+      />
 
-    <div class="link-wrapper">
-      <p>
-        ¿No llegó tu código?
-        <span class="input-link" *ngIf="!resend"
-          >Reenvia en {{ countdown }} segundos</span
-        >
-        <a
-          class="input-link cursor-pointer"
-          *ngIf="resend"
-          (click)="resendSMS()"
-          >Reenviar</a
-        >
-      </p>
+      <div class="link-wrapper">
+        <p>
+          {{ 'deleteAccountVerificationCode.didntGetCode' | translate }}
+          <span class="input-link" *ngIf="!resend"> 
+            {{ 'deleteAccountVerificationCode.forwardIn' | translate }} {{ countdown }} {{ 'deleteAccountVerificationCode.seconds' | translate }}
+          </span>
+          <a
+            class="input-link cursor-pointer"
+            *ngIf="resend"
+            (click)="resendSMS()"
+          >
+            {{ 'deleteAccountVerificationCode.forward' | translate }}
+          </a>
+        </p>
+      </div>
+
+      <ng-container *ngIf="verificationCode.invalid && verificationCode.touched">
+        <p class="error-message">
+          <span *ngIf="verificationCode.errors?.required"
+            >{{ 'deleteAccount.requiredField' | translate }}</span
+          >
+          <span *ngIf="verificationCode.errors?.minlength"
+            >{{ 'deleteAccountVerificationCode.forward' | translate }}</span
+          >
+        </p>
+      </ng-container>
     </div>
 
-    <ng-container *ngIf="verificationCode.invalid && verificationCode.touched">
-      <p class="error-message">
-        <span *ngIf="verificationCode.errors?.required"
-          >Este campo es obligatorio</span
-        >
-        <span *ngIf="verificationCode.errors?.minlength"
-          >El código de verifiación debe contener 6 dígitos</span
-        >
-      </p>
-    </ng-container>
-  </div>
+    <button
+      type="button"
+      class="btn btn-maat"
+      (click)="submitVerificationCode()"
+      [disabled]="!form2fa.valid || loader"
+    >
+      <span *ngIf="!loader">{{ 'deleteAccountVerificationCode.verify' | translate }}</span>
+      <span *ngIf="loader">{{ 'deleteAccountVerificationCode.loading' | translate }}</span>
+    </button>
+  </form>
 
-  <button
-    type="button"
-    class="btn btn-maat"
-    (click)="submitVerificationCode()"
-    [disabled]="!form2fa.valid || loader"
-  >
-    <span *ngIf="!loader"> Verificar</span>
-    <span *ngIf="loader"> Cargando...</span>
-  </button>
-</form>
+</div>

@@ -3,7 +3,7 @@ import { LoginDataResponse } from "../../../models/login.model";
 import AuthService from "../../../services/auth.service";
 import LocalStorageService from "../../../services/localstorage.service";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-import { Observable, timer, Subscription } from "rxjs";
+import { timer, Subscription } from "rxjs";
 import { takeWhile, tap } from "rxjs/operators";
 
 @Component({

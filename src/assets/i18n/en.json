@@ -217,5 +217,62 @@
       "expresslyagree": "Users expressly acknowledge and agree with us processing their personal data as indicated here, in strict compliance with this notice, the Law, its Regulations and other applicable legislation, by providing us with their personal data and ticking the corresponding acceptance boxes upon creating their account.",
       "understand": "Users understand that transferring their personal data or documentation stored in MAAT Vault shall only be with their authorization and, therefore, release MAAT from any and all liability in connection with or arising from their (Users’) transfer of data to entities, individuals and applications outside MAAT.",
       "lastmodified": "LAST MODIFIED: JUNE 25TH, 2021."
+    },
+    "deleteAccount": {
+        "titleDeleteAccount": "Delete Account",
+        "requiredField": "This field is required",
+        "sending": "Sending...",
+        "privacyPolicy": "Privacy Policy"
+    },
+    "deleteAccountLogin": {
+        "loginText1": "We're sorry to see you go from ",
+        "loginText2": "Your account data will be deleted, please review our",
+        "loginText3": "for more information on how we use your information.",
+        "loginText4": "If you really want to leave 😢, log in to continue the process.",
+        "phonePlaceholder": "Phone (10 digits)",
+        "enterPassword": "Enter your password",
+        "login": "Log In",
+        "somethingWrong": "Oops!, Something went wrong, please try again"
+    },
+    "deleteAccountVerificationCode": {
+        "confirmNumberTitle": "Confirm Your Number",
+        "verificationCodeText": "Please enter the verification code we sent to:",
+        "didntGetCode": "Didn't receive your code?",
+        "forwardIn": "Forward in",
+        "seconds": "seconds",
+        "forward": "Resend",
+        "codeMinLength": "The verification code must contain 6 digits",
+        "verify": "Verify",
+        "loading": "Loading..."
+    },
+    "deleteAccountConfirmDelete": {
+        "confirmDeleteText1": "We're sorry to see you go from ",
+        "confirmDeleteText2": "help us improve by selecting the reason for deleting your account:",
+        "anotherChangeBtn": "Another chance",
+        "delete": "Delete",
+        "tellUsMore": "Tell us more",
+        "dontUseTitle": "I don't use it",
+        "dontUseTitleDesc1": "We're working to have more companies and institutions accept documents stored on our platform. Also, so you can upload more documents and share them with others, not just with companies.",
+        "dontUseTitleDesc2": "Could you tell us where you'd like to be able to use your {{a}}maat.ai{{b}} account by writing to",
+        "dontUnderstandTitle": "I don't understand it",
+        "dontUnderstandDesc1": "{{a}}maat.ai{{b}} is an identity document wallet where all your papers will be stored securely. When a company wants to identify you, instead of asking you to bring your folder with an original and two copies or go through the same old process on their website, they can send you a notification, and you'll decide whether to grant access to some of your documents or not. We also provide complete traceability of who has access to your data, for how long, for what reason, and how they handle it.",
+        "dontUnderstandDesc2": "There are surely many features missing to help you in the battle against bureaucracy. Could you give us some ideas on where to focus first by writing to",
+        "dontTrustTitle": "I don't trust maat.ai",
+        "dontTrustDesc1": "At {{a}}maat.ai{{b}}, we want to be your tool to navigate the murky waters of bureaucracy.",
+        "dontTrustDesc2": "Security and privacy are the two primary focuses of this application. We certify ourselves twice a year in cybersecurity, and we also have certification from the National Institute for Access to Information and Data Protection (INAI), as well as ISO27001 to safeguard your personal information.",
+        "dontTrustDesc3": "If there's anything you think we can improve, please send us your feedback at",
+        "badExperienceTitle": "I had a bad experience",
+        "badExperienceDesc1": "At maat.ai, we want to be your tool to navigate the murky waters of bureaucracy.",
+        "badExperienceDesc2": "There are surely many features missing to achieve that goal, but we're working every day to make it happen.",
+        "badExperienceDesc3": "We're sorry you had a bad experience, please e-mail us at info@maatai.com with a description of the situation so we can learn from it and prevent it from happening to any other maat.ai users",
+        "otherTitle": "Other"
+    },
+    "deleteAccountConfirmation": {
+        "cancelTitle": "Thank you for giving us another chance 😊!",
+        "cancelDesc1": "We continue working to improve.",
+        "cancelDesc2": "More and more companies and institutions will accept your identity documents from maat.ai.",
+        "deleteTitle": "We're very sad 😢 to see you go!",
+        "deleteDesc1": "Your account and all your data have been deleted. If you decide to return, you'll need to create a new account from scratch.",
+        "deletelDesc2": "In the meantime, we will continue working to improve."
     }
 }

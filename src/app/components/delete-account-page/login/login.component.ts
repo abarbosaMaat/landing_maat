@@ -1,10 +1,10 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-import { map } from "rxjs/operators";
-import { Country, LocationResponse } from "../../../models/country.model";
+import { CountriesResponse, Country, LocationResponse } from "../../../models/country.model";
 import { CountryService } from "../../../services/country.service";
 import AuthService from "src/app/services/auth.service";
 import LocalStorageService from "src/app/services/localstorage.service";
+import { LanguageService } from "src/app/services/language.service";
 
 @Component({
   selector: "app-login",
@@ -12,7 +12,7 @@ import LocalStorageService from "src/app/services/localstorage.service";
   styleUrls: ["./login.component.css", "../shared.component.css"],
 })
 export class LoginComponent implements OnInit {
-  userLoginOn: boolean = false;
+
   public loader: boolean = false;
 
   public loginForm: FormGroup;
@@ -24,12 +24,14 @@ export class LoginComponent implements OnInit {
     name_es: "",
     iso_2: "",
   };
+  
 
   constructor(
     private fb: FormBuilder,
     private countryService: CountryService,
     private _authService: AuthService,
-    private _localStaroge: LocalStorageService
+    private _localStaroge: LocalStorageService,
+    public language: LanguageService
   ) {
     this.loginForm = this.fb.group({
       password: ["", [Validators.minLength(4), Validators.required]],
@@ -44,14 +46,22 @@ export class LoginComponent implements OnInit {
     this._authService.loader.subscribe((state: boolean) => {
       this.loader = state;
     });
+    this._authService.error.subscribe((error: string) => {
+      this.loginError = error ? this.getErrorTranslate() : '';
+    });
+
+
   }
 
-  getCountriesData() {
-    this.countryService
-      .getCountry()
-      .pipe(
-        map((response) =>
-          response.data.countries.map((country) => {
+  onInputFocus() {
+    if(this.loginError) this.loginError = '';
+  }
+
+  public async getCountriesData() {
+    await this.countryService.getCountry()
+      .then((res: CountriesResponse) => {
+        const countries = res.data.countries
+          .map((country) => {
             return {
               phone_code: country.phone_code,
               emoji: country.emoji,
@@ -59,29 +69,23 @@ export class LoginComponent implements OnInit {
               iso_2: country.iso_2,
             };
           })
-        ),
-        map((countries) =>
-          countries.sort((a, b) => a.name_es.localeCompare(b.name_es))
-        )
-      )
-      .subscribe(
-        (transformedData) => (this.transformCountries = transformedData),
-        (error) => console.error("Error:", error)
-      );
+          .sort((a, b) => a.name_es.localeCompare(b.name_es));
+        
+        this.transformCountries = countries
+      });
   }
 
-  getCurrentCountry() {
-    this.countryService.getLocation().subscribe((data: LocationResponse) => {
-      this.currentCountry = this.transformCountries.find(
-        (country) => country.iso_2 === data.country_code
-      );
-    });
+  public async getCurrentCountry() {
+    await this.countryService.getLocation()
+      .then((res: LocationResponse) => {
+        this.currentCountry = this.transformCountries.find(
+          (country) => country.iso_2 === res.country_code
+        );
+      })
   }
 
   dropdownValueChanged(selectedValue: any) {
-    // Acciones en respuesta al cambio de valor seleccionado.
     this.currentCountry = selectedValue;
-    // console.log('Selected value changed:', this.currentCountry);
   }
 
   get phoneNumber() {
@@ -101,11 +105,8 @@ export class LoginComponent implements OnInit {
         phone: this.arrayBufferToBase64(phoneNumber),
         type_message: "sms",
       };
-      this._localStaroge.setItem(
-        "phone",
-        `${this.currentCountry.phone_code} ${phoneNumber}`
-      );
-      await this._authService.signIn(credentials);
+      this._localStaroge.setItem("phone", `${this.currentCountry.phone_code} ${phoneNumber}`);
+      await this._authService.signIn(credentials)
     }
   }
 
@@ -117,5 +118,13 @@ export class LoginComponent implements OnInit {
       new Uint8Array(dataArrayBuffer)
     );
     return btoa(binary);
+  }
+
+  getErrorTranslate() {
+    if (this.language.browserLang == 'es') {
+      return '¡Ops!, Usuario y contraseña no hacen match 😅.';
+    } else if (this.language.browserLang == 'en') {
+      return 'Ops!, Username and password do not match 😅.';
+    }
   }
 }

@@ -40,7 +40,6 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { LanguageService } from './services/language.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { ErrorMsgComponent } from './components/delete-account-page/error-msg/error-msg.component';
 import { SelectComponent } from './components/delete-account-page/select/select.component';
 
 // required for AOT compilation
@@ -80,7 +79,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     PoliticaDeCumplimientoComponent,
     NavbarComponent,
     PageNotFoundComponent,
-    ErrorMsgComponent,
     SelectComponent,
   ],
   imports: [

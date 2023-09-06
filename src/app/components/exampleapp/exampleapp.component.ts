@@ -13,7 +13,6 @@ export class ExampleappComponent implements OnInit {
 
   constructor(public language: LanguageService) {
     if(language.langFooterEs == 'es') {
-      console.log("Si funciona");
       this.language.visibleDivEs = true;
       this.language.visibleDivEn = false;
     }else if(language.langFooterEn == 'en'){
@@ -45,7 +44,6 @@ export class ExampleappComponent implements OnInit {
       this.language.visibleDivEs = false;
     }else {
       this.visibleDivEs = true;
-      console.log("error en carga de imagenes");
     }
   }
 

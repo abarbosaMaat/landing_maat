@@ -1,7 +1,6 @@
 * {
   font-family: 'Mulish';
 }
-
 h1 {
   margin-top: .7em;
   font-style: normal;
@@ -16,17 +15,25 @@ p {
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
+  color: #2B3C5A;
 }
 a {
   color: #2B3C5A !important;
 }
-.login-container {
+.container {
   text-align: center;
-}
-.link-maat {
-  font-weight: 500;
 }
 
 .login-form {
   margin-top: 40px;
+}
+.link-maat {
+  font-weight: 700 !important;
+}
+
+@media only screen and (max-width: 920px) {
+  h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 }

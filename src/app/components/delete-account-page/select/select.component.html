@@ -17,15 +17,22 @@
   </button>
 
   <ul class="dropdown-list" role="listbox" aria-expanded="false" [ngClass]="{'dropdown-open' : dropdownOpen}">
+      
+      <input
+        type="text"
+        class="search-country"
+        [(ngModel)]="filterText"
+        (ngModelChange)="filterCountryByName($event)"
+      />
+      
       <li 
-        *ngFor="let o of options"
-        [ngClass]="{'selected' : currentValue === o}"
+        *ngFor="let country of filteredCountries"
+        [ngClass]="{'selected' : currentValue === country}"
         tabindex="0"
-        (click)="select(o)"
+        (click)="select(country)"
         role="option"
       >
-        <!-- [innerHTML]="<span>{{o.emoji}}</span>" -->
-        <span>{{ o.emoji }} {{ o.name_es }} (+{{ o.phone_code }})</span>
+        <span>{{ country.emoji }} {{ country.name_es }} (+{{ country.phone_code }})</span>
       </li>
   </ul>
 </div>

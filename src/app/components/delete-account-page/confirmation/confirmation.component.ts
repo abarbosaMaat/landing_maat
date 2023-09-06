@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import LocalStorageService from 'src/app/services/localstorage.service';
 
 @Component({
   selector: 'app-confirmation',
@@ -7,11 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ConfirmationComponent implements OnInit {
 
-  @Input() deletedAccount: boolean;
-  constructor() { }
+  public endProcessLayout: string;
+  @Input() endProcess: boolean;
+  constructor(private _localStaroge: LocalStorageService) { }
 
-  
   ngOnInit() {
+    this.endProcessLayout = this._localStaroge.getItem<string>("end_process");
   }
 
 }
