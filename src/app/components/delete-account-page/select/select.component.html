@@ -23,6 +23,7 @@
         class="search-country"
         [(ngModel)]="filterText"
         (ngModelChange)="filterCountryByName($event)"
+        placeholder="{{ 'deleteAccount.search' | translate }}"
       />
       
       <li 
@@ -32,7 +33,7 @@
         (click)="select(country)"
         role="option"
       >
-        <span>{{ country.emoji }} {{ country.name_es }} (+{{ country.phone_code }})</span>
+        <span>{{ country.emoji }}</span> <span>{{ country.name_es }} (+{{ country.phone_code }})</span>
       </li>
   </ul>
 </div>

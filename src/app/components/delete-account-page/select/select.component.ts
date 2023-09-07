@@ -47,28 +47,21 @@ export class SelectComponent {
         });
     }
 
-    handleKeyboardEvents($event: KeyboardEvent) {
-        if ($event.code === 'ArrowUp') {
-            if (this.currentIndex < 0) {
-                this.currentIndex = 0;
-            } else if (this.currentIndex > 0) {
-                this.currentIndex--;
-            }
-            this.elem.nativeElement.querySelectorAll('li').item(this.currentIndex).focus();
-        } else if ($event.code === 'ArrowDown') {
-            if (this.currentIndex < 0) {
-                this.currentIndex = 0;
-            } else if (this.currentIndex < this.countries.length-1) {
-                this.currentIndex++;
-            }
-            this.elem.nativeElement.querySelectorAll('li').item(this.currentIndex).focus();
-        } else if (($event.code === 'Enter' || $event.code === 'NumpadEnter') && this.currentIndex >= 0) {
-            this.selectByIndex(this.currentIndex);
-        } else if ($event.code === 'Escape') {
-            this.closeDropdown();
-        }
-    }
 
+    handleKeyboardEvents($event: KeyboardEvent) {
+        const arrowUp = $event.code === 'ArrowUp';
+        const arrowDown = $event.code === 'ArrowDown';
+        const escape = $event.code === 'Escape';
+
+        (arrowUp || arrowDown)
+        ? (arrowUp && this.currentIndex > 0)
+            ? (this.currentIndex--, this.elem.nativeElement.querySelectorAll('li').item(this.currentIndex).focus())
+            : (arrowDown && this.currentIndex < this.countries.length - 1)
+            ? (this.currentIndex++, this.elem.nativeElement.querySelectorAll('li').item(this.currentIndex).focus())
+            : null
+        : (escape && this.closeDropdown());
+    }
+ 
     closeDropdown() {
         this.dropdownElement.setAttribute('aria-expanded', "false");
         this.currentIndex = -1;
@@ -91,10 +84,8 @@ export class SelectComponent {
 
     toggleDropdown() {
         this.dropdownOpen = !this.dropdownOpen;
-        this.dropdownElement.setAttribute('aria-expanded', this.dropdownOpen ? "true" : "false");
-        if(this.dropdownOpen) {
-            this.filteredCountries = this.countries;
-        }
+        this.dropdownElement.setAttribute('aria-expanded', this.dropdownOpen ? 'true' : 'false');
+        this.filteredCountries = this.dropdownOpen ? this.countries : [];
     }
 
     ngOnDestroy(): void {

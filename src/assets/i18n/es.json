@@ -222,7 +222,8 @@
         "titleDeleteAccount": "Eliminar cuenta",
         "requiredField": "Este campo es obligatorio",
         "sending": "Enviando...",
-        "privacyPolicy": "Aviso de Privacidad"
+        "privacyPolicy": "Aviso de Privacidad",
+        "search": "Buscar"
     },
     "deleteAccountLogin": {
         "loginText1": "Lamentamos que ya no quieras formar parte de ",

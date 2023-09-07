@@ -222,7 +222,8 @@
         "titleDeleteAccount": "Delete Account",
         "requiredField": "This field is required",
         "sending": "Sending...",
-        "privacyPolicy": "Privacy Policy"
+        "privacyPolicy": "Privacy Policy",
+        "search": "Search"
     },
     "deleteAccountLogin": {
         "loginText1": "We're sorry to see you go from ",

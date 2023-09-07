@@ -55,7 +55,6 @@ export default class AuthService {
     return !!end_process;
   }
 
-  // private headers(token?: string) {
   private headers(token?: string) {
     return {
       withCredentials: false,
