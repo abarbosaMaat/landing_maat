@@ -1,0 +1,15 @@
+<div class="confirmation-container">
+
+  <div *ngIf="endProcessLayout === 'cancelProcess'">
+    <h1>{{ 'deleteAccountConfirmation.cancelTitle' | translate }}</h1>
+    <p>{{ 'deleteAccountConfirmation.cancelDesc1' | translate }}</p>
+    <p>{{ 'deleteAccountConfirmation.cancelDesc2' | translate }}</p>
+  </div>
+  
+  <div *ngIf="endProcessLayout === 'deleteAccount'">
+    <h1>{{ 'deleteAccountConfirmation.deleteTitle' | translate }}</h1>  
+    <p>{{ 'deleteAccountConfirmation.deleteDesc1' | translate }}</p>
+    <p>{{ 'deleteAccountConfirmation.deletelDesc2' | translate }}</p>
+  </div>
+
+</div>

@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router } from '@angular/router';
 import { LanguageService } from '../app/services/language.service';
-import { Title, Meta, MetaDefinition } from '@angular/platform-browser';
-import { TranslateService } from  '@ngx-translate/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -15,13 +14,7 @@ export class AppComponent {
     public language: LanguageService,
     public router: Router,
     public title: Title,
-    translate:  TranslateService
     ) {
-      const  currentLanguage  =  translate.getBrowserLang();
-      translate.setDefaultLang('en');
-      translate.use(currentLanguage);
-      console.log(this.language.browserLang);
-      console.log("AQUI SERVICIO DE TRADUCCION");
   }
 
 ngOnInit(){

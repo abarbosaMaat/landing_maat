@@ -17,6 +17,11 @@ import { Certifications2Component } from './components/certifications2/certifica
 import { EmpresasComponent } from './components/empresas/empresas.component';
 import { LandingCarDealerComponent } from './components/car-dealer/landing/landing.component';
 import { MicroCreditoComponent } from './components/microcredito/landing/landing.component';
+import { DeleteAccountPage } from './components/delete-account-page/delete-account-page.component';
+import { LoginComponent } from './components/delete-account-page/login/login.component';
+import { VerificationCodeComponent } from './components/delete-account-page/verification-code/verification-code.component';
+import { ConfirmDeleteComponent } from './components/delete-account-page/confirm-delete/confirm-delete.component';
+import { ConfirmationComponent } from './components/delete-account-page/confirmation/confirmation.component';
 import { Video2Component } from './components/video2/video2.component';
 import { ProductsComponent } from './components/products/products.component';
 import { UseComponent } from './components/use/use.component';
@@ -35,6 +40,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { LanguageService } from './services/language.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { SelectComponent } from './components/delete-account-page/select/select.component';
 
 // required for AOT compilation
 export function HttpLoaderFactory(http: HttpClient) {
@@ -56,6 +62,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     EmpresasComponent,
     LandingCarDealerComponent,
     MicroCreditoComponent,
+    DeleteAccountPage,
+    LoginComponent,
+    VerificationCodeComponent,
+    ConfirmDeleteComponent,
+    ConfirmationComponent,
     Video2Component,
     ProductsComponent,
     UseComponent,
@@ -68,6 +79,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PoliticaDeCumplimientoComponent,
     NavbarComponent,
     PageNotFoundComponent,
+    SelectComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

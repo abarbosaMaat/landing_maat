@@ -1,0 +1,75 @@
+<!-- formulario.component.html -->
+<div class="container">
+  <h1>{{ 'deleteAccount.titleDeleteAccount' | translate }}</h1>
+  <p>{{ 'deleteAccountLogin.loginText1' | translate }} <strong>maat.ai</strong>.</p>
+  <p>{{ 'deleteAccountLogin.loginText2' | translate }} <a routerLink="/aviso-de-privacidad" target="_blank" class="link-maat">{{ 'deleteAccount.privacyPolicy' | translate }}</a> {{ 'deleteAccountLogin.loginText3' | translate }}
+  </p>
+  <p>{{ 'deleteAccountLogin.loginText4' | translate }}</p>
+
+  <form [formGroup]="loginForm" class="login-form">
+    <div class="form-group input-phone">
+      <div class="input-group input-bordered">
+        <div class="input-group-prepend">
+          <custom-select
+            [title]="currentCountry"
+            [countries]="transformCountries"
+            (currentValueChange)="dropdownValueChanged($event)"
+          ></custom-select>
+        </div>
+
+        <input
+          formControlName="phoneNumber"
+          type="text"
+          id="phoneNumber"
+          name="phoneNumber"
+          placeholder="{{ 'deleteAccountLogin.phonePlaceholder' | translate }}"
+          class="form-control"
+          required
+          autocomplete="off"
+          (focus)="onInputFocus()"
+        />
+      </div>
+      <ng-container *ngIf="phoneNumber.invalid && phoneNumber.touched">
+        <p class="error-message">
+          <span *ngIf="phoneNumber.errors?.required">
+            {{ 'deleteAccount.requiredField' | translate }}
+          </span>
+        </p>
+      </ng-container>
+    </div>
+
+    <div class="form-group">
+      <input
+        formControlName="password"
+        type="password"
+        id="password"
+        name="password"
+        placeholder="{{ 'deleteAccountLogin.enterPassword' | translate }}"
+        class="form-control input-bordered"
+        required
+        autocomplete="off"
+        (focus)="onInputFocus()"
+      />
+
+      <ng-container *ngIf="password.invalid && password.touched">
+        <p class="error-message">
+          <span *ngIf="password.errors?.required">{{ 'deleteAccount.requiredField' | translate }}</span>
+        </p>
+      </ng-container>
+    </div>
+
+    <ng-container *ngIf="loginError">
+      <p class="error-message">{{ loginError }}</p>
+    </ng-container>
+
+    <button
+      type="submit"
+      class="btn btn-maat"
+      [disabled]="!loginForm.valid || loader"
+      (click)="submitLoginForm($event)"
+    >
+      <span *ngIf="!loader">{{ 'deleteAccountLogin.login' | translate }}</span>
+      <span *ngIf="loader">{{ 'deleteAccount.sending' | translate }}</span>
+    </button>
+  </form>
+</div>

@@ -1,0 +1,39 @@
+<div class="dropdown-collection">
+  <button 
+    class="dropdown-button" 
+    aria-haspopup="listbox" 
+    aria-labelledby="dropdown-label" 
+    (click)="toggleDropdown()" 
+    (clickOutside)="dropdownOpen = false"
+    >
+      
+      <span id="dropdown-label" *ngIf="!currentValue">{{title.emoji}}</span>
+      <span class="dropdown-value" *ngIf="currentValue">{{currentValue?.emoji}}</span>
+
+      <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 8.05469L10 13.0547L15 8.05469" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+        
+  </button>
+
+  <ul class="dropdown-list" role="listbox" aria-expanded="false" [ngClass]="{'dropdown-open' : dropdownOpen}">
+      
+      <input
+        type="text"
+        class="search-country"
+        [(ngModel)]="filterText"
+        (ngModelChange)="filterCountryByName($event)"
+        placeholder="{{ 'deleteAccount.search' | translate }}"
+      />
+      
+      <li 
+        *ngFor="let country of filteredCountries"
+        [ngClass]="{'selected' : currentValue === country}"
+        tabindex="0"
+        (click)="select(country)"
+        role="option"
+      >
+        <span>{{ country.emoji }}</span> <span>{{ country.name_es }} (+{{ country.phone_code }})</span>
+      </li>
+  </ul>
+</div>

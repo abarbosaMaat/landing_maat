@@ -1,0 +1,65 @@
+<div class="container">
+  <h1>{{ 'deleteAccount.titleDeleteAccount' | translate }}</h1>
+  <p>{{ 'deleteAccountConfirmDelete.confirmDeleteText1' | translate }} <strong>maat.ai</strong> {{ 'deleteAccountConfirmDelete.confirmDeleteText2' | translate }}
+  </p>
+
+  <div class="options-list">
+    <label *ngFor="let option of options" class="custom-radio">
+      <div class="label-component">
+        <input
+          type="radio"
+          name="selectedOption"
+          [(ngModel)]="selectedOption"
+          [value]="option.value"
+        />
+        <span class="checkmark">
+          <svg
+            width="14"
+            height="15"
+            viewBox="0 0 14 15"
+            stroke="#ffffff"
+            fill="none"
+          >
+            <path
+              d="M11.6666 3.52539L5.24992 9.94206L2.33325 7.02539"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+        <span class="label-text">{{ option.label }}</span>
+      </div>
+      <div *ngIf="selectedOption == option.value" class="option-description">
+
+        <p [innerHTML]="sanitizeHTML(option.description)"></p>
+        
+        <div *ngIf="option.withInput">
+          <div class="form-group">
+            <input
+              class="form-control input-underline"
+              id="moreInformation"
+              name="moreInformation"
+              placeholder="{{ 'deleteAccountConfirmDelete.tellUsMore' | translate }}"
+              [(ngModel)]="otherReason"
+              (ngModelChange)="onOtherReason($event)"
+            />
+          </div>
+        </div>
+      </div>
+    </label>
+  </div>
+  
+  <div class="buttons-container">
+    <button class="btn btn-tertiary" (click)="cancelEverything()">{{ 'deleteAccountConfirmDelete.anotherChangeBtn' | translate }}</button>
+    <button
+      class="btn btn-maat-outline"
+      [disabled]="!selectedOption || loader"
+      (click)="submit()"
+    >
+      <span *ngIf="!loader">{{ 'deleteAccountConfirmDelete.delete' | translate }}</span>
+      <span *ngIf="loader">{{ 'deleteAccount.sending' | translate }}</span>
+    </button>
+  </div>
+</div>

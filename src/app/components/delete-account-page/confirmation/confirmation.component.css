@@ -1,0 +1,21 @@
+* {
+    font-family: 'Mulish';
+    color: #26314D;
+}
+.confirmation-container {
+    text-align: center;
+}
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 32px;
+    font-size: 28px;
+    color: #2B3C5A;
+    margin-bottom: 40px;
+}
+p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}

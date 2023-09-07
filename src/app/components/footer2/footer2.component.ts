@@ -59,7 +59,6 @@ export class Footer2Component implements OnInit {
 //window.scrollTo (0, 0);
   }
   contactEn() {
-    console.log("funciono wee");
     hbspt.forms.create({
       portalId: "6971767",
       formId: "571c6a1e-1605-4f44-9e18-04f5bfe30c96",

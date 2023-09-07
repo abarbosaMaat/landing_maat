@@ -217,5 +217,64 @@
       "expresslyagree": "Al proporcionarnos sus datos personales y marcar la casilla de aceptación, al crear su cuenta, expresamente lo reconoce y acepta que procedamos al tratamiento de los datos personales de la forma en que se señala en el presente y con estricto apego al mismo, la Ley, su Reglamento y demás legislación aplicable.",
       "understand": "Comprende   que   la   transferencia   de   sus   datos   o   documentación   que almacene en la Bóveda de MAAT, será bajó su autorización y deslinda a MAAT de la responsabilidad que conlleve esta transferencia de datos a entidades, personas y aplicaciones ajenas a MAAT.",
       "lastmodified": "FECHA DE ÚLTIMA ACTUALIZACIÓN: 25 DE JUNIO DE 2021."
+    },
+    "deleteAccount" : {
+        "titleDeleteAccount": "Eliminar cuenta",
+        "requiredField": "Este campo es obligatorio",
+        "sending": "Enviando...",
+        "privacyPolicy": "Aviso de Privacidad",
+        "search": "Buscar"
+    },
+    "deleteAccountLogin": {
+        "loginText1": "Lamentamos que ya no quieras formar parte de ",
+        "loginText2": "Los datos de tu cuenta serán eliminados, revisar nuestro",
+        "loginText3": "para más información sobre como usamos tu información.",
+        "loginText4": "Si de verdad quieres irte 😢, inicia sesión para continuar con el proceso.",
+        "phonePlaceholder": "Celular (10 dígitos)",
+        "enterPassword": "Escribe tu contraseña",
+        "login": "Iniciar sesión",
+        "somethingWrong": "¡Ops!, Algo fallo, intenta nuevamente"
+    },
+    "deleteAccountVerificationCode": {
+        "confirmNumberTitle": "Confirma tu número",
+        "verificationCodeText": "Escribe el código de verificación que hemos enviado al:",
+        "didntGetCode": "¿No llegó tu código?",
+        "forwardIn": "Reenvia en",
+        "seconds": "segundos",
+        "forward": "Reenviar",
+        "codeMinLength": "El código de verifiación debe contener 6 dígitos",
+        "verify": "Verificar",
+        "loading": "Cargando..."
+    },
+    "deleteAccountConfirmDelete": {
+        "confirmDeleteText1": "Lamentamos que ya no quieras formar parte de ",
+        "confirmDeleteText2": "ayúdanos a mejorar seleccionando la razón por la que eliminarás tu cuenta:",
+        "anotherChangeBtn": "Otra oportunidad",
+        "delete": "Eliminar",
+        "tellUsMore": "Cuentanos más",
+        "dontUseTitle": "No la uso",
+        "dontUseTitleDesc1": "Estamos trabajando para que más empresas e instituciones acepten los documentos almacenados en nuestra plataforma. También para que puedas subir más documentos y compartirlos con otras personas, no sólo con empresas.",	
+        "dontUseTitleDesc2": "Nos puedes comentar dónde te gustaría poder usar tu cuenta de {{a}}maat.ai{{b}} escribiendo a",	
+        "dontUnderstandTitle": "No le entiendo",
+        "dontUnderstandDesc1": "{{a}}maat.ai{{b}} es una cartera de documentos de identidad en la que todos tus papeles estarán almacenados y muy seguros. Cuando una empresa te quiera identificar, en lugar de pedirte llevar tu folder con original y dos copias, o que hagas el mismo flujo de siempre en su página web, podrá enviarte una notificación, y tu decidiras si darle acceso a algunos de tus documentos, o no. Además te damos total trazabilidad de quien tiene acceso a tus datos, por cuanto tiempo, por que razón y como los cuidan.",
+        "dontUnderstandDesc2": "Seguro hay muchas funcionalidades que nos faltan para ayudarte en la lucha contra la burocracia, ¿nos puedes dar algunas ideas de en que enfocarnos primero escribiendo a",
+        "dontTrustTitle": "No confío en maat.ai",
+        "dontTrustDesc1": "En {{a}}maat.ai{{b}}, queremos ser tu herramienta para navegar las pantanosas aguas de la burocracia.",
+        "dontTrustDesc2": "Seguridad y privacidad son los dos prioritarios enfoques de está aplicación. Nos certificamos dos veces al año en cyberseguridad, y además tenemos certificación del Instituto Nacional de Acceso a la Información y Protección de Datos (INAI), además de la ISO27001 para resguardar tu información personal.",
+        "dontTrustDesc3": "Si hay algo que crees que podamos mejorar, porfavor envíanos tus comentarios a",
+        "badExperienceTitle": "Tuve una mala experiencia",
+        "badExperienceDesc1": "En {{a}}maat.ai{{b}} queremos ser tu herramienta para navegar las pantanosas aguas de la burocracia.",
+        "badExperienceDesc2": "Seguro hay muchas funcionalidades que nos faltan para cumplir ese objetivo, pero estamos trabajando todos los días para poderlo lograr.",
+        "badExperienceDesc3": "Lamentamos que hayas tenido una mala experiencia, porfavor cuentanos a",
+        "badExperienceDesc4": "lo que sucedió para que podamos aprender de ello y no le pase a ningun otro usuario de {{a}}maat.ai{{b}}",
+        "otherTitle": "Otra"
+    },
+    "deleteAccountConfirmation": {
+        "cancelTitle": "¡Gracias por darnos otra oportunidad 😊!",
+        "cancelDesc1": "Seguimos trabajando para mejorar.",
+        "cancelDesc2": "Cada vez mas empresas e instituciones te aceptaran tus documentos de identidad desde maat.ai.",
+        "deleteTitle": "¡Nos pone muy tristes 😢 que te vayas!",
+        "deleteDesc1": "Tu cuenta y todos tus datos han sido eliminados, si decides volver deberas abrir tu cuenta desde cero.",
+        "deletelDesc2": "Mientras tanto, seguiremos trabajando por mejorar."
     }
 }

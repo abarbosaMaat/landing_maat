@@ -1,0 +1,106 @@
+* {
+  font-family: 'Mulish', sans-serif;
+}
+
+.page-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.navbarHome {
+  overflow-x: hidden;
+  height: 77px;
+}
+.navbar {
+  margin: 0 auto;
+  overflow-x: hidden;
+  color: #2B3C5A;
+  width: 100%;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+.navbar-brand {
+  height: 55px;
+}
+.navbar-brand img {
+  height: 100%;
+}
+.container.thin-container{
+  max-width: 1000px; 
+  flex: 1;
+}
+.container.thin-container > .row{
+  justify-content: center;
+  height: 100%;
+}
+.d-inline{
+  width: 70%;
+}
+.col-custom {
+  padding: 0px 24px 4rem;
+  align-self: center;
+}
+.link-maat{
+  font-weight: bold;
+}
+.form-image{
+  width: 100%;
+}
+.thin-container {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -webkit-scrollbar-width: none; 
+}
+
+.thin-container::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+@media only screen and (min-width: 480px) {
+  
+}
+@media only screen and (max-width: 767px) {
+  section.container.thin-container {
+    padding: 0;
+    height: 100%;
+    overflow-y: unset;
+    overflow-x: hidden;
+  }
+  section.thin-container .row {
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  section.thin-container .row > div {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 24px 4rem;
+    min-height: 100%;
+  }
+  .right-img {
+    display: none;
+  }
+  .bottom-img{
+    display: block;
+  }
+  .page-container{
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .right-img {
+    display: block;
+  }
+  .bottom-img {
+    display: none;
+  }
+  .right-img {
+    align-self: center;
+  }
+}

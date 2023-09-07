@@ -40,9 +40,7 @@ export class HomeComponent implements OnInit {
 
   detect(){
     let osMobile = navigator.userAgent;
-    console.log(osMobile);
     if(/Android/i.test(osMobile)){
-      console.log("Si funciona");
       window.location.href = "https://play.google.com/store/apps/details?id=com.maatai.maatapp&hl=es-419&ah=pny3Z6zoy162CNptM1OYajk5NF0";
     }  else if(osMobile.includes('iPhone') || /iPhone/i.test(osMobile)) {
       window.location.href = "https://testflight.apple.com/join/0Zrc0HME";
