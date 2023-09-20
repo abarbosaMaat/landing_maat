@@ -77,6 +77,12 @@
       console.log(numero);
       console.log(numero.detail);
     }
+    function maatAuthenticate() {
+      Maat.showIFrameButton("maat-demo", "demo-idpal", "", function(data) {
+        console.log("Respuesta:");
+        console.log(data);
+      });
+    }
   </script>
   <script src="https://demo.maatai.com/widget/js/widget.v2.js" onload="maat_loaded"></script>
   
