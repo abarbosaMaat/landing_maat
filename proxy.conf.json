@@ -1,7 +1,0 @@
-{
-    "/api/*": {
-        "target": "https://maat-api-ykdgcrhh2a-uc.a.run.app",
-        "secure": false,
-        "logLevel": "debug" 
-    } 
-}

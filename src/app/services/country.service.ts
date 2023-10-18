@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { CountriesResponse } from '../models/country.model';
+import { BehaviorSubject } from 'rxjs';
+// import { CountriesResponse } from '../models/country.model';
 import { environment } from '../../environments/environment';
 
 @Injectable({
@@ -24,14 +24,13 @@ export class CountryService {
   
   async getCountry() {
     this._loader.next(true);
-    
     try {
       return await this._http
         .get(`${environment.maatUrl}/misc/flags`, this.headers)
         .toPromise();
 
     } catch (error) {
-      console.log(error)
+      console.log(error.message)
     }
     this._loader.next(false);
 
@@ -43,7 +42,7 @@ export class CountryService {
       return await this._http.get(`https://geolocation-db.com/json/`).toPromise();;
 
     } catch (error) {
-      console.log(error)
+      console.log(error.message)
     }
     this._loader.next(false);
   }
